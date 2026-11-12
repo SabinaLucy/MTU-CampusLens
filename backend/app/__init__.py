@@ -1,0 +1,1 @@
+"""MTU CampusLens FastAPI application."""

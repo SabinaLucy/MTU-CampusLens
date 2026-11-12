@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "dataset": "CampusLens curated MTU snapshot",
+    "last_verified_at": "2026-11-11T12:00:00-05:00",
+    "live_events": false,
+    "live_classes": false,
+    "disclaimer": "This student-built snapshot is not a live MTU feed. Empty event and class lists mean no verified records are loaded, not that nothing is scheduled."
+  },
+  "buildings": [
+    {
+      "id": 1,
+      "name": "Kanwal and Ann Rekhi Hall",
+      "abbreviation": "Rekhi",
+      "aliases": [
+        "Rekhi Hall",
+        "College of Computing",
+        "Kanwal & Ann Rekhi Hall"
+      ],
+      "description": "Campus building identified on the official MTU map with the College of Computing, Applied Computing, and Computer Science.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": 28,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-11T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [
+        {
+          "id": 101,
+          "name": "Applied Computing",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "id": 102,
+          "name": "Computer Science",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "offices": [
+        {
+          "id": 103,
+          "name": "College of Computing",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          },
+          "room_number": null
+        }
+      ],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 2,
+      "name": "R. L. Smith Building",
+      "abbreviation": "MEEM",
+      "aliases": [
+        "R.L. Smith Building",
+        "MEEM Building",
+        "Mechanical Engineering Building"
+      ],
+      "description": "Academic building associated with Mechanical and Aerospace Engineering.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": 20,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-11T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [
+        {
+          "id": 201,
+          "name": "Mechanical and Aerospace Engineering",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "offices": [],
+      "rooms": [
+        {
+          "id": 210,
+          "room_number": "111",
+          "room_type": "Classroom",
+          "notes": "100 seats listed in the official classroom directory.",
+          "source": {
+            "title": "Michigan Tech IT — Classroom directory",
+            "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "id": 211,
+          "room_number": "112",
+          "room_type": "Classroom",
+          "notes": "104 seats listed in the official classroom directory.",
+          "source": {
+            "title": "Michigan Tech IT — Classroom directory",
+            "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 3,
+      "name": "Fisher Hall",
+      "abbreviation": "Fisher",
+      "aliases": [
+        "Fisher",
+        "Fisher Hall Building"
+      ],
+      "description": "Academic building for Physics and Mathematical Sciences with classrooms and teaching facilities.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": 15,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-11T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [
+        {
+          "id": 301,
+          "name": "Physics",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "id": 302,
+          "name": "Mathematical Sciences",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "offices": [],
+      "rooms": [
+        {
+          "id": 310,
+          "room_number": "135",
+          "room_type": "Lecture hall",
+          "notes": "476 seats listed in the official classroom directory.",
+          "source": {
+            "title": "Michigan Tech IT — Classroom directory",
+            "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "id": 311,
+          "room_number": "139",
+          "room_type": "Lecture hall",
+          "notes": "125 seats listed in the official classroom directory.",
+          "source": {
+            "title": "Michigan Tech IT — Classroom directory",
+            "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 4,
+      "name": "Memorial Union Building",
+      "abbreviation": "MUB",
+      "aliases": [
+        "Memorial Union",
+        "MUB",
+        "Memorial Union Building"
+      ],
+      "description": "Student-services building listed on the MTU campus map; includes the Campus Store and McAllister Welcome Center.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": 34,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-11T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [
+        {
+          "id": 401,
+          "name": "Campus Store",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          },
+          "room_number": null
+        },
+        {
+          "id": 402,
+          "name": "McAllister Welcome Center",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          },
+          "room_number": null
+        }
+      ],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 5,
+      "name": "J. Robert Van Pelt and John and Ruanne Opie Library",
+      "abbreviation": "Library",
+      "aliases": [
+        "Van Pelt and Opie Library",
+        "Van Pelt Library",
+        "Opie Library",
+        "MTU Library"
+      ],
+      "description": "Campus library providing collections, study spaces, research assistance, and learning support.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": 17,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Van Pelt and Opie Library",
+        "url": "https://www.mtu.edu/library/",
+        "checked_at": "2026-11-11T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [
+        {
+          "id": 501,
+          "name": "University Archives and Historical Collections",
+          "source": {
+            "title": "Van Pelt and Opie Library — Floor directory",
+            "url": "https://www.mtu.edu/library/about/map/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          },
+          "room_number": null
+        },
+        {
+          "id": 502,
+          "name": "Jackson Center for Teaching and Learning",
+          "source": {
+            "title": "Van Pelt and Opie Library — Floor directory",
+            "url": "https://www.mtu.edu/library/about/map/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          },
+          "room_number": null
+        }
+      ],
+      "rooms": [
+        {
+          "id": 510,
+          "room_number": "242",
+          "room_type": "Library instruction room",
+          "notes": "Second floor; no current class assignment asserted.",
+          "source": {
+            "title": "Van Pelt and Opie Library — Floor directory",
+            "url": "https://www.mtu.edu/library/about/map/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "id": 511,
+          "room_number": "244",
+          "room_type": "Library instruction room",
+          "notes": "Second floor; no current class assignment asserted.",
+          "source": {
+            "title": "Van Pelt and Opie Library — Floor directory",
+            "url": "https://www.mtu.edu/library/about/map/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    }
+  ]
+}
