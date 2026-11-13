@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 import re
 
-SKILLS_ROOT = Path(__file__).resolve().parents[3] / '.agents' / 'skills'
+SKILLS_ROOT = Path(__file__).resolve().parents[2] / '.agents' / 'skills'
 
 @dataclass(frozen=True)
 class Skill:

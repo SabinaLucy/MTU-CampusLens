@@ -1,0 +1,16 @@
+{
+  "id": null,
+  "title": "TODO: Exact publicly listed MTU event title",
+  "description": "TODO: Check the official event listing before publishing",
+  "start_at": null,
+  "end_at": null,
+  "room_number": null,
+  "location": null,
+  "source": {
+    "title": "TODO: Official MTU calendar entry",
+    "url": "TODO: Official MTU event URL",
+    "checked_at": null,
+    "source_type": "official_mtu"
+  },
+  "draft_status": "unverified_do_not_publish"
+}

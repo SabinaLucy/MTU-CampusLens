@@ -1,0 +1,13 @@
+{
+  "id": null,
+  "room_number": null,
+  "room_type": "Unverified draft",
+  "notes": "TODO: Verify this room and its public description against an official MTU source.",
+  "source": {
+    "title": "TODO: Official MTU page title",
+    "url": "TODO: Official MTU URL",
+    "checked_at": null,
+    "source_type": "official_mtu"
+  },
+  "draft_status": "unverified_do_not_publish"
+}
