@@ -12,6 +12,7 @@ from .agents.providers import recognize, generate, AIProviderError
 from .agents.knowledge_agent import grounded_context, collect_sources
 from .agents.orchestrator import recognize_workflow, chat_workflow
 from .agents.skill_runtime import list_skills
+from .services.live_events import get_live_events, matching_building
 
 logger = logging.getLogger(__name__)
 repo = BuildingRepository()
@@ -67,9 +68,31 @@ async def get_building(building_id: int):
     return find_building(building_id)
 
 
+
+@app.get('/api/events')
+async def list_live_events():
+    return await get_live_events()
+
+
 @app.get('/api/buildings/{building_id}/events')
 async def get_events(building_id: int):
-    return find_building(building_id)['events']
+    building = find_building(building_id)
+    result = await get_live_events()
+
+    events = [
+        event for event in result["events"]
+        if matching_building(
+            event["location"],
+            building["abbreviation"]
+        )
+    ]
+
+    return {
+        "events": events,
+        "status": result["status"],
+        "building": building["name"],
+    }
+
 
 
 @app.get('/api/buildings/{building_id}/departments')

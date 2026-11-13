@@ -105,7 +105,7 @@
           "room_type": "Classroom",
           "notes": "100 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -117,7 +117,7 @@
           "room_type": "Classroom",
           "notes": "104 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -176,7 +176,7 @@
           "room_type": "Lecture hall",
           "notes": "476 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -188,7 +188,7 @@
           "room_type": "Lecture hall",
           "notes": "125 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -274,7 +274,7 @@
           "id": 501,
           "name": "University Archives and Historical Collections",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -285,7 +285,7 @@
           "id": 502,
           "name": "Jackson Center for Teaching and Learning",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -300,7 +300,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -312,13 +312,38 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
           }
         }
       ],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 6,
+      "name": "Rozsa Center for the Performing Arts",
+      "abbreviation": "Rozsa",
+      "aliases": [
+        "Rozsa Center",
+        "Rozsa Center for the Performing Arts"
+      ],
+      "description": "Michigan Tech performing arts venue hosting public performances and cultural programming. Consult the official Rozsa calendar for current events and ticket information.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech Rozsa Center",
+        "url": "https://www.mtu.edu/rozsa/",
+        "checked_at": "2026-11-12T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
       "events": [],
       "classes": [],
       "reference_images": []
