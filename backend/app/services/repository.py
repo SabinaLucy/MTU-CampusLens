@@ -34,7 +34,7 @@ class BuildingRepository:
 
     @staticmethod
     def _summary(b: dict[str, Any]) -> dict[str, Any]:
-        return {key: b[key] for key in ('id', 'name', 'abbreviation', 'description', 'address', 'campus_map_number', 'map_url', 'source')}
+        return {key: b[key] for key in ('id', 'name', 'abbreviation', 'description', 'address', 'campus_map_number', 'map_url', 'source', 'category', 'location_type', 'aliases')}
 
     def summary(self, b: dict[str, Any]) -> dict[str, Any]:
         return self._summary(b)

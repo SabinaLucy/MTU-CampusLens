@@ -41,6 +41,9 @@ type Building = {
   id: number;
   name: string;
   abbreviation: string;
+  category?: string;
+  location_type?: string;
+  aliases?: string[];
   description: string;
   address: string;
   map_url: string;
@@ -89,6 +92,8 @@ type BuildingTab =
   | 'Classes & rooms'
   | 'Location'
   | 'Ask CampusLens';
+
+const CAMPUS_CATEGORIES = ['Academic & Research', 'Sports & Recreation', 'Student Housing', 'Administration & Services', 'Other Campus Locations'] as const;
 
 const tabs: BuildingTab[] = [
   'Overview',
@@ -417,7 +422,7 @@ function App() {
     const search = query.toLowerCase();
 
     return buildings.filter(building =>
-      `${building.name} ${building.abbreviation} ${building.description}`
+      `${building.name} ${building.abbreviation} ${(building.aliases || []).join(' ')} ${building.category || ''} ${building.description}`
         .toLowerCase()
         .includes(search)
     );
@@ -1386,35 +1391,26 @@ function App() {
                     />
                   </div>
 
-                  <div className="building-results">
-                    {filtered.map(building => (
-                      <button
-                        key={building.id}
-                        onClick={() =>
-                          openBuilding(building.id)
-                        }
-                      >
-                        <span className="tile-icon">
-                          <Building2 size={20} />
-                        </span>
-
-                        <span>
-                          <strong>{building.name}</strong>
-                          <small>
-                            {building.abbreviation}
-                          </small>
-                        </span>
-
-                        <ChevronRight size={17} />
-                      </button>
-                    ))}
-
-                    {!filtered.length && (
-                      <p className="muted">
-                        No matching supported buildings.
-                      </p>
-                    )}
-                  </div>
+                  <p className="muted">{filtered.length} locations found across {CAMPUS_CATEGORIES.length} categories.</p>
+                  {CAMPUS_CATEGORIES.map(category => {
+                    const locations = filtered.filter(building => building.category === category);
+                    if (!locations.length) return null;
+                    return (
+                      <section className="campus-category" key={category} aria-label={category}>
+                        <h3 className="campus-category-heading">{category} <span>{locations.length}</span></h3>
+                        <div className="building-results">
+                          {locations.map(building => (
+                            <button key={building.id} onClick={() => openBuilding(building.id)}>
+                              <span className="tile-icon"><Building2 size={20} /></span>
+                              <span><strong>{building.name}</strong><small>{building.abbreviation}{building.location_type === 'campus_location' ? ' · Campus location' : ''}</small></span>
+                              <ChevronRight size={17} />
+                            </button>
+                          ))}
+                        </div>
+                      </section>
+                    );
+                  })}
+                  {!filtered.length && <p className="muted">No matching campus locations.</p>}
                 </section>
               </div>
             </>

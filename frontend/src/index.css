@@ -186,3 +186,6 @@
     font-size: 9px;
   }
 }
+
+/* Full campus directory */
+.campus-category{margin-top:24px}.campus-category-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px;font-size:16px}.campus-category-heading span{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 10px}.campus-category .building-results{max-height:none}

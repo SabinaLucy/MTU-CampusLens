@@ -1,132 +1,276 @@
 {
   "metadata": {
-    "dataset": "CampusLens curated MTU snapshot",
-    "last_verified_at": "2026-11-11T12:00:00-05:00",
+    "dataset": "CampusLens MTU official-source campus directory",
+    "last_verified_at": "2026-11-22",
     "live_events": false,
     "live_classes": false,
-    "disclaimer": "This student-built snapshot is not a live MTU feed. Empty event and class lists mean no verified records are loaded, not that nothing is scheduled."
+    "disclaimer": "Directory entries are sourced from official MTU map and facilities references. Building profiles are incomplete until independently researched; offices, classes and room details must not be inferred. Facilities inventory includes support structures and off-campus locations.",
+    "catalog_sources": [
+      "https://www.mtu.edu/maps/campus-map.pdf",
+      "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf"
+    ],
+    "directory_count": 76
   },
   "buildings": [
     {
-      "id": 1,
-      "name": "Kanwal and Ann Rekhi Hall",
-      "abbreviation": "Rekhi",
+      "id": 1029,
+      "name": "A. E. Seaman Mineral Museum",
+      "abbreviation": "Mineral Museum",
       "aliases": [
-        "Rekhi Hall",
-        "College of Computing",
-        "Kanwal & Ann Rekhi Hall"
+        "Mineral Museum"
       ],
-      "description": "Campus building identified on the official MTU map with the College of Computing, Applied Computing, and Computer Science.",
-      "address": "Michigan Technological University, Houghton, MI 49931, USA",
-      "campus_map_number": 28,
+      "description": "A. E. Seaman Mineral Museum is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 103,
       "map_url": "https://map.mtu.edu/",
       "source": {
         "title": "Michigan Tech campus map (September 2025)",
         "url": "https://www.mtu.edu/maps/campus-map.pdf",
-        "checked_at": "2026-11-11T12:00:00-05:00",
+        "checked_at": "2026-11-22",
         "source_type": "official_mtu"
       },
-      "departments": [
-        {
-          "id": 101,
-          "name": "Applied Computing",
-          "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          }
-        },
-        {
-          "id": 102,
-          "name": "Computer Science",
-          "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          }
-        }
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1002,
+      "name": "Academic Office Building",
+      "abbreviation": "Academic Offices",
+      "aliases": [
+        "Academic Offices"
       ],
-      "offices": [
-        {
-          "id": 103,
-          "name": "College of Computing",
-          "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          },
-          "room_number": null
-        }
+      "description": "Academic Office Building is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 5,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1046,
+      "name": "Advanced Energy Research Building",
+      "abbreviation": "Energy Research",
+      "aliases": [
+        "Energy Research"
       ],
+      "description": "Advanced Energy Research Building is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 92,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1066,
+      "name": "Advanced Power Systems Research Center",
+      "abbreviation": "APSRC",
+      "aliases": [
+        "APSRC"
+      ],
+      "category": "Academic & Research",
+      "location_type": "campus_location",
+      "description": "Advanced Power Systems Research Center is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
       "rooms": [],
       "events": [],
       "classes": [],
       "reference_images": []
     },
     {
-      "id": 2,
-      "name": "R. L. Smith Building",
-      "abbreviation": "MEEM",
+      "id": 1027,
+      "name": "Advanced Technology Development Complex",
+      "abbreviation": "ATDC",
       "aliases": [
-        "R.L. Smith Building",
-        "MEEM Building",
-        "Mechanical Engineering Building"
+        "ATDC"
       ],
-      "description": "Academic building associated with Mechanical and Aerospace Engineering.",
-      "address": "Michigan Technological University, Houghton, MI 49931, USA",
-      "campus_map_number": 20,
+      "description": "Advanced Technology Development Complex is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 95,
       "map_url": "https://map.mtu.edu/",
       "source": {
         "title": "Michigan Tech campus map (September 2025)",
         "url": "https://www.mtu.edu/maps/campus-map.pdf",
-        "checked_at": "2026-11-11T12:00:00-05:00",
+        "checked_at": "2026-11-22",
         "source_type": "official_mtu"
       },
-      "departments": [
-        {
-          "id": 201,
-          "name": "Mechanical and Aerospace Engineering",
-          "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          }
-        }
-      ],
+      "departments": [],
       "offices": [],
-      "rooms": [
-        {
-          "id": 210,
-          "room_number": "111",
-          "room_type": "Classroom",
-          "notes": "100 seats listed in the official classroom directory.",
-          "source": {
-            "title": "Michigan Tech IT \u2014 Classroom directory",
-            "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          }
-        },
-        {
-          "id": 211,
-          "room_number": "112",
-          "room_type": "Classroom",
-          "notes": "104 seats listed in the official classroom directory.",
-          "source": {
-            "title": "Michigan Tech IT \u2014 Classroom directory",
-            "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          }
-        }
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1067,
+      "name": "Alternative Energy Research Building",
+      "abbreviation": "Alternative Energy",
+      "aliases": [
+        "Alternative Energy"
       ],
+      "category": "Academic & Research",
+      "location_type": "campus_location",
+      "description": "Alternative Energy Research Building is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
       "events": [],
       "classes": [],
       "reference_images": []
+    },
+    {
+      "id": 1047,
+      "name": "AMJOCH Observatory",
+      "abbreviation": "Observatory",
+      "aliases": [
+        "Observatory"
+      ],
+      "description": "AMJOCH Observatory is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 94,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1011,
+      "name": "Chemical Sciences & Engineering Building",
+      "abbreviation": "Chem Sci",
+      "aliases": [
+        "Chem Sci"
+      ],
+      "description": "Chemical Sciences & Engineering Building is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 19,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1004,
+      "name": "Dow Environmental Sciences & Engineering Building",
+      "abbreviation": "Dow",
+      "aliases": [
+        "Dow"
+      ],
+      "description": "Dow Environmental Sciences & Engineering Building is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 8,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1003,
+      "name": "Electrical Energy Resources Center",
+      "abbreviation": "EERC",
+      "aliases": [
+        "EERC"
+      ],
+      "description": "Electrical Energy Resources Center is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 7,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
     },
     {
       "id": 3,
@@ -176,7 +320,7 @@
           "room_type": "Lecture hall",
           "notes": "476 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT \u2014 Classroom directory",
+            "title": "Michigan Tech IT — Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -188,7 +332,7 @@
           "room_type": "Lecture hall",
           "notes": "125 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT \u2014 Classroom directory",
+            "title": "Michigan Tech IT — Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -197,7 +341,1176 @@
       ],
       "events": [],
       "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1028,
+      "name": "Great Lakes Research Center",
+      "abbreviation": "GLRC",
+      "aliases": [
+        "GLRC"
+      ],
+      "description": "Great Lakes Research Center is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 100,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1009,
+      "name": "Grover C. Dillman Hall",
+      "abbreviation": "Dillman",
+      "aliases": [
+        "Dillman"
+      ],
+      "description": "Grover C. Dillman Hall is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 14,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1031,
+      "name": "H-STEM Engineering & Health Technologies Complex",
+      "abbreviation": "H-STEM",
+      "aliases": [
+        "H-STEM"
+      ],
+      "description": "H-STEM Engineering & Health Technologies Complex is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 114,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 5,
+      "name": "J. Robert Van Pelt and John and Ruanne Opie Library",
+      "abbreviation": "Library",
+      "aliases": [
+        "Van Pelt and Opie Library",
+        "Van Pelt Library",
+        "Opie Library",
+        "MTU Library",
+        "Library"
+      ],
+      "description": "Campus library providing collections, study spaces, research assistance, and learning support.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": 17,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Van Pelt and Opie Library",
+        "url": "https://www.mtu.edu/library/",
+        "checked_at": "2026-11-11T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [
+        {
+          "id": 501,
+          "name": "University Archives and Historical Collections",
+          "source": {
+            "title": "Van Pelt and Opie Library — Floor directory",
+            "url": "https://www.mtu.edu/library/about/map/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          },
+          "room_number": null
+        },
+        {
+          "id": 502,
+          "name": "Jackson Center for Teaching and Learning",
+          "source": {
+            "title": "Van Pelt and Opie Library — Floor directory",
+            "url": "https://www.mtu.edu/library/about/map/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          },
+          "room_number": null
+        }
+      ],
+      "rooms": [
+        {
+          "id": 510,
+          "room_number": "242",
+          "room_type": "Library instruction room",
+          "notes": "Second floor; no current class assignment asserted.",
+          "source": {
+            "title": "Van Pelt and Opie Library — Floor directory",
+            "url": "https://www.mtu.edu/library/about/map/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "id": 511,
+          "room_number": "244",
+          "room_type": "Library instruction room",
+          "notes": "Second floor; no current class assignment asserted.",
+          "source": {
+            "title": "Van Pelt and Opie Library — Floor directory",
+            "url": "https://www.mtu.edu/library/about/map/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1,
+      "name": "Kanwal and Ann Rekhi Hall",
+      "abbreviation": "Rekhi",
+      "aliases": [
+        "Rekhi Hall",
+        "College of Computing",
+        "Kanwal & Ann Rekhi Hall",
+        "Rekhi"
+      ],
+      "description": "Campus building identified on the official MTU map with the College of Computing, Applied Computing, and Computer Science.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": 28,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-11T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [
+        {
+          "id": 101,
+          "name": "Applied Computing",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "id": 102,
+          "name": "Computer Science",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "offices": [
+        {
+          "id": 103,
+          "name": "College of Computing",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          },
+          "room_number": null
+        }
+      ],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1065,
+      "name": "Keweenaw Research Center",
+      "abbreviation": "KRC",
+      "aliases": [
+        "KRC"
+      ],
+      "category": "Academic & Research",
+      "location_type": "campus_location",
+      "description": "Keweenaw Research Center is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
       "reference_images": []
+    },
+    {
+      "id": 1007,
+      "name": "Minerals & Materials Engineering Building",
+      "abbreviation": "M&M",
+      "aliases": [
+        "M&M"
+      ],
+      "description": "Minerals & Materials Engineering Building is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 12,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1056,
+      "name": "Nara Family Maple Center",
+      "abbreviation": "Maple Center",
+      "aliases": [
+        "Maple Center"
+      ],
+      "description": "Nara Family Maple Center is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 115,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 2,
+      "name": "R. L. Smith Building",
+      "abbreviation": "MEEM",
+      "aliases": [
+        "R.L. Smith Building",
+        "MEEM Building",
+        "Mechanical Engineering Building",
+        "MEEM"
+      ],
+      "description": "Academic building associated with Mechanical and Aerospace Engineering.",
+      "address": "Michigan Technological University, Houghton, MI 49931, USA",
+      "campus_map_number": 20,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-11T12:00:00-05:00",
+        "source_type": "official_mtu"
+      },
+      "departments": [
+        {
+          "id": 201,
+          "name": "Mechanical and Aerospace Engineering",
+          "source": {
+            "title": "Michigan Tech campus map (September 2025)",
+            "url": "https://www.mtu.edu/maps/campus-map.pdf",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "offices": [],
+      "rooms": [
+        {
+          "id": 210,
+          "room_number": "111",
+          "room_type": "Classroom",
+          "notes": "100 seats listed in the official classroom directory.",
+          "source": {
+            "title": "Michigan Tech IT — Classroom directory",
+            "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "id": 211,
+          "room_number": "112",
+          "room_type": "Classroom",
+          "notes": "104 seats listed in the official classroom directory.",
+          "source": {
+            "title": "Michigan Tech IT — Classroom directory",
+            "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
+            "checked_at": "2026-11-11T12:00:00-05:00",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1001,
+      "name": "ROTC Building",
+      "abbreviation": "ROTC",
+      "aliases": [
+        "ROTC"
+      ],
+      "description": "ROTC Building is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 4,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1045,
+      "name": "Sands Pilot Plant",
+      "abbreviation": "Sands Pilot",
+      "aliases": [
+        "Sands Pilot"
+      ],
+      "description": "Sands Pilot Plant is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 90,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1010,
+      "name": "U. J. Noblet Forestry Building",
+      "abbreviation": "Forestry",
+      "aliases": [
+        "Forestry"
+      ],
+      "description": "U. J. Noblet Forestry Building is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 18,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1006,
+      "name": "Walker Arts & Humanities Center",
+      "abbreviation": "Walker",
+      "aliases": [
+        "Walker"
+      ],
+      "description": "Walker Arts & Humanities Center is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 11,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Academic & Research",
+      "location_type": "building"
+    },
+    {
+      "id": 1023,
+      "name": "Gates Tennis Center",
+      "abbreviation": "Gates",
+      "aliases": [
+        "Gates"
+      ],
+      "description": "Gates Tennis Center is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 50,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Sports & Recreation",
+      "location_type": "building"
+    },
+    {
+      "id": 1013,
+      "name": "Kearly Stadium Press Box",
+      "abbreviation": "Press Box",
+      "aliases": [
+        "Press Box"
+      ],
+      "description": "Kearly Stadium Press Box is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 25,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Sports & Recreation",
+      "location_type": "building"
+    },
+    {
+      "id": 1059,
+      "name": "Mont Ripley Ski Area",
+      "abbreviation": "Mont Ripley",
+      "aliases": [
+        "Mont Ripley"
+      ],
+      "category": "Sports & Recreation",
+      "location_type": "campus_location",
+      "description": "Mont Ripley Ski Area is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Hancock, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/mont-ripley/",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 1035,
+      "name": "Mont Ripley Ski Chalet",
+      "abbreviation": "Ski Chalet",
+      "aliases": [
+        "Ski Chalet"
+      ],
+      "description": "Mont Ripley Ski Chalet is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 54,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Sports & Recreation",
+      "location_type": "building"
+    },
+    {
+      "id": 1034,
+      "name": "Mont Ripley Ski Hill",
+      "abbreviation": "Mont Ripley",
+      "aliases": [
+        "Mont Ripley"
+      ],
+      "description": "Mont Ripley Ski Hill is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 53,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Sports & Recreation",
+      "location_type": "building"
+    },
+    {
+      "id": 1060,
+      "name": "Portage Lake Golf Course",
+      "abbreviation": "Golf Course",
+      "aliases": [
+        "Golf Course"
+      ],
+      "category": "Sports & Recreation",
+      "location_type": "campus_location",
+      "description": "Portage Lake Golf Course is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/aux/",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 1033,
+      "name": "Portage Lake Golf Course Clubhouse",
+      "abbreviation": "Golf Course",
+      "aliases": [
+        "Golf Course"
+      ],
+      "description": "Portage Lake Golf Course Clubhouse is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 52,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Sports & Recreation",
+      "location_type": "building"
+    },
+    {
+      "id": 1048,
+      "name": "SDC Annex Building",
+      "abbreviation": "SDC Annex",
+      "aliases": [
+        "SDC Annex"
+      ],
+      "description": "SDC Annex Building is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 96,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Sports & Recreation",
+      "location_type": "building"
+    },
+    {
+      "id": 1062,
+      "name": "Sherman Field at Kearly Stadium",
+      "abbreviation": "Sherman Field",
+      "aliases": [
+        "Sherman Field"
+      ],
+      "category": "Sports & Recreation",
+      "location_type": "campus_location",
+      "description": "Sherman Field at Kearly Stadium is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 1012,
+      "name": "Student Development Complex",
+      "abbreviation": "SDC",
+      "aliases": [
+        "SDC"
+      ],
+      "description": "Student Development Complex is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 24,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Sports & Recreation",
+      "location_type": "building"
+    },
+    {
+      "id": 1061,
+      "name": "Tech Trails",
+      "abbreviation": "Tech Trails",
+      "aliases": [
+        "Tech Trails"
+      ],
+      "category": "Sports & Recreation",
+      "location_type": "campus_location",
+      "description": "Tech Trails is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 1016,
+      "name": "Daniell Heights Apartments",
+      "abbreviation": "Daniell Heights",
+      "aliases": [
+        "Daniell Heights"
+      ],
+      "description": "Daniell Heights Apartments is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 32,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1015,
+      "name": "Douglass Houghton Hall",
+      "abbreviation": "DHH",
+      "aliases": [
+        "DHH"
+      ],
+      "description": "Douglass Houghton Hall is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 31,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1032,
+      "name": "East Hall",
+      "abbreviation": "East Hall",
+      "aliases": [
+        "East Hall"
+      ],
+      "description": "East Hall is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 119,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1019,
+      "name": "East McNair Hall",
+      "abbreviation": "East McNair",
+      "aliases": [
+        "East McNair"
+      ],
+      "description": "East McNair Hall is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 40,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1024,
+      "name": "Grad Commons",
+      "abbreviation": "Grad Commons",
+      "aliases": [
+        "Grad Commons"
+      ],
+      "description": "Grad Commons is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 51,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1022,
+      "name": "Hillside Place",
+      "abbreviation": "Hillside",
+      "aliases": [
+        "Hillside"
+      ],
+      "description": "Hillside Place is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 48,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1030,
+      "name": "Peace Corps Master's International House",
+      "abbreviation": "Peace Corps House",
+      "aliases": [
+        "Peace Corps House"
+      ],
+      "description": "Peace Corps Master's International House is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 107,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1017,
+      "name": "Wadsworth Hall",
+      "abbreviation": "Wadsworth",
+      "aliases": [
+        "Wadsworth"
+      ],
+      "description": "Wadsworth Hall is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 37,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1018,
+      "name": "West McNair Hall",
+      "abbreviation": "West McNair",
+      "aliases": [
+        "West McNair"
+      ],
+      "description": "West McNair Hall is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 38,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Student Housing",
+      "location_type": "building"
+    },
+    {
+      "id": 1000,
+      "name": "Administration Building",
+      "abbreviation": "Admin",
+      "aliases": [
+        "Admin"
+      ],
+      "description": "Administration Building is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 1,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1005,
+      "name": "Alumni House",
+      "abbreviation": "Alumni House",
+      "aliases": [
+        "Alumni House"
+      ],
+      "description": "Alumni House is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 9,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1057,
+      "name": "Ambulance Garage",
+      "abbreviation": "Ambulance Garage",
+      "aliases": [
+        "Ambulance Garage"
+      ],
+      "description": "Ambulance Garage is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 118,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1020,
+      "name": "Facilities Management",
+      "abbreviation": "Facilities",
+      "aliases": [
+        "Facilities"
+      ],
+      "description": "Facilities Management is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 44,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1054,
+      "name": "Facilities Storage",
+      "abbreviation": "Facilities Storage",
+      "aliases": [
+        "Facilities Storage"
+      ],
+      "description": "Facilities Storage is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 112,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1008,
+      "name": "Hamar House",
+      "abbreviation": "Hamar",
+      "aliases": [
+        "Hamar"
+      ],
+      "description": "Hamar House is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 13,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1014,
+      "name": "Little Huskies Child Development Center",
+      "abbreviation": "Little Huskies",
+      "aliases": [
+        "Little Huskies"
+      ],
+      "description": "Little Huskies Child Development Center is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 30,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
     },
     {
       "id": 4,
@@ -246,82 +1559,529 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
     },
     {
-      "id": 5,
-      "name": "J. Robert Van Pelt and John and Ruanne Opie Library",
-      "abbreviation": "Library",
+      "id": 1064,
+      "name": "Michigan Tech Lakeshore Center",
+      "abbreviation": "Lakeshore Center",
       "aliases": [
-        "Van Pelt and Opie Library",
-        "Van Pelt Library",
-        "Opie Library",
-        "MTU Library"
+        "Lakeshore Center"
       ],
-      "description": "Campus library providing collections, study spaces, research assistance, and learning support.",
-      "address": "Michigan Technological University, Houghton, MI 49931, USA",
-      "campus_map_number": 17,
+      "category": "Administration & Services",
+      "location_type": "campus_location",
+      "description": "Michigan Tech Lakeshore Center is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
       "map_url": "https://map.mtu.edu/",
       "source": {
-        "title": "Van Pelt and Opie Library",
-        "url": "https://www.mtu.edu/library/",
-        "checked_at": "2026-11-11T12:00:00-05:00",
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
         "source_type": "official_mtu"
       },
       "departments": [],
-      "offices": [
-        {
-          "id": 501,
-          "name": "University Archives and Historical Collections",
-          "source": {
-            "title": "Van Pelt and Opie Library \u2014 Floor directory",
-            "url": "https://www.mtu.edu/library/about/map/",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          },
-          "room_number": null
-        },
-        {
-          "id": 502,
-          "name": "Jackson Center for Teaching and Learning",
-          "source": {
-            "title": "Van Pelt and Opie Library \u2014 Floor directory",
-            "url": "https://www.mtu.edu/library/about/map/",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          },
-          "room_number": null
-        }
-      ],
-      "rooms": [
-        {
-          "id": 510,
-          "room_number": "242",
-          "room_type": "Library instruction room",
-          "notes": "Second floor; no current class assignment asserted.",
-          "source": {
-            "title": "Van Pelt and Opie Library \u2014 Floor directory",
-            "url": "https://www.mtu.edu/library/about/map/",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          }
-        },
-        {
-          "id": 511,
-          "room_number": "244",
-          "room_type": "Library instruction room",
-          "notes": "Second floor; no current class assignment asserted.",
-          "source": {
-            "title": "Van Pelt and Opie Library \u2014 Floor directory",
-            "url": "https://www.mtu.edu/library/about/map/",
-            "checked_at": "2026-11-11T12:00:00-05:00",
-            "source_type": "official_mtu"
-          }
-        }
-      ],
+      "offices": [],
+      "rooms": [],
       "events": [],
       "classes": [],
       "reference_images": []
+    },
+    {
+      "id": 1026,
+      "name": "Police and Safety Services",
+      "abbreviation": "Public Safety",
+      "aliases": [
+        "Public Safety"
+      ],
+      "description": "Police and Safety Services is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 84,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1055,
+      "name": "Salt Storage Building",
+      "abbreviation": "Salt Storage",
+      "aliases": [
+        "Salt Storage"
+      ],
+      "description": "Salt Storage Building is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 113,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1025,
+      "name": "Transfer House",
+      "abbreviation": "Transfer House",
+      "aliases": [
+        "Transfer House"
+      ],
+      "description": "Transfer House is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 82,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Administration & Services",
+      "location_type": "building"
+    },
+    {
+      "id": 1058,
+      "name": "20688 Royce Road House",
+      "abbreviation": "Royce Road House",
+      "aliases": [
+        "Royce Road House"
+      ],
+      "description": "20688 Royce Road House is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 120,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1052,
+      "name": "214 East Street House",
+      "abbreviation": "East Street House",
+      "aliases": [
+        "East Street House"
+      ],
+      "description": "214 East Street House is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 110,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1053,
+      "name": "46645 US-41 House",
+      "abbreviation": "US-41 House",
+      "aliases": [
+        "US-41 House"
+      ],
+      "description": "46645 US-41 House is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 111,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1069,
+      "name": "Clock Tower",
+      "abbreviation": "Clock Tower",
+      "aliases": [
+        "Clock Tower"
+      ],
+      "category": "Other Campus Locations",
+      "location_type": "campus_location",
+      "description": "Clock Tower is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 1063,
+      "name": "Ford Center and Forest",
+      "abbreviation": "Ford Center",
+      "aliases": [
+        "Ford Center"
+      ],
+      "category": "Other Campus Locations",
+      "location_type": "campus_location",
+      "description": "Ford Center and Forest is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 1068,
+      "name": "Husky Plaza",
+      "abbreviation": "Husky Plaza",
+      "aliases": [
+        "Husky Plaza"
+      ],
+      "category": "Other Campus Locations",
+      "location_type": "campus_location",
+      "description": "Husky Plaza is an MTU campus or university-associated location. Detailed profile information has not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": null,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech official university source",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": []
+    },
+    {
+      "id": 1050,
+      "name": "Mineral Museum Storage",
+      "abbreviation": "Museum Storage",
+      "aliases": [
+        "Museum Storage"
+      ],
+      "description": "Mineral Museum Storage is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 104,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1044,
+      "name": "Mont Ripley Pump House",
+      "abbreviation": "Ripley Pump",
+      "aliases": [
+        "Ripley Pump"
+      ],
+      "description": "Mont Ripley Pump House is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 109,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1036,
+      "name": "Mont Ripley Storage",
+      "abbreviation": "Ripley Storage",
+      "aliases": [
+        "Ripley Storage"
+      ],
+      "description": "Mont Ripley Storage is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 55,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1039,
+      "name": "Portage Lake Golf Course Cart Storage A",
+      "abbreviation": "Golf Cart A",
+      "aliases": [
+        "Golf Cart A"
+      ],
+      "description": "Portage Lake Golf Course Cart Storage A is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 60,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1040,
+      "name": "Portage Lake Golf Course Cart Storage B",
+      "abbreviation": "Golf Cart B",
+      "aliases": [
+        "Golf Cart B"
+      ],
+      "description": "Portage Lake Golf Course Cart Storage B is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 61,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1041,
+      "name": "Portage Lake Golf Course Cart Storage C",
+      "abbreviation": "Golf Cart C",
+      "aliases": [
+        "Golf Cart C"
+      ],
+      "description": "Portage Lake Golf Course Cart Storage C is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 62,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1037,
+      "name": "Portage Lake Golf Course Maintenance 1",
+      "abbreviation": "Golf Maintenance 1",
+      "aliases": [
+        "Golf Maintenance 1"
+      ],
+      "description": "Portage Lake Golf Course Maintenance 1 is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 58,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1038,
+      "name": "Portage Lake Golf Course Maintenance 2",
+      "abbreviation": "Golf Maintenance 2",
+      "aliases": [
+        "Golf Maintenance 2"
+      ],
+      "description": "Portage Lake Golf Course Maintenance 2 is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 59,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1042,
+      "name": "Portage Lake Golf Course Maintenance 3",
+      "abbreviation": "Golf Maintenance 3",
+      "aliases": [
+        "Golf Maintenance 3"
+      ],
+      "description": "Portage Lake Golf Course Maintenance 3 is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 63,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1043,
+      "name": "Portage Lake Golf Course Pump House",
+      "abbreviation": "Golf Pump House",
+      "aliases": [
+        "Golf Pump House"
+      ],
+      "description": "Portage Lake Golf Course Pump House is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 64,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
     },
     {
       "id": 6,
@@ -329,7 +2089,8 @@
       "abbreviation": "Rozsa",
       "aliases": [
         "Rozsa Center",
-        "Rozsa Center for the Performing Arts"
+        "Rozsa Center for the Performing Arts",
+        "Rozsa"
       ],
       "description": "Michigan Tech performing arts venue hosting public performances and cultural programming. Consult the official Rozsa calendar for current events and ticket information.",
       "address": "Michigan Technological University, Houghton, MI 49931, USA",
@@ -346,7 +2107,87 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1051,
+      "name": "Sands Storage",
+      "abbreviation": "Sands Storage",
+      "aliases": [
+        "Sands Storage"
+      ],
+      "description": "Sands Storage is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 106,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1021,
+      "name": "Sustainability Demonstration House",
+      "abbreviation": "Sustainability House",
+      "aliases": [
+        "Sustainability House"
+      ],
+      "description": "Sustainability Demonstration House is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 45,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech campus map (September 2025)",
+        "url": "https://www.mtu.edu/maps/campus-map.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
+    },
+    {
+      "id": 1049,
+      "name": "Tech Trails Storage",
+      "abbreviation": "Trails Storage",
+      "aliases": [
+        "Trails Storage"
+      ],
+      "description": "Tech Trails Storage is listed in Michigan Technological University's official facilities inventory. Further profile details have not yet been verified.",
+      "address": "Michigan Technological University, Houghton, MI, USA",
+      "campus_map_number": 101,
+      "map_url": "https://map.mtu.edu/",
+      "source": {
+        "title": "Michigan Tech facilities inventory (2025)",
+        "url": "https://www.mtu.edu/facilities/resources/hazard-mitigation-planning/draft-plan-2025.pdf",
+        "checked_at": "2026-11-22",
+        "source_type": "official_mtu"
+      },
+      "departments": [],
+      "offices": [],
+      "rooms": [],
+      "events": [],
+      "classes": [],
+      "reference_images": [],
+      "category": "Other Campus Locations",
+      "location_type": "building"
     }
   ]
 }
