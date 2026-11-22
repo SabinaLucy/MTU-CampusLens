@@ -189,3 +189,18 @@
 
 /* Full campus directory */
 .campus-category{margin-top:24px}.campus-category-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px;font-size:16px}.campus-category-heading span{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 10px}.campus-category .building-results{max-height:none}
+
+/* Mobile: show the existing MTU campus photograph without covering the text. */
+@media (max-width: 768px) {
+  .hero { min-height: 700px; align-items: flex-start; }
+  .hero .hero-inner { width: 100%; max-width: none; flex: 0 0 auto; padding: 30px 24px 0; }
+  .hero .hero-art.campus-photo { display: block !important; top: auto; left: 0; right: 0; bottom: 0; width: 100%; height: 42%; min-height: 250px; }
+  .hero .campus-hero-image { object-position: center center; }
+  .hero .hero-actions { position: relative; z-index: 4; }
+}
+@media (max-width: 420px) {
+  .hero { min-height: 725px; }
+  .hero .hero-inner { padding: 26px 20px 0; }
+  .hero h1 { font-size: clamp(30px, 9vw, 36px); }
+  .hero .hero-art.campus-photo { height: 39%; }
+}

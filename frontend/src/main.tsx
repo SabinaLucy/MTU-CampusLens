@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import './index.css';
 
-const API = import.meta.env.VITE_API_URL || '';
+const API = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
 
 const EVENT_URL = 'https://events.mtu.edu/';
 const ROZSA_URL =
@@ -123,6 +123,9 @@ async function request<T>(
       // Keep the HTTP error message.
     }
 
+    if (response.status === 404 && url.startsWith('/api/')) {
+      message = `API endpoint ${url} returned 404. Check the frontend VITE_API_URL in Vercel Preview settings and redeploy.`;
+    }
     throw new Error(message);
   }
 
