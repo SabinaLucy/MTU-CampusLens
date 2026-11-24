@@ -326,7 +326,7 @@
           }
         },
         {
-          "name": "Electrical and Computer Engineering Women’s Center",
+          "name": "Electrical and Computer Engineering Women\u2019s Center",
           "notes": "Seventh floor",
           "source": {
             "title": "MTU official EERC place profile",
@@ -387,7 +387,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/akbari/images/akbari-rotated-personnel340.jpg"
         },
         {
           "name": "Hongyu An",
@@ -400,7 +401,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/an/images/hongyu-an-personnel170.jpg"
         },
         {
           "name": "Glen E. Archer",
@@ -452,7 +454,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/chen-t/images/tan-chen-2022-personnel170.jpg"
         },
         {
           "name": "Taerin Chung",
@@ -465,7 +468,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/tchung/images/taerin-chung-pic-personnel340.jpg"
         },
         {
           "name": "Christopher (Kit) Cischke",
@@ -504,10 +508,11 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/dang/images/fengying-dang-personnel340.jpg"
         },
         {
-          "name": "Durdu Güney",
+          "name": "Durdu G\u00fcney",
           "title": "Associate Professor, ECE",
           "office": "EERC 729",
           "email": "dguney@mtu.edu",
@@ -517,7 +522,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/guney/images/guney-image-personnel170.jpg"
         },
         {
           "name": "Trever Hassell",
@@ -530,7 +536,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/hassell/images/trever-hassell-2021-personnel170.jpg"
         },
         {
           "name": "Yi Hu",
@@ -543,7 +550,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/hu/images/yihu-personnel340.jpg"
         },
         {
           "name": "Christopher Middlebrook",
@@ -556,7 +564,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/middlebrook/images/christopher-middlebrook-2024-personnel340.jpg"
         },
         {
           "name": "Bruce A. Mork",
@@ -582,7 +591,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/oberloier-shane/images/shane-oberloier-personnel170.jpg"
         },
         {
           "name": "Aurenice M. Oliveira",
@@ -621,7 +631,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/semouchkina/images/semouchkina-image-personnel170.jpg"
         },
         {
           "name": "Anna Stuhlmacher",
@@ -634,7 +645,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/stuhlmacher/images/anna-stuhlmacher-personnel340.jpg"
         },
         {
           "name": "Chee-Wooi Ten",
@@ -647,7 +659,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/ten/images/fullsizer-personnel170.jpg"
         },
         {
           "name": "Kaichen Yang",
@@ -660,7 +673,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/faculty/yang/images/kaichen-yang-personnel170.jpg"
         },
         {
           "name": "Maryann Wilcox",
@@ -673,7 +687,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/staff/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/staff/images/maryann-wilcox-2019-personnel170.jpg"
         },
         {
           "name": "Carl Greene",
@@ -686,7 +701,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/staff/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/mtu_resources/images/no-photo.gif"
         },
         {
           "name": "Ashley Hendrickson",
@@ -699,7 +715,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/staff/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/mtu_resources/images/no-photo.gif"
         },
         {
           "name": "Lauren Huested",
@@ -712,7 +729,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/staff/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/staff/images/lauren-huested-personnel170.jpg"
         },
         {
           "name": "Kate Marin",
@@ -725,7 +743,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/staff/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/mtu_resources/images/no-photo.gif"
         },
         {
           "name": "Lynn McCormick",
@@ -738,7 +757,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/staff/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/mtu_resources/images/no-photo.gif"
         },
         {
           "name": "Chuck Sannes",
@@ -751,7 +771,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/staff/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/staff/images/sannes-personnel340.jpg"
         },
         {
           "name": "Mark Sloat",
@@ -764,7 +785,8 @@
             "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/staff/",
             "checked_at": "2026-11-24"
-          }
+          },
+          "image_url": "https://www.mtu.edu/ece/department/staff/images/sloat-personnel170.jpg"
         }
       ],
       "image_url": "https://www.mtu.edu/mmet/department/profile/images/eerc-building-banner2400.jpg",
@@ -935,7 +957,7 @@
           "room_type": "Lecture hall",
           "notes": "476 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -947,7 +969,7 @@
           "room_type": "Lecture hall",
           "notes": "125 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1075,7 +1097,7 @@
           "id": 501,
           "name": "University Archives and Historical Collections",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1086,7 +1108,7 @@
           "id": 502,
           "name": "Jackson Center for Teaching and Learning",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1101,7 +1123,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1113,7 +1135,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1138,11 +1160,11 @@
           "building_ids": [
             5
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/library/about/hours/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Published regular hours: Mon–Thu 8 AM–10 PM; Fri 8 AM–6 PM; Sat 9 AM–5 PM; Sun 9 AM–8 PM. Holiday exceptions apply."
+          "hours": "Published regular hours: Mon\u2013Thu 8 AM\u201310 PM; Fri 8 AM\u20136 PM; Sat 9 AM\u20135 PM; Sun 9 AM\u20138 PM. Holiday exceptions apply."
         }
       ]
     },
@@ -1418,7 +1440,7 @@
           "room_type": "Classroom",
           "notes": "100 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1430,7 +1452,7 @@
           "room_type": "Classroom",
           "notes": "104 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1646,11 +1668,11 @@
       "dining": [
         {
           "id": "huski",
-          "name": "Huski Café",
+          "name": "Huski Caf\u00e9",
           "building_ids": [
             1059
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/it/accounts/huskycard/",
           "note": "Check official dining site for current menus and hours."
@@ -2072,7 +2094,8 @@
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Thanksgiving: closed until Nov 30, 7 AM"
+          "hours": "Thanksgiving: closed until Nov 30, 7 AM",
+          "image_url": "https://www.mtu.edu/residential-living/dining/images/summerstudentbrand20250604126-banner1200.jpg"
         }
       ]
     },
@@ -2205,15 +2228,16 @@
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Thanksgiving: closed until Nov 29, 4:30 PM"
+          "hours": "Thanksgiving: closed until Nov 29, 4:30 PM",
+          "image_url": "https://www.mtu.edu/residential-living/dining/images/socialhouse20251110003-square250.jpg"
         },
         {
           "id": "campus",
-          "name": "Campus Café",
+          "name": "Campus Caf\u00e9",
           "building_ids": [
             1017
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
@@ -2258,7 +2282,8 @@
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Thanksgiving: closed until Nov 30, 7 AM"
+          "hours": "Thanksgiving: closed until Nov 30, 7 AM",
+          "image_url": "https://www.mtu.edu/residential-living/dining/images/summerstudentbrand20250604126-banner1200.jpg"
         }
       ]
     },
@@ -2524,7 +2549,7 @@
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Closed Nov 25–29; reopens Nov 30, 10 AM"
+          "hours": "Closed Nov 25\u201329; reopens Nov 30, 10 AM"
         }
       ]
     },

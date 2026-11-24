@@ -52,7 +52,8 @@ const DINING: Dining[] = [
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
-    "hours": "Thanksgiving: closed until Nov 29, 4:30 PM"
+    "hours": "Thanksgiving: closed until Nov 29, 4:30 PM",
+    "image_url": "https://www.mtu.edu/residential-living/dining/images/socialhouse20251110003-square250.jpg"
   },
   {
     "id": "mcnair",
@@ -65,7 +66,8 @@ const DINING: Dining[] = [
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
-    "hours": "Thanksgiving: closed until Nov 30, 7 AM"
+    "hours": "Thanksgiving: closed until Nov 30, 7 AM",
+    "image_url": "https://www.mtu.edu/residential-living/dining/images/summerstudentbrand20250604126-banner1200.jpg"
   },
   {
     "id": "dhh",
@@ -81,11 +83,11 @@ const DINING: Dining[] = [
   },
   {
     "id": "campus",
-    "name": "Campus Café",
+    "name": "Campus Caf\u00e9",
     "building_ids": [
       1017
     ],
-    "type": "Café",
+    "type": "Caf\u00e9",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
@@ -97,11 +99,11 @@ const DINING: Dining[] = [
     "building_ids": [
       5
     ],
-    "type": "Café",
+    "type": "Caf\u00e9",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/library/about/hours/",
     "note": "Check official dining site for current menus and hours.",
-    "hours": "Published regular hours: Mon–Thu 8 AM–10 PM; Fri 8 AM–6 PM; Sat 9 AM–5 PM; Sun 9 AM–8 PM. Holiday exceptions apply."
+    "hours": "Published regular hours: Mon\u2013Thu 8 AM\u201310 PM; Fri 8 AM\u20136 PM; Sat 9 AM\u20135 PM; Sun 9 AM\u20138 PM. Holiday exceptions apply."
   },
   {
     "id": "mub",
@@ -113,15 +115,15 @@ const DINING: Dining[] = [
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
-    "hours": "Closed Nov 25–29; reopens Nov 30, 10 AM"
+    "hours": "Closed Nov 25\u201329; reopens Nov 30, 10 AM"
   },
   {
     "id": "huski",
-    "name": "Huski Café",
+    "name": "Huski Caf\u00e9",
     "building_ids": [
       1059
     ],
-    "type": "Café",
+    "type": "Caf\u00e9",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/it/accounts/huskycard/",
     "note": "Check official dining site for current menus and hours."
