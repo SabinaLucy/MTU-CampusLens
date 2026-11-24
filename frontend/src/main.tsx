@@ -53,7 +53,8 @@ const DINING: Dining[] = [
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
     "hours": "Thanksgiving: closed until Nov 29, 4:30 PM",
-    "image_url": "https://www.mtu.edu/residential-living/dining/images/socialhouse20251110003-square250.jpg"
+    "image_url": "/dining/wads.jpg",
+    "image_source": "https://www.mtu.edu/residential-living/dining/images/socialhouse20251110003-square250.jpg"
   },
   {
     "id": "mcnair",
@@ -67,7 +68,8 @@ const DINING: Dining[] = [
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
     "hours": "Thanksgiving: closed until Nov 30, 7 AM",
-    "image_url": "https://www.mtu.edu/residential-living/dining/images/summerstudentbrand20250604126-banner1200.jpg"
+    "image_url": "/dining/mcnair.jpg",
+    "image_source": "https://www.mtu.edu/residential-living/dining/images/summerstudentbrand20250604126-banner1200.jpg"
   },
   {
     "id": "dhh",
