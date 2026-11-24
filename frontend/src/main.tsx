@@ -160,6 +160,7 @@ type Building = {
   map_url: string;
   campus_map_number?: number;
   source?: Source;
+  labs?: Item[];
   departments?: Item[];
   offices?: Item[];
   rooms?: Item[];
@@ -1015,6 +1016,7 @@ function App() {
                       items={selected.offices}
                       empty="No verified office records are loaded."
                     />
+                    {!!selected.labs?.length && <><h2 className="subhead">Research laboratories & facilities</h2><Items items={selected.labs} empty="No verified laboratory records are loaded."/></>}
                   </>
                 )}
 

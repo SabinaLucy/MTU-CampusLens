@@ -527,7 +527,119 @@
         "url": "https://www.mtu.edu/mmet/department/profile/",
         "checked_at": "2026-11-24"
       },
-      "dining": []
+      "dining": [],
+      "labs": [
+        {
+          "name": "Plexus Innovation Lab",
+          "room_number": "621",
+          "description": "Electronics makerspace with soldering stations, PCB fabrication and 3D printing.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www.makerspace.ece.mtu.edu/equipment",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "IEEE Student Projects Lab",
+          "room_number": "609",
+          "description": "Electronics prototyping and student projects; safety onboarding required.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www.involvement.mtu.edu/organization/institute-of-electrical-and-electronic-engineers",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Hardware Configuration Lab",
+          "room_number": "328A",
+          "description": "Network engineering and systems administration.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www-cf.mtu.edu/computing/about/college/facilities/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Security / Network / Programming Lab",
+          "room_number": "328",
+          "description": "Operating systems, programming and network security.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www-cf.mtu.edu/computing/about/college/facilities/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "NUCOR Industrial Control and Automation Lab",
+          "room_number": "427",
+          "description": "Industrial automation, robotics and digital controls.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www-cf.mtu.edu/computing/about/college/facilities/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Circuits and Data Acquisition Lab",
+          "room_number": "431",
+          "description": "Instrumentation, circuit analysis and signal processing.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www-cf.mtu.edu/computing/about/college/facilities/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "CNSA Senior Design Lab",
+          "room_number": "419",
+          "description": "Senior design workspace; enrolled students have card access.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www-cf.mtu.edu/computing/about/college/facilities/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "MERET Senior Design Lab",
+          "room_number": "418A",
+          "description": "Mechatronics and robotics senior design workspace.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www-cf.mtu.edu/computing/about/college/facilities/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Mechatronics Playground",
+          "room_number": "430",
+          "description": "Industrial robots, machine vision and programmable controllers.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www-cf.mtu.edu/computing/about/college/facilities/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Windows Computing Lab",
+          "room_number": "421",
+          "description": "24-seat computer lab; available outside scheduled classes.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www.mtu.edu/ece/graduate/handbook/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Windows Computing Lab",
+          "room_number": "330",
+          "description": "44-seat computer lab; available outside scheduled classes.",
+          "source": {
+            "title": "Official MTU laboratory information",
+            "url": "https://www.mtu.edu/ece/graduate/handbook/",
+            "checked_at": "2026-11-24"
+          }
+        }
+      ]
     },
     {
       "id": 3,
