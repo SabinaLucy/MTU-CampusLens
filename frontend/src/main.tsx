@@ -471,6 +471,29 @@ function Items({
 }
 
 type CampusTurn={role:'user'|'assistant';text:string;attachment?:string;nearby?:{id:number;name:string;meters:number}[]};
+function ChatMarkdown({text}:{text:string}) {
+  // Render a bounded Markdown subset as React nodes, never raw HTML.
+  const inline=(value:string)=>value.split(/(\[[^\]\n]+\]\(https?:\/\/[^\s)]+\)|\*\*[^*\n]+\*\*|https?:\/\/[^\s<>()]+|\x60[^\x60\n]+\x60)/g).map((part,i)=>{
+    const link=part.match(/^\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)$/);
+    if(link)return <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer">{link[1]}</a>;
+    if(/^https?:\/\//.test(part))return <a key={i} href={part} target="_blank" rel="noopener noreferrer">{part}</a>;
+    if(part.startsWith('**')&&part.endsWith('**'))return <strong key={i}>{part.slice(2,-2)}</strong>;
+    if(part.charCodeAt(0)===96&&part.charCodeAt(part.length-1)===96)return <code key={i}>{part.slice(1,-1)}</code>;
+    return <React.Fragment key={i}>{part}</React.Fragment>;
+  });
+  const blocks:React.ReactNode[]=[];const lines=text.replace(/\r\n/g,'\n').split('\n');
+  for(let i=0;i<lines.length;){
+    const line=lines[i].trim();if(!line){i++;continue;}
+    const list=line.match(/^([-*+]|\d+\.)\s+(.+)$/);
+    if(list){const ordered=/^\d/.test(list[1]);const items:React.ReactNode[]=[];const start=i;
+      while(i<lines.length){const m=lines[i].trim().match(/^([-*+]|\d+\.)\s+(.+)$/);if(!m||/^\d/.test(m[1])!==ordered)break;items.push(<li key={i}>{inline(m[2])}</li>);i++;}
+      blocks.push(ordered?<ol key={start}>{items}</ol>:<ul key={start}>{items}</ul>);continue;}
+    if(/^#{1,6}\s/.test(line))blocks.push(<h4 key={i}>{inline(line.replace(/^#{1,6}\s+/,''))}</h4>);
+    else blocks.push(<p key={i}>{inline(line)}</p>);i++;
+  }
+  return <div className="chat-markdown">{blocks}</div>;
+}
+
 function CampusChat({openBuilding}:{openBuilding:(id:number)=>void}){
  const key='campuslens-chat-v1';
  const bottom=React.useRef<HTMLDivElement>(null),watch=React.useRef<number|null>(null); const [preview,Preview]=useState('');
@@ -483,7 +506,7 @@ function CampusChat({openBuilding}:{openBuilding:(id:number)=>void}){
  function clear(){if(window.confirm('Clear this conversation history from this device?')){U([]);Q('');F(null);stopLocation();N('');localStorage.removeItem(key)}}
  function locate(){if(!navigator.geolocation){N('Location is unavailable.');return}if(watch.current!==null){stopLocation();return}watch.current=navigator.geolocation.watchPosition(p=>{P(p.coords);N('Live location enabled')},()=>{stopLocation();N('Location permission denied or unavailable. You can still chat.')},{enableHighAccuracy:true,timeout:12000,maximumAge:0})}
  async function send(e:React.FormEvent){e.preventDefault();if(busy||(!q.trim()&&!file))return;if(file&&file.size>3*1024*1024){N('Choose an attachment under 3 MB.');return}const text=q.trim()||'What can you tell me about this attachment?';const data=new FormData();data.append('question',text);data.append('history',JSON.stringify(turns.slice(-12)));data.append('location',JSON.stringify(pos?{latitude:pos.latitude,longitude:pos.longitude,accuracy:pos.accuracy}:null));if(file)data.append('file',file);U(t=>[...t,{role:'user',text,attachment:file?.name}]);Q('');F(null);B(true);try{const res=await request<{answer:string;nearby:CampusTurn['nearby']}>('/api/campus-chat',{method:'POST',body:data});U(t=>[...t,{role:'assistant',text:res.answer,nearby:res.nearby}])}catch{U(t=>[...t,{role:'assistant',text:'Could not reach CampusLens. Please try again.'}])}finally{B(false)}}
- return <section className="campus-chat"><header><div className="chat-heading"><span className="chat-brand-icon"><MessageCircle size={22}/></span><div><h2>Ask CampusLens</h2><small>Your intelligent campus companion</small></div></div><button className="chat-action" disabled={busy} onClick={clear}>Clear history</button></header><div className="chat-thread">{!turns.length&&<div className="chat-welcome"><span className="chat-orb"><img src="/images/husky-icon.png" alt="Michigan Tech Husky logo"/></span><h1>How can I help you today?</h1><p>Your campus. Your questions. One place.</p><div className="chat-prompts">{[{q:'What buildings are near me?',t:"What's near me?",d:'Explore nearby places',emoji:'📍'},{q:'Identify a building from a photo',t:'Identify a place',d:'Take or upload a photo',emoji:'📸'},{q:'Find food nearby',t:'Find food',d:'Explore dining options',emoji:'🍔'},{q:'What events are happening today?',t:'Campus events',d:'Discover what is happening',emoji:'🎉'},{q:'Find faculty and staff',t:'Find someone',d:'Search the directory',emoji:'👩‍🏫'},{q:'Help me find my way around',t:'Get directions',d:'Explore the campus',emoji:'🗺️'}].map(({q,t,d,emoji})=><button className="chat-suggestion" key={q} onClick={()=>Q(q)}><span className="chat-emoji" aria-hidden="true">{emoji}</span><strong>{t}</strong><small>{d}</small></button>)}</div></div>}{turns.map((t,i)=><article className={'chat-turn '+t.role} key={i}><strong>{t.role==='user'?'You':'CampusLens'}</strong>{t.attachment&&<small>{t.attachment}</small>}<p style={{whiteSpace:'pre-wrap',overflowWrap:'anywhere'}}>{t.text}</p>{t.nearby?.map(x=><button className="chat-action" key={x.id} onClick={()=>openBuilding(x.id)}>{x.name} · {x.meters} m straight-line</button>)}{t.role==='assistant'&&<button className="chat-action" onClick={()=>navigator.clipboard.writeText(t.text)}>Copy</button>}</article>)}{busy&&<p className="chat-thinking">CampusLens is thinking…</p>}<div ref={bottom}/></div><form className="chat-composer" onSubmit={send}><textarea rows={3} maxLength={4000} value={q} onChange={e=>Q(e.target.value)} onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.nativeEvent.isComposing&&window.matchMedia('(pointer:fine)').matches){e.preventDefault();e.currentTarget.form?.requestSubmit()}}} placeholder="Ask CampusLens anything…"/>{file&&<div className="chat-attachment">{preview&&<img src={preview} alt="Attachment preview"/>}{file.name} <button type="button" onClick={()=>F(null)}>Remove</button></div>}<div className="chat-tools"><label className="chat-action" title="Attach file"><Upload size={16}/><span className="chat-tool-label">Attach</span><input hidden type="file" accept="image/jpeg,image/png,image/webp,application/pdf,text/plain" onChange={e=>{F(e.target.files?.[0]||null);e.target.value=''}}/></label><label className="chat-action" title="Camera"><Camera size={16}/><span className="chat-tool-label">Camera</span><input hidden type="file" accept="image/*" capture="environment" onChange={e=>{F(e.target.files?.[0]||null);e.target.value=''}}/></label><button type="button" className="chat-action" onClick={locate} aria-label={pos?"Stop location":"Use location"}><MapPin size={16}/><span className="chat-tool-label">{pos?'Stop location':'Use location'}</span></button>{pos&&<button type="button" className="chat-action" onClick={stopLocation}>Remove location</button>}<button type="submit" className="gold-btn" disabled={busy||(!q.trim()&&!file)} aria-label="Send message"><ArrowUpRight size={22}/></button></div><small>{notice||'Optional attachments and location are sent with your question. Chat text is saved on this device.'}</small></form><small>CampusLens may make mistakes. Verify important information.</small></section>
+ return <section className="campus-chat"><header><div className="chat-heading"><span className="chat-brand-icon"><MessageCircle size={22}/></span><div><h2>Ask CampusLens</h2><small>Your intelligent campus companion</small></div></div><button className="chat-action" disabled={busy} onClick={clear}>Clear history</button></header><div className="chat-thread">{!turns.length&&<div className="chat-welcome"><span className="chat-orb"><img src="/images/husky-icon.png" alt="Michigan Tech Husky logo"/></span><h1>How can I help you today?</h1><p>Your campus. Your questions. One place.</p><div className="chat-prompts">{[{q:'What buildings are near me?',t:"What's near me?",d:'Explore nearby places',emoji:'📍'},{q:'Identify a building from a photo',t:'Identify a place',d:'Take or upload a photo',emoji:'📸'},{q:'Find food nearby',t:'Find food',d:'Explore dining options',emoji:'🍔'},{q:'What events are happening today?',t:'Campus events',d:'Discover what is happening',emoji:'🎉'},{q:'Find faculty and staff',t:'Find someone',d:'Search the directory',emoji:'👩‍🏫'},{q:'Help me find my way around',t:'Get directions',d:'Explore the campus',emoji:'🗺️'}].map(({q,t,d,emoji})=><button className="chat-suggestion" key={q} onClick={()=>Q(q)}><span className="chat-emoji" aria-hidden="true">{emoji}</span><strong>{t}</strong><small>{d}</small></button>)}</div></div>}{turns.map((t,i)=><article className={'chat-turn '+t.role} key={i}><strong>{t.role==='user'?'You':'CampusLens'}</strong>{t.attachment&&<small>{t.attachment}</small>}{t.role==='assistant'?<ChatMarkdown text={t.text}/>:<p style={{whiteSpace:'pre-wrap',overflowWrap:'anywhere'}}>{t.text}</p>}{t.nearby?.map(x=><button className="chat-action" key={x.id} onClick={()=>openBuilding(x.id)}>{x.name} · {x.meters} m straight-line</button>)}</article>)}{busy&&<p className="chat-thinking">CampusLens is thinking…</p>}<div ref={bottom}/></div><form className="chat-composer" onSubmit={send}><textarea rows={3} maxLength={4000} value={q} onChange={e=>Q(e.target.value)} onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.nativeEvent.isComposing&&window.matchMedia('(pointer:fine)').matches){e.preventDefault();e.currentTarget.form?.requestSubmit()}}} placeholder="Ask CampusLens anything…"/>{file&&<div className="chat-attachment">{preview&&<img src={preview} alt="Attachment preview"/>}{file.name} <button type="button" onClick={()=>F(null)}>Remove</button></div>}<div className="chat-tools"><label className="chat-action" title="Attach file"><Upload size={16}/><span className="chat-tool-label">Attach</span><input hidden type="file" accept="image/jpeg,image/png,image/webp,application/pdf,text/plain" onChange={e=>{F(e.target.files?.[0]||null);e.target.value=''}}/></label><label className="chat-action" title="Camera"><Camera size={16}/><span className="chat-tool-label">Camera</span><input hidden type="file" accept="image/*" capture="environment" onChange={e=>{F(e.target.files?.[0]||null);e.target.value=''}}/></label><button type="button" className="chat-action" onClick={locate} aria-label={pos?"Stop location":"Use location"}><MapPin size={16}/><span className="chat-tool-label">{pos?'Stop location':'Use location'}</span></button>{pos&&<button type="button" className="chat-action" onClick={stopLocation}>Remove location</button>}<button type="submit" className="gold-btn" disabled={busy||(!q.trim()&&!file)} aria-label="Send message"><ArrowUpRight size={22}/></button></div><small>{notice||'Optional attachments and location are sent with your question. Chat text is saved on this device.'}</small></form><small>CampusLens may make mistakes. Verify important information.</small></section>
 }
 
 function TodayCampus({buildings,events,status,navigate,openBuilding}:{buildings:Building[];events:LiveEvent[];status:string;navigate:(p:Page)=>void;openBuilding:(id:number)=>void}){
@@ -1501,55 +1524,19 @@ function App() {
                     <ArrowUpRight size={17} />
                   </button>
 
-                  {prediction && (
-                    <div className="prediction">
-                      <strong>
-                        {prediction.status === 'recognized'
-                          ? 'AI building suggestion'
-                          : 'Recognition uncertain'}
-                      </strong>
-
-                      <p>{prediction.message}</p>
-
-                      {prediction.evidence && (
-                        <p>
-                          Visible evidence:
-                          {' '}{prediction.evidence}
-                        </p>
-                      )}
-
-                      {prediction.building_id && (
-                        <>
-                          <h3>
-                            {buildings.find(
-                              building =>
-                                building.id ===
-                                prediction.building_id
-                            )?.name}
-                          </h3>
-
-                          <small>
-                            Confidence:
-                            {' '}{prediction.confidence}
-                            {' '}· Provider:
-                            {' '}{prediction.provider}
-                          </small>
-
-                          <button
-                            className="gold-btn"
-                            onClick={() =>
-                              openBuilding(
-                                prediction.building_id!
-                              )
-                            }
-                          >
-                            Confirm and explore
-                            <ChevronRight size={16} />
-                          </button>
-                        </>
-                      )}
-                    </div>
-                  )}
+                  {prediction && (() => {
+                    const match = buildings.find(b => b.id === prediction.building_id);
+                    const recognized = prediction.status === 'recognized' && !!match;
+                    return recognized && match ? (
+                      <div className="prediction recognition-match">
+                        <div className="recognition-heading"><ShieldCheck size={21}/><strong>Building match found</strong><span className="recognition-confidence">{prediction.confidence || 'Unspecified'} confidence</span></div>
+                        <div className="recognition-detail"><Thumb key={match.id} building={match}/><div><h3>{match.name}</h3><small>Michigan Technological University</small>{prediction.evidence && <p>{prediction.evidence}</p>}</div></div>
+                        <button className="gold-btn" onClick={()=>openBuilding(match.id)}>Explore building <ChevronRight size={16}/></button>
+                        <small className="recognition-note">AI suggestion — confirm this is the right building before exploring.</small>
+                        <button className="recognition-manual" onClick={()=>{document.getElementById('manual-building-search')?.focus();document.getElementById('manual-building-search')?.scrollIntoView({block:'center',behavior:'smooth'});}}>Not the right building? Search manually</button>
+                      </div>
+                    ) : <div className="prediction"><strong>Recognition uncertain</strong><p>{prediction.message}</p>{prediction.evidence&&<p>{prediction.evidence}</p>}</div>;
+                  })()}
                 </section>
 
                 <section className="content-card">
@@ -1570,7 +1557,7 @@ function App() {
                       onChange={e =>
                         { setQuery(e.target.value); setExpandedCategories({}); }
                       }
-                      placeholder="Search buildings, departments…"
+                      id="manual-building-search" placeholder="Search buildings, departments…"
                     />
                   </div>
 
