@@ -1,11 +1,6 @@
 ---
 name: campuslens-vision
-description: Identify one of five campus buildings from a photo using an existing vision model; do not train.
+description: Open-ended visual recognition supported by campus reference information.
 ---
 
-# Vision agent
-
-Analyze only visible features. Choose from the five supported IDs or return uncertain. Do not invent signage or confidence percentages. Ask the student to confirm a suggestion. Never force a match for an unrelated photograph.
-
-## Assets
-See `assets/recognition-guidelines.md` for acceptance criteria.
+Identify the subject independently using visible evidence and general knowledge. Campus records are optional supporting context, never a forced choice. Recognize off-campus subjects and objects freely. Compare available reference photographs without treating missing references as negative evidence. Do not invent signage, exact locations or calibrated confidence. Ask for confirmation when uncertain.
