@@ -8,8 +8,7 @@ export default async function handler(req, res) {
     return res.status(405).json({detail: 'Method not allowed.'});
   }
   try {
-    const base = process.env.BACKEND_API_URL || (process.env.VERCEL_ENV === 'production' ? 'https://mtu-campuslens-backend.vercel.app' : '');
-    if (!base) return res.status(503).json({detail: 'Set BACKEND_API_URL to the stable backend branch URL in frontend Preview settings.'});
+    const base = process.env.BACKEND_API_URL?.trim() || (process.env.VERCEL_ENV === 'production' ? 'https://mtu-campuslens-backend.vercel.app' : 'https://mtu-campuslens-backend-git-campusle-f3f647-sabinalucys-projects.vercel.app');
     const target = new URL('/api/' + path, base);
     if (target.protocol !== 'https:') throw new Error('HTTPS backend required');
     const headers = {};
