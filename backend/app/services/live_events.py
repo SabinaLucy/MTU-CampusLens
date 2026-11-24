@@ -3,6 +3,8 @@
 
 import asyncio
 import logging
+import re
+from html import unescape
 import time
 from datetime import date, datetime, time as dt_time, timedelta
 from zoneinfo import ZoneInfo
@@ -72,12 +74,15 @@ def parse_calendar(raw):
         if not url.startswith("https://events.mtu.edu/"):
             url = FEED_URL
 
+        photo = str(component.get("IMAGE", "") or component.get("X-ALT-DESC", "")).strip()
+        image_match = re.search(r'https://[^\s"<>]+\.(?:jpg|jpeg|png|webp)(?:\?[^\s"<>]*)?', photo, re.I)
         results.append({
             "title": title,
             "location": location or "Location not specified",
             "start_time": start_at.isoformat(),
             "url": url,
             "source": "Michigan Tech Events Calendar",
+            **({"image_url": unescape(image_match.group(0))} if image_match else {}),
         })
 
     results.sort(key=lambda event: event["start_time"])
@@ -109,17 +114,26 @@ async def enrich_images(client, events):
     pages = min(6, int(first.get("page", {}).get("total", 1) or 1))
     payloads = [first] + await asyncio.gather(*(fetch_page(i) for i in range(2, pages + 1)))
     images = {}
+    titles = {}
+    def title_key(value):
+        return re.sub(r'[^\w]+', ' ', str(value).casefold()).strip()
     for payload in payloads:
         for item in payload.get("events", []):
             event = item.get("event", {})
-            photo = event.get("photo_url")
+            photo = event.get("photo_url") or (event.get("photo") or {}).get("url") if isinstance(event.get("photo"), dict) else event.get("photo_url")
             if not isinstance(photo, str) or not photo.startswith("https://"):
                 continue
+            key = title_key(event.get("title", ""))
+            if key:
+                titles.setdefault(key, set()).add(photo)
             for url in (event.get("localist_url"), event.get("url")):
                 if isinstance(url, str) and url.startswith("https://events.mtu.edu/event/"):
                     images[event_key(url)] = photo
     for event in events:
         photo = images.get(event_key(event["url"]))
+        candidates = titles.get(title_key(event["title"]), set())
+        if not photo and len(candidates) == 1:
+            photo = next(iter(candidates))
         if photo:
             event["image_url"] = photo
 
@@ -140,7 +154,7 @@ async def get_live_events():
 
             events = await asyncio.to_thread(parse_calendar, response.content)
             try:
-                await asyncio.wait_for(enrich_images(client, events), timeout=10)
+                await asyncio.wait_for(enrich_images(client, events), timeout=15)
             except Exception:
                 logger.warning("Official event images unavailable; retaining calendar entries")
 
