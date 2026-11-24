@@ -99,7 +99,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/jeffrey-wall.jpg",
+          "image_source": "https://www.mtu.edu/business/people-groups/faculty/jeffrey-wall/images/jeffrey-wall-personnel340.jpg"
         },
         {
           "name": "Jenny Apriesnig",
@@ -109,7 +111,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/jenny-apriesnig.jpg",
+          "image_source": "https://www.mtu.edu/business/people-groups/faculty/jenny-apriesnig/images/jenny-apriesnig-1-personnel340.jpg"
         },
         {
           "name": "Elham Asgari",
@@ -119,7 +123,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/elham-asgari.jpg",
+          "image_source": "https://www.mtu.edu/business/people-groups/faculty/elham-asgari/images/ellie-asgari-photo-personnel170.jpg"
         },
         {
           "name": "Laura Connolly",
@@ -129,7 +135,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/laura-connolly.jpg",
+          "image_source": "https://www.mtu.edu/business/people-groups/faculty/laura-connolly/images/connolly-picture-personnel340.jpg"
         },
         {
           "name": "Jun Dai",
@@ -139,7 +147,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/jun-dai.jpg",
+          "image_source": "https://www.mtu.edu/business/people-groups/faculty/jun-dai/images/jun-dai-personnel170.jpg"
         }
       ]
     },
@@ -397,7 +407,7 @@
           }
         },
         {
-          "name": "Electrical and Computer Engineering Women’s Center",
+          "name": "Electrical and Computer Engineering Women\u2019s Center",
           "notes": "Seventh floor",
           "source": {
             "title": "MTU official EERC place profile",
@@ -600,7 +610,7 @@
           "image_source": "https://www.mtu.edu/ece/department/faculty/dang/images/fengying-dang-personnel340.jpg"
         },
         {
-          "name": "Durdu Güney",
+          "name": "Durdu G\u00fcney",
           "title": "Associate Professor, ECE",
           "office": "EERC 729",
           "email": "dguney@mtu.edu",
@@ -1060,7 +1070,7 @@
           "room_type": "Lecture hall",
           "notes": "476 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1072,7 +1082,7 @@
           "room_type": "Lecture hall",
           "notes": "125 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1177,7 +1187,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/physics/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/katrina-black.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/black/images/black-katrina-personnel.jpg"
         },
         {
           "name": "Jacek Borysow",
@@ -1187,7 +1199,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/physics/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/jacek-borysow.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/borysow/images/borysow-jacek-personnel.jpg"
         },
         {
           "name": "Elena Giusarma",
@@ -1197,7 +1211,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/physics/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/elena-giusarma.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/giusarma/images/giusarma-personnel170.jpg"
         },
         {
           "name": "Qi Zhong",
@@ -1207,7 +1223,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/physics/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/qi-zhong.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/zhong/images/zhong-personnel170.jpg"
         },
         {
           "name": "Robert Weidman",
@@ -1217,7 +1235,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/physics/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/robert-weidman.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/weidman/images/weidman-robert-personnel.jpg"
         },
         {
           "name": "Jae Jeong Lee",
@@ -1227,7 +1247,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/physics/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/jae-jeong-lee.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/staff/images/lee-personnel170.jpg"
         },
         {
           "name": "Claire Wiitanen",
@@ -1237,7 +1259,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/physics/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/claire-wiitanen.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/staff/images/wiitanen-claire-personnel.jpg"
         }
       ]
     },
@@ -1355,7 +1379,7 @@
           "id": 501,
           "name": "University Archives and Historical Collections",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1366,7 +1390,7 @@
           "id": 502,
           "name": "Jackson Center for Teaching and Learning",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1381,7 +1405,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1393,7 +1417,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1418,11 +1442,11 @@
           "building_ids": [
             5
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/library/about/hours/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Published regular hours: Mon–Thu 8 AM–10 PM; Fri 8 AM–6 PM; Sat 9 AM–5 PM; Sun 9 AM–8 PM. Holiday exceptions apply.",
+          "hours": "Published regular hours: Mon\u2013Thu 8 AM\u201310 PM; Fri 8 AM\u20136 PM; Sat 9 AM\u20135 PM; Sun 9 AM\u20138 PM. Holiday exceptions apply.",
           "image_url": "/dining/library-card.svg"
         }
       ]
@@ -1559,7 +1583,9 @@
             "url": "https://www.mtu.edu/cs/department/people/",
             "checked_at": "2026-11-24",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/bo-zhang.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/bzhang/images/bo-zhang-20251001-personnel170.jpg"
         },
         {
           "name": "Ruihong Zhang",
@@ -1571,7 +1597,9 @@
             "url": "https://www.mtu.edu/cs/department/people/",
             "checked_at": "2026-11-24",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/ruihong-zhang.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/zhang/images/zhang-personnel-personnel170.jpg"
         },
         {
           "name": "Weihua Zhou",
@@ -1583,7 +1611,9 @@
             "url": "https://www.mtu.edu/cs/department/people/",
             "checked_at": "2026-11-24",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/weihua-zhou.jpg",
+          "image_source": "https://www.mtu.edu/data-science/about/faculty/zhou-w/images/weihua-zhou-4x4-personnel170.jpg"
         },
         {
           "name": "Ronghua (Sam) Xu",
@@ -1615,7 +1645,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/zhenlin-wang.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/zlwang/images/zhenlinwang-2025100601crop-personnel340.jpg"
         },
         {
           "name": "Daniel Fuhrmann",
@@ -1655,7 +1687,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/jean-mayo.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/mayo/images/mayo-personnel170.jpg"
         },
         {
           "name": "Nilufer Onder",
@@ -1665,7 +1699,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/nilufer-onder.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/n-onder/images/n-onder-personnel340.jpg"
         },
         {
           "name": "Charles Wallace",
@@ -1675,7 +1711,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/charles-wallace.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/wallace/images/crw-sigcse-small-personnel170.jpg"
         },
         {
           "name": "Todd Arney",
@@ -1695,7 +1733,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/anwar-walid.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/images/anwarwalid-iccdirector-20260821013-personnel170.jpg"
         },
         {
           "name": "Sherry Wyeth",
@@ -1705,7 +1745,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/sherry-wyeth.jpg",
+          "image_source": "https://www.mtu.edu/computing/about/staff/wyeth/images/sherry-wyeth-personnel170.jpg"
         },
         {
           "name": "Kay Oliver",
@@ -1715,7 +1757,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/kay-oliver.jpg",
+          "image_source": "https://www.mtu.edu/computing/about/staff/oliver/images/kay-oliver-black-back-5x7-personnel170.jpg"
         },
         {
           "name": "Denise Landsberg",
@@ -1725,7 +1769,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/denise-landsberg.jpg",
+          "image_source": "https://www.mtu.edu/computing/about/staff/landsberg/images/denise-landsberg2-crop-personnel340.jpg"
         },
         {
           "name": "Nicholas Kwiek",
@@ -1735,7 +1781,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/nicholas-kwiek.jpg",
+          "image_source": "https://www.mtu.edu/applied-computing/about/staff/images/nickkwiek-personnel340.jpg"
         },
         {
           "name": "Janna Chittick",
@@ -1745,7 +1793,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/janna-chittick.jpg",
+          "image_source": "https://www.mtu.edu/computing/about/staff/chittick/images/janna-chittick-personnel170.jpg"
         },
         {
           "name": "Madeline Mercado Voelker",
@@ -1755,7 +1805,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/madeline-mercado-voelker.jpg",
+          "image_source": "https://www.mtu.edu/applied-computing/about/staff/images/mvoelkerportrait10-2026-personnel340.jpg"
         },
         {
           "name": "Kristi Hauswirth",
@@ -1765,15 +1817,13 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/kristi-hauswirth.jpg",
+          "image_source": "https://www.mtu.edu/computing/about/staff/hauswirth/images/kristi-hauswirth-personnel-personnel170.jpg"
         }
       ],
-      "image_url": "https://www.mtu.edu/tour/campus/images/rekhi-800banner.jpg",
-      "image_source": {
-        "title": "Official MTU photograph (source caption matched)",
-        "url": "https://www.mtu.edu/tour/campus/",
-        "checked_at": "2026-11-24"
-      },
+      "image_url": "/buildings/1.jpg",
+      "image_source": "https://www.mtu.edu/tour/campus/images/rekhi-800banner.jpg",
       "dining": [],
       "labs": [
         {
@@ -1977,7 +2027,7 @@
           "room_type": "Classroom",
           "notes": "100 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1989,7 +2039,7 @@
           "room_type": "Classroom",
           "notes": "104 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -2237,7 +2287,8 @@
             "source_type": "official_mtu"
           }
         }
-      ]
+      ],
+      "people": []
     },
     {
       "id": 1001,
@@ -2441,11 +2492,11 @@
       "dining": [
         {
           "id": "huski",
-          "name": "Huski Café",
+          "name": "Huski Caf\u00e9",
           "building_ids": [
             1059
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/it/accounts/huskycard/",
           "note": "Check official dining site for current menus and hours.",
@@ -2801,12 +2852,8 @@
       "reference_images": [],
       "category": "Sports & Recreation",
       "location_type": "building",
-      "image_url": "https://www.mtu.edu/tour/campus/images/sdc-800banner.jpg",
-      "image_source": {
-        "title": "Official MTU photograph (source caption matched)",
-        "url": "https://www.mtu.edu/tour/campus/",
-        "checked_at": "2026-11-24"
-      },
+      "image_url": "/buildings/1012.jpg",
+      "image_source": "https://www.mtu.edu/tour/campus/images/sdc-800banner.jpg",
       "dining": [
         {
           "id": "sdc",
@@ -2820,7 +2867,8 @@
           "note": "Listed in MTU's faculty handbook; confirm current operation and hours.",
           "image_url": "/dining/sdc-card.svg"
         }
-      ]
+      ],
+      "people": []
     },
     {
       "id": 1061,
@@ -3134,11 +3182,11 @@
         },
         {
           "id": "campus",
-          "name": "Campus Café",
+          "name": "Campus Caf\u00e9",
           "building_ids": [
             1017
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
@@ -3212,7 +3260,7 @@
         {
           "name": "International Programs and Services",
           "room_number": "200",
-          "notes": "Immigration advising, CPT/OPT and international student support. 906-487-2160; ips@mtu.edu. Academic year Mon–Fri 8–5, closed noon–1.",
+          "notes": "Immigration advising, CPT/OPT and international student support. 906-487-2160; ips@mtu.edu. Academic year Mon\u2013Fri 8\u20135, closed noon\u20131.",
           "source": {
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/international/about/contact/",
@@ -3430,7 +3478,9 @@
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/gradschool/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/karen-hext.jpg",
+          "image_source": "https://www.mtu.edu/registrar/about/staff/images/karen-hext-personnel340.jpg"
         },
         {
           "name": "Tiffany Jaeger",
@@ -3749,12 +3799,8 @@
       "reference_images": [],
       "category": "Administration & Services",
       "location_type": "building",
-      "image_url": "https://www.mtu.edu/tour/campus/images/mub-800banner.jpg",
-      "image_source": {
-        "title": "Official MTU photograph (source caption matched)",
-        "url": "https://www.mtu.edu/tour/campus/",
-        "checked_at": "2026-11-24"
-      },
+      "image_url": "/buildings/4.jpg",
+      "image_source": "https://www.mtu.edu/tour/campus/images/mub-800banner.jpg",
       "dining": [
         {
           "id": "mub",
@@ -3766,10 +3812,11 @@
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Closed Nov 25–29; reopens Nov 30, 10 AM",
+          "hours": "Closed Nov 25\u201329; reopens Nov 30, 10 AM",
           "image_url": "/dining/mub-card.svg"
         }
-      ]
+      ],
+      "people": []
     },
     {
       "id": 1064,
