@@ -407,7 +407,7 @@
           }
         },
         {
-          "name": "Electrical and Computer Engineering Women\u2019s Center",
+          "name": "Electrical and Computer Engineering Women’s Center",
           "notes": "Seventh floor",
           "source": {
             "title": "MTU official EERC place profile",
@@ -610,7 +610,7 @@
           "image_source": "https://www.mtu.edu/ece/department/faculty/dang/images/fengying-dang-personnel340.jpg"
         },
         {
-          "name": "Durdu G\u00fcney",
+          "name": "Durdu Güney",
           "title": "Associate Professor, ECE",
           "office": "EERC 729",
           "email": "dguney@mtu.edu",
@@ -1070,7 +1070,7 @@
           "room_type": "Lecture hall",
           "notes": "476 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT \u2014 Classroom directory",
+            "title": "Michigan Tech IT — Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1082,7 +1082,7 @@
           "room_type": "Lecture hall",
           "notes": "125 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT \u2014 Classroom directory",
+            "title": "Michigan Tech IT — Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1379,7 +1379,7 @@
           "id": 501,
           "name": "University Archives and Historical Collections",
           "source": {
-            "title": "Van Pelt and Opie Library \u2014 Floor directory",
+            "title": "Van Pelt and Opie Library — Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1390,7 +1390,7 @@
           "id": 502,
           "name": "Jackson Center for Teaching and Learning",
           "source": {
-            "title": "Van Pelt and Opie Library \u2014 Floor directory",
+            "title": "Van Pelt and Opie Library — Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1405,7 +1405,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library \u2014 Floor directory",
+            "title": "Van Pelt and Opie Library — Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1417,7 +1417,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library \u2014 Floor directory",
+            "title": "Van Pelt and Opie Library — Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1442,11 +1442,11 @@
           "building_ids": [
             5
           ],
-          "type": "Caf\u00e9",
+          "type": "Café",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/library/about/hours/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Published regular hours: Mon\u2013Thu 8 AM\u201310 PM; Fri 8 AM\u20136 PM; Sat 9 AM\u20135 PM; Sun 9 AM\u20138 PM. Holiday exceptions apply.",
+          "hours": "Published regular hours: Mon–Thu 8 AM–10 PM; Fri 8 AM–6 PM; Sat 9 AM–5 PM; Sun 9 AM–8 PM. Holiday exceptions apply.",
           "image_url": "/dining/library-card.svg"
         }
       ]
@@ -2027,7 +2027,7 @@
           "room_type": "Classroom",
           "notes": "100 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT \u2014 Classroom directory",
+            "title": "Michigan Tech IT — Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -2039,7 +2039,7 @@
           "room_type": "Classroom",
           "notes": "104 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT \u2014 Classroom directory",
+            "title": "Michigan Tech IT — Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -2288,7 +2288,236 @@
           }
         }
       ],
-      "people": []
+      "people": [
+        {
+          "name": "Jason R. Blough",
+          "office": "R. L. Smith 808",
+          "email": "jrblough@mtu.edu",
+          "phone": "906-487-1020",
+          "title": "Chair and Distinguished Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Amitabh Narain",
+          "office": "R. L. Smith 804",
+          "email": "narain@mtu.edu",
+          "phone": "906-487-2555",
+          "title": "Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Aneet Dharmavaram Narendranath",
+          "office": "R. L. Smith 929",
+          "email": "dnaneet@mtu.edu",
+          "phone": "906-487-3019",
+          "title": "Teaching Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Vinh Nguyen",
+          "office": "R. L. Smith 926",
+          "email": "vinhn@mtu.edu",
+          "phone": "906-487-3110",
+          "title": "Assistant Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Gregory M. Odegard",
+          "office": "R. L. Smith 803",
+          "email": "gmodegar@mtu.edu",
+          "phone": "906-487-2329",
+          "title": "University Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ye Qi",
+          "office": "R. L. Smith 827",
+          "email": "yeqi@mtu.edu",
+          "phone": "906-487-1403",
+          "title": "Assistant Teaching Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Youngchul Ra",
+          "office": "R. L. Smith 907",
+          "email": "yra@mtu.edu",
+          "phone": "906-487-2385",
+          "title": "Associate Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Darrell L. Robinette",
+          "office": "R. L. Smith 1020A",
+          "email": "dlrobine@mtu.edu",
+          "phone": "906-487-2764",
+          "title": "Associate Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Trisha Sain",
+          "office": "R. L. Smith 921",
+          "email": "tsain@mtu.edu",
+          "phone": "906-487-2977",
+          "title": "Associate Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Aslihan Vuruskan",
+          "office": "R. L. Smith 932",
+          "email": "avuruska@mtu.edu",
+          "phone": "906-487-3014",
+          "title": "Assistant Teaching Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Chad M. Walber",
+          "office": "R. L. Smith 821",
+          "email": "cmwalber@mtu.edu",
+          "phone": "906-487-1156",
+          "title": "Associate Teaching Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Wei Wei",
+          "office": "R. L. Smith 927",
+          "email": "wwei4@mtu.edu",
+          "phone": "906-487-3405",
+          "title": "Associate Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Amir Hussain Idrisi",
+          "office": "R. L. Smith 1009",
+          "email": "amirhus@mtu.edu",
+          "phone": "906-487-2047",
+          "title": "Assistant Teaching Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Jaclyn Johnson",
+          "office": "R. L. Smith 817",
+          "email": "jenesbit@mtu.edu",
+          "phone": "906-487-3433",
+          "title": "Teaching Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "L. Brad King",
+          "office": "R. L. Smith 1014",
+          "email": "lbking@mtu.edu",
+          "phone": "906-487-2683",
+          "title": "Endowed Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Vijaya V. N. Sriram Malladi",
+          "office": "R. L. Smith 933",
+          "email": "smalladi@mtu.edu",
+          "phone": "906-487-3503",
+          "title": "Associate Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Scott A Miers",
+          "office": "R. L. Smith 904",
+          "email": "samiers@mtu.edu",
+          "phone": "906-487-2709",
+          "title": "Associate Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Stephen M. Morse",
+          "office": "R. L. Smith 820",
+          "email": "smmorse@mtu.edu",
+          "phone": "906-487-3241",
+          "title": "Associate Teaching Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Jeffrey D. Naber",
+          "office": "R. L. Smith 1011",
+          "email": "jnaber@mtu.edu",
+          "phone": "906-487-1938",
+          "title": "Endowed Professor",
+          "source": {
+            "title": "MAE Faculty Directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 1001,
@@ -2492,11 +2721,11 @@
       "dining": [
         {
           "id": "huski",
-          "name": "Huski Caf\u00e9",
+          "name": "Huski Café",
           "building_ids": [
             1059
           ],
-          "type": "Caf\u00e9",
+          "type": "Café",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/it/accounts/huskycard/",
           "note": "Check official dining site for current menus and hours.",
@@ -3182,11 +3411,11 @@
         },
         {
           "id": "campus",
-          "name": "Campus Caf\u00e9",
+          "name": "Campus Café",
           "building_ids": [
             1017
           ],
-          "type": "Caf\u00e9",
+          "type": "Café",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
@@ -3260,7 +3489,7 @@
         {
           "name": "International Programs and Services",
           "room_number": "200",
-          "notes": "Immigration advising, CPT/OPT and international student support. 906-487-2160; ips@mtu.edu. Academic year Mon\u2013Fri 8\u20135, closed noon\u20131.",
+          "notes": "Immigration advising, CPT/OPT and international student support. 906-487-2160; ips@mtu.edu. Academic year Mon–Fri 8–5, closed noon–1.",
           "source": {
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/international/about/contact/",
@@ -3812,11 +4041,24 @@
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Closed Nov 25\u201329; reopens Nov 30, 10 AM",
+          "hours": "Closed Nov 25–29; reopens Nov 30, 10 AM",
           "image_url": "/dining/mub-card.svg"
         }
       ],
-      "people": []
+      "people": [
+        {
+          "name": "Emilie Sander",
+          "title": "Administrative Aide, Student Leadership and Involvement",
+          "office": "MUB 112",
+          "email": "emsander@mtu.edu",
+          "phone": "906-487-1963",
+          "source": {
+            "title": "Student Leadership Staff",
+            "url": "https://www-cf.mtu.edu/student-leadership/about/staff/",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 1064,

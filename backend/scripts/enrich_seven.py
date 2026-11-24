@@ -9,11 +9,11 @@ from concurrent.futures import ThreadPoolExecutor
 BASE='https://www.mtu.edu/'
 targets={
 1:('Rekhi', ['computing/about/staff/','cs/department/faculty/','cs/department/staff/','computing/applied-computing/faculty-staff/']),
-2:('MEEM|R\\. L\\. Smith', ['mechanical-aerospace/department/faculty/','mechanical-aerospace/department/staff/','mechanical-aerospace/department/faculty-staff/']),
+2:('MEEM|R\\. L\\. Smith', ['mechanical-aerospace/people/faculty/','mechanical-aerospace/people/staff/','mechanical-aerospace/department/staff/','mechanical-aerospace/department/faculty-staff/']),
 3:('Fisher',['math/department/faculty/','math/department/staff/','math/department/faculty-staff/','physics/department/faculty/','physics/department/staff/']),
 1000:('Admin(?:istration)?(?: and Student Services)?',['international/about/staff/','international/about/contact/','career/about/staff/','gradschool/about/staff/','deanofstudents/about/staff/','finaid/about/staff/','registrar/about/staff/']),
 1002:('AOB|Academic Office Building',['business/people-groups/faculty-staff/','social-sciences/department/faculty-staff/']),
-1012:('SDC|Student Development Complex',['recreation/about/staff/','athletics/']),
+1012:('SDC|Student Development Complex',['recreation/about/staff/','recreation/contact/','recreation/about/','athletics/']),
 4:('MUB|Memorial Union(?: Building)?',['student-leadership/about/staff/','mub/about/staff/','admissions/about/staff/'])
 }
 def allowed(u):return urlsplit(u).scheme=='https' and urlsplit(u).hostname in ('www.mtu.edu','www-cf.mtu.edu')
@@ -57,11 +57,11 @@ def records(soup,page,building):
         if not email.endswith('@mtu.edu'):continue
         for card in list(a.parents)[:6]:
             headings=card.select('h2,h3,h4,h5')
-            if len(headings)!=1:continue
+            if not headings or len(headings)>3:continue
             name=headings[0].get_text(' ',strip=True)
             if len(name.split())<2 or len(name)>90:continue
             text=card.get_text(' ',strip=True)
-            office=pattern.search(text)
+            office=pattern.search(text) or re.search(r'\b([A-Z]?\d{2,4}[A-Z]?)\s+(?:'+building+r')\b',text,re.I)
             if not office:continue
             if len(card.select('a[href^="mailto:"]'))!=1:continue
             title=''
