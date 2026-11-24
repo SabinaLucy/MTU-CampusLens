@@ -145,6 +145,8 @@ Your confidence is an uncalibrated subjective estimate, not a probability.'''
     decision = _json_object(response)
     identification = str(decision.get('identification') or '')[:300]
     kind = decision.get('kind', 'uncertain')
+    identification = str(decision.get('identification') or '')[:300]
+    kind = decision.get('kind', 'uncertain')
     id_ = decision.get('building_id')
     confidence = str(decision.get('confidence', 'low')).lower()
     if kind != 'campus' or type(id_) is not int or not any(b['id'] == id_ for b in buildings) or confidence not in ('high', 'medium'):

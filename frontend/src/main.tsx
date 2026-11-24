@@ -482,7 +482,7 @@ function ChatMarkdown({text}:{text:string}) {
     if(part.charCodeAt(0)===96&&part.charCodeAt(part.length-1)===96)return <code key={i}>{part.slice(1,-1)}</code>;
     return <React.Fragment key={i}>{part}</React.Fragment>;
   });
-  const blocks:React.ReactNode[]=[];const lines=text.replace(/\\u([0-9a-fA-F]{4})/g,(_,hex)=>String.fromCharCode(parseInt(hex,16))).replace(/\r\n/g,'\n').split('\n');
+  const blocks:React.ReactNode[]=[];const lines=text.replace(/\\u([0-9a-fA-F]{4})/g,(_,hex)=>String.fromCharCode(parseInt(hex,16))).replace(/\\u([0-9a-fA-F]{4})/g,(_,hex)=>String.fromCharCode(parseInt(hex,16))).replace(/\r\n/g,'\n').split('\n');
   for(let i=0;i<lines.length;){
     const line=lines[i].trim();if(!line){i++;continue;}
     const list=line.match(/^([-*+]|\d+\.)\s+(.+)$/);
@@ -1531,7 +1531,7 @@ function App() {
                     const recognized = prediction.status === 'recognized' && !!match;
                     return recognized && match ? (
                       <div className="prediction recognition-match">
-                        <div className="recognition-heading"><ShieldCheck size={21}/><strong>Building match found</strong><span className="recognition-confidence">{prediction.confidence || 'Unspecified'} confidence</span></div>
+                        <div className="recognition-heading"><ShieldCheck size={21}/><strong>Building match found</strong><span className="recognition-confidence">AI estimate: {prediction.confidence || 'Unspecified'}</span></div>
                         <div className="recognition-detail"><Thumb key={match.id} building={match}/><div><h3>{match.name}</h3><small>Michigan Technological University</small><p>This looks like {match.name}! {match.description}</p></div></div><p className="recognition-intro">Explore the building to learn more about its facilities, available events and location.</p>
                         <button className="gold-btn" onClick={()=>openBuilding(match.id)}>Explore building <ChevronRight size={16}/></button>
                         
