@@ -133,24 +133,26 @@ async def recognize(image: bytes, mime: str, buildings: list[dict[str, Any]]) ->
                            for b in buildings)
     prompt = f'''You are a campus building visual identification assistant for a STUDENT DEMO.
 Only use what is VISIBLE IN THE IMAGE. Do not assume it shows a campus building.
-Choose exactly one ID from this list or null if uncertain:
+First independently identify the subject using your general visual knowledge. The following catalog is optional supporting context, not a closed set of answers. Never choose a campus ID merely because it is the closest candidate.
 {candidates}
 If exterior features, signage or clear distinguishing details are missing, return null.
 Even if the image seems to be a campus building, do NOT force a match.
-Return a JSON object with fields: building_id (integer or null), confidence (low, medium, high),
+Return a JSON object with fields: identification (plain-language subject name or description), kind (campus, off_campus, other, uncertain), building_id (integer or null), confidence (low, medium, high),
 evidence (one brief sentence specifying visible cues; no invented facts).
-Set building_id to null when confidence is low, or image is not recognizable as one of these buildings.
+Set building_id to null unless specific visible evidence supports that exact campus identity. Recognize off-campus landmarks and other subjects freely; do not invent a branch or address. High confidence requires readable identifying signage or distinctive features you can specifically explain. Generic brick, windows or resemblance alone are insufficient.
 Your confidence is an uncalibrated subjective estimate, not a probability.'''
     response, provider = await generate(prompt, image=image, mime=mime, task='vision', json_mode=True)
     decision = _json_object(response)
+    identification = str(decision.get('identification') or '')[:300]
+    kind = decision.get('kind', 'uncertain')
     id_ = decision.get('building_id')
     confidence = str(decision.get('confidence', 'low')).lower()
-    if type(id_) is not int or not any(b['id'] == id_ for b in buildings) or confidence not in ('high', 'medium'):
-        return {'status': 'uncertain', 'building_id': None, 'building': None,
+    if kind != 'campus' or type(id_) is not int or not any(b['id'] == id_ for b in buildings) or confidence not in ('high', 'medium'):
+        return {'status': 'identified' if kind in ('off_campus', 'other') and identification and confidence in ('medium', 'high') else 'uncertain', 'identification': identification, 'building_id': None, 'building': None,
                 'confidence': 'low', 'evidence': str(decision.get('evidence',''))[:300],
-                'provider': provider, 'message': 'Image does not provide a reliable match. Select a building manually.'}
+                'provider': provider, 'message': identification if kind in ('off_campus', 'other') and identification else 'I cannot confidently match this photo to a campus building. Try another angle or search the directory.'}
     chosen = next(b for b in buildings if b['id'] == id_)
     return {'status': 'recognized', 'building_id': id_,
             'building': {k: chosen[k] for k in ('id','name','abbreviation','description','address','campus_map_number','map_url','source')},
-            'confidence': confidence, 'evidence': str(decision.get('evidence',''))[:300],
+            'confidence': 'medium', 'evidence': str(decision.get('evidence',''))[:300],
             'provider': provider, 'message': 'AI suggestion only. Confirm before opening the building dashboard.'}

@@ -482,7 +482,7 @@ function ChatMarkdown({text}:{text:string}) {
     if(part.charCodeAt(0)===96&&part.charCodeAt(part.length-1)===96)return <code key={i}>{part.slice(1,-1)}</code>;
     return <React.Fragment key={i}>{part}</React.Fragment>;
   });
-  const blocks:React.ReactNode[]=[];const lines=text.replace(/\r\n/g,'\n').split('\n');
+  const blocks:React.ReactNode[]=[];const lines=text.replace(/\\u([0-9a-fA-F]{4})/g,(_,hex)=>String.fromCharCode(parseInt(hex,16))).replace(/\r\n/g,'\n').split('\n');
   for(let i=0;i<lines.length;){
     const line=lines[i].trim();if(!line){i++;continue;}
     const list=line.match(/^([-*+]|\d+\.)\s+(.+)$/);
@@ -1537,7 +1537,7 @@ function App() {
                         
                         <button className="recognition-manual" onClick={()=>{document.getElementById('manual-building-search')?.focus();document.getElementById('manual-building-search')?.scrollIntoView({block:'center',behavior:'smooth'});}}>Not the right building? Search manually</button>
                       </div>
-                    ) : <div className="prediction"><strong>Recognition uncertain</strong><p>{prediction.message}</p>{prediction.evidence&&<p>{prediction.evidence}</p>}</div>;
+                    ) : <div className="prediction"><strong>{prediction.status==='identified'?'Image identified':'Recognition uncertain'}</strong><p>{prediction.message}</p>{prediction.evidence&&<p>{prediction.evidence}</p>}</div>;
                   })()}
                 </section>
 
