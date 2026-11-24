@@ -3907,7 +3907,868 @@
           "image_url": "/dining/sdc-card.svg"
         }
       ],
-      "people": []
+      "people": [
+        {
+          "name": "Suzanne Sanregret",
+          "title": "VP for Athletics and Recreation",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/suzanne-sanregret/171",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/suzanne-sanregret/171",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3070",
+          "image_url": "/portraits/sdc-suzanne-sanregret.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/29/Suzanne_Sanregret.jpg?width=300"
+        },
+        {
+          "name": "Joel Isaacson",
+          "title": "Deputy Athletic Director",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/joel-isaacson/172",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/joel-isaacson/172",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-1915",
+          "image_url": "/portraits/sdc-joel-isaacson.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/29/Joel_Isaacson.jpg?width=300"
+        },
+        {
+          "name": "Rhys Edwards",
+          "title": "Associate Athletic Director - NCAA Compliance & Student-Athlete Academic Success",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/rhys-edwards/149",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/rhys-edwards/149",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-0914",
+          "image_url": "/portraits/sdc-rhys-edwards.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/edwards_rhys.jpg?width=300"
+        },
+        {
+          "name": "Calvin Larson",
+          "title": "Assistant Athletic Director - Media Relations",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/calvin-larson/158",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/calvin-larson/158",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2351",
+          "image_url": "/portraits/sdc-calvin-larson.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/larson_calvin.jpg?width=300"
+        },
+        {
+          "name": "Nate Larson",
+          "title": "Assistant Athletic Director - Sports Medicine (HOC)",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/nate-larson/159",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/nate-larson/159",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-1610",
+          "image_url": "/portraits/sdc-nate-larson.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/larson_nate.jpg?width=300"
+        },
+        {
+          "name": "Curtis Wittenberg",
+          "title": "Assistant Athletic Director - Business Operations",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/curtis-wittenberg/145",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/curtis-wittenberg/145",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3168",
+          "image_url": "/portraits/sdc-curtis-wittenberg.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/curtis_wittenberg.jpg?width=300"
+        },
+        {
+          "name": "Samantha Almquist",
+          "title": "Director of Athletic Operations",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/samantha-almquist/167",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/samantha-almquist/167",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3077",
+          "image_url": "/portraits/sdc-samantha-almquist.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/terry_sam.jpg?width=300"
+        },
+        {
+          "name": "Greg Christopher",
+          "title": "Director of Video Production & Operations",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/greg-christopher/152",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/greg-christopher/152",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-1603",
+          "image_url": "/portraits/sdc-greg-christopher.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/greg_christopher.jpg?width=300"
+        },
+        {
+          "name": "Gabe Frontuto",
+          "title": "Manager of Ticketing Operations",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/gabe-frontuto/200",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/gabe-frontuto/200",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2976",
+          "image_url": "/portraits/sdc-gabe-frontuto.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/6/3/gabe-frontuto.jpg?width=300"
+        },
+        {
+          "name": "Jada Gullstrand",
+          "title": "Director of Programming & Membership Services",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/jada-gullstrand/173",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/jada-gullstrand/173",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2227",
+          "image_url": "/portraits/sdc-jada-gullstrand.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/29/Jada_Gullstrand.jpg?width=300"
+        },
+        {
+          "name": "Todd Hall",
+          "title": "Athletic Trainer (M/W XC/T&F, VB, M/W Nordic)",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/todd-hall/153",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/todd-hall/153",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3070"
+        },
+        {
+          "name": "Courtney Handlen",
+          "title": "Athletic Trainer (SOC, WBB, Esports)",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/courtney-handlen/193",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/courtney-handlen/193",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3070",
+          "image_url": "/portraits/sdc-courtney-handlen.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/8/22/Handlen.jpg?width=300"
+        },
+        {
+          "name": "Dirk Hembroff",
+          "title": "Director of Athletic Partnerships & Ticket Sales",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/dirk-hembroff/154",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/dirk-hembroff/154",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-1604",
+          "image_url": "/portraits/sdc-dirk-hembroff.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/hembroff_dirk.jpg?width=300"
+        },
+        {
+          "name": "Emily Kunnen",
+          "title": "Strength & Conditioning Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/emily-kunnen/235",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/emily-kunnen/235",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Trey Saari",
+          "title": "Head Strength & Conditioning Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/trey-saari/233",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/trey-saari/233",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "James Shortt",
+          "title": "Director of Charitable Giving",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/james-shortt/231",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/james-shortt/231",
+            "source_type": "official_mtu"
+          },
+          "phone": "989-750-3465"
+        },
+        {
+          "name": "Abbie Tollefson",
+          "title": "Athletic Equipment & Event Coordinator",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/abbie-tollefson/197",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/abbie-tollefson/197",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-1076",
+          "image_url": "/portraits/sdc-abbie-tollefson.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/11/11/abbie-tollefson.jpg?width=300"
+        },
+        {
+          "name": "Taylor Thelen",
+          "title": "Athletic Trainer (FB, M/W Tennis)",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/taylor-thelen/192",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/taylor-thelen/192",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3070",
+          "image_url": "/portraits/sdc-taylor-thelen.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/11/18/Taylor_Thelen_Headshot.jpg?width=300"
+        },
+        {
+          "name": "Korinne Thomas",
+          "title": "Athletic Trainer (Head FB, MBB)",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/korinne-thomas/169",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/korinne-thomas/169",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3070",
+          "image_url": "/portraits/sdc-korinne-thomas.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/12/1/KThomas.jpg?width=300"
+        },
+        {
+          "name": "Robert Young",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/robert-young/84",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/robert-young/84",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2647",
+          "image_url": "/portraits/sdc-robert-young.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/9/30/B29Y8810.jpg?width=300"
+        },
+        {
+          "name": "Luke Moore",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/luke-moore/188",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/luke-moore/188",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3143",
+          "image_url": "/portraits/sdc-luke-moore.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/9/30/B29Y8809.jpg?width=300"
+        },
+        {
+          "name": "Karah McElhone",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/karah-mcelhone/186",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/karah-mcelhone/186",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-karah-mcelhone.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/9/30/B29Y8812.jpg?width=300"
+        },
+        {
+          "name": "Wesley Beck",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/wesley-beck/187",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/wesley-beck/187",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-wesley-beck.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/9/30/B29Y8813.jpg?width=300"
+        },
+        {
+          "name": "Travis Isbell",
+          "title": "Director of Esports",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/travis-isbell/3",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/travis-isbell/3",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-1224",
+          "image_url": "/portraits/sdc-travis-isbell.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/travis_isbell.jpg?width=300"
+        },
+        {
+          "name": "Dan Mettlach",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/dan-mettlach/9",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/dan-mettlach/9",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2985",
+          "image_url": "/portraits/sdc-dan-mettlach.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Mettlach-2026.jpg?width=300"
+        },
+        {
+          "name": "Phil Milbrath",
+          "title": "Assistant Head Coach/Special Teams Coordinator",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/phil-milbrath/23",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/phil-milbrath/23",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2984",
+          "image_url": "/portraits/sdc-phil-milbrath.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Milbrath-2026.jpg?width=300"
+        },
+        {
+          "name": "Bryan Thomas",
+          "title": "Defensive Coordinator/Linebackers",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/bryan-thomas/27",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/bryan-thomas/27",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-3394",
+          "image_url": "/portraits/sdc-bryan-thomas.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Thomas-2026.jpg?width=300"
+        },
+        {
+          "name": "Jack Rustman",
+          "title": "Offensive Line Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/jack-rustman/15",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/jack-rustman/15",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2718",
+          "image_url": "/portraits/sdc-jack-rustman.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Rustman-2026.jpg?width=300"
+        },
+        {
+          "name": "Michael Donnelly",
+          "title": "Defensive Backs and Pass Game Coordinator",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/michael-donnelly/10",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/michael-donnelly/10",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-4366",
+          "image_url": "/portraits/sdc-michael-donnelly.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Donnelly-2026.jpg?width=300"
+        },
+        {
+          "name": "Jace Daniels",
+          "title": "Defensive Line Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/jace-daniels/8",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/jace-daniels/8",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2350",
+          "image_url": "/portraits/sdc-jace-daniels.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Daniels-2026_HLSO9.jpg?width=300"
+        },
+        {
+          "name": "Bryan Parker",
+          "title": "Wide Receivers Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/bryan-parker/220",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/bryan-parker/220",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-bryan-parker.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Parker-2026.jpg?width=300"
+        },
+        {
+          "name": "Nate Vereeke",
+          "title": "Assistant Linebacker Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/nate-vereeke/211",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/nate-vereeke/211",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-nate-vereeke.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/8/22/Vereeke25.jpg?width=300"
+        },
+        {
+          "name": "Andy Crouch",
+          "title": "Volunteer Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/andy-crouch/190",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/andy-crouch/190",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-andy-crouch.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Crouch-2026.jpg?width=300"
+        },
+        {
+          "name": "Jeff Paulson",
+          "title": "Team Chaplin",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/jeff-paulson/189",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/jeff-paulson/189",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-jeff-paulson.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Paulson-2026_RvxcB.jpg?width=300"
+        },
+        {
+          "name": "Keegan Maciejewski",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/keegan-maciejewski/221",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/keegan-maciejewski/221",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-keegan-maciejewski.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Maciejewski-2026.jpg?width=300"
+        },
+        {
+          "name": "Tim Driscoll",
+          "title": "Volunteer Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/tim-driscoll/228",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/tim-driscoll/228",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-tim-driscoll.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/25/Driscoll-2026.jpg?width=300"
+        },
+        {
+          "name": "Josh Buettner",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/josh-buettner/33",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/josh-buettner/33",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2594",
+          "image_url": "/portraits/sdc-josh-buettner.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/buettner_josh.jpg?width=300"
+        },
+        {
+          "name": "Zach Flener",
+          "title": "Associate Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/zach-flener/38",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/zach-flener/38",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ryan Peterson",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/ryan-peterson/212",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/ryan-peterson/212",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Bill Muckalt",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/bill-muckalt/199",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/bill-muckalt/199",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-bill-muckalt.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/9/23/muckalt-2026.jpg?width=300"
+        },
+        {
+          "name": "Benton Maass",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/benton-maass/201",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/benton-maass/201",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-benton-maass.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/6/4/IMG_5189.jpg?width=300"
+        },
+        {
+          "name": "Zach Richards",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/zach-richards/219",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/zach-richards/219",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-zach-richards.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/7/1/Zach-Richards-8x12.jpg?width=300"
+        },
+        {
+          "name": "Tyler Shelast",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/tyler-shelast/59",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/tyler-shelast/59",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2979",
+          "image_url": "/portraits/sdc-tyler-shelast.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/tyler_shelast.jpg?width=300"
+        },
+        {
+          "name": "Colin Swoyer",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/colin-swoyer/230",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/colin-swoyer/230",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-colin-swoyer.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/9/2/Colin-Swoyer-2019091901.jpg?width=300"
+        },
+        {
+          "name": "Mike Andrews",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/mike-andrews/202",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/mike-andrews/202",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-mike-andrews.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/11/21/Mike-Andrews_Ir9Bo.jpg?width=300"
+        },
+        {
+          "name": "Katerina Khardina",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/katerina-khardina/236",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/katerina-khardina/236",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-katerina-khardina.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/11/21/Katerina_Khardina_PNxlI.jpg?width=300"
+        },
+        {
+          "name": "Tom Monahan Smith",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/tom-monahan-smith/177",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/tom-monahan-smith/177",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2986",
+          "image_url": "/portraits/sdc-tom-monahan-smith.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/1/16/coach-tom_l0GIT.jpg?width=300"
+        },
+        {
+          "name": "Kristen Monahan Smith",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/kristen-monahan-smith/174",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/kristen-monahan-smith/174",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2986",
+          "image_url": "/portraits/sdc-kristen-monahan-smith.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/1/16/coach-kristen_TxlCP.jpg?width=300"
+        },
+        {
+          "name": "F\u00e9lix Cottet-Puinel",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/f-eacute-lix-cottet-puinel/68",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/f-eacute-lix-cottet-puinel/68",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-f-lix-cottet-puinel.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/felix_cottet_puinel.jpg?width=300"
+        },
+        {
+          "name": "Will Haapala",
+          "title": "Student Manager",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/will-haapala/76",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/will-haapala/76",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-will-haapala.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2024/5/22/will_haapala.jpg?width=300"
+        },
+        {
+          "name": "C\u00e9dric Keller",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/c-dric-keller/196",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/c-dric-keller/196",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Lauritz Sogn-Larssen",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/lauritz-sogn-larssen/232",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/lauritz-sogn-larssen/232",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Eric Gruber",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/eric-gruber/217",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/eric-gruber/217",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-eric-gruber.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/10/8/Eric-Gruber-2026.jpg?width=300"
+        },
+        {
+          "name": "Evie Wolshire",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/evie-wolshire/218",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/evie-wolshire/218",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-evie-wolshire.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/10/8/Evie-Wolshire-2026.jpg?width=300"
+        },
+        {
+          "name": "Patrick Rocks",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/patrick-rocks/225",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/patrick-rocks/225",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-patrick-rocks.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/10/8/Patrick-Rocks-2026.jpg?width=300"
+        },
+        {
+          "name": "Melissa Kuhar",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/melissa-kuhar/181",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/melissa-kuhar/181",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2887",
+          "image_url": "/portraits/sdc-melissa-kuhar.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/11/Kuhar_QnByc.jpg?width=300"
+        },
+        {
+          "name": "Jason Dellinger",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/jason-dellinger/226",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/jason-dellinger/226",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-jason-dellinger.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/11/Dellinger_4WV3h.jpg?width=300"
+        },
+        {
+          "name": "Carter Elmy",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/carter-elmy/208",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/carter-elmy/208",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-carter-elmy.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/11/Elmy.jpg?width=300"
+        },
+        {
+          "name": "Sam Trout",
+          "title": "Student Manager",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/sam-trout/210",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/sam-trout/210",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-sam-trout.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2025/9/4/Sam_Trout.jpg?width=300"
+        },
+        {
+          "name": "Ludesha Reynolds",
+          "title": "Student Manager",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/ludesha-reynolds/227",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/ludesha-reynolds/227",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-ludesha-reynolds.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/11/Reynolds.jpg?width=300"
+        },
+        {
+          "name": "Cindy Pindral",
+          "title": "Head Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/cindy-pindral/198",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/cindy-pindral/198",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2427",
+          "image_url": "/portraits/sdc-cindy-pindral.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/18/Pindral.jpg?width=300"
+        },
+        {
+          "name": "Mallory Nickelson",
+          "title": "Assistant Coach",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/mallory-nickelson/126",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/mallory-nickelson/126",
+            "source_type": "official_mtu"
+          },
+          "phone": "906-487-2595",
+          "image_url": "/portraits/sdc-mallory-nickelson.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/18/Nickelson.jpg?width=300"
+        },
+        {
+          "name": "Meg Raabe",
+          "title": "Volunteer Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/meg-raabe/206",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/meg-raabe/206",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Julia Fledderjohn",
+          "title": "Graduate Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/julia-fledderjohn/223",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/julia-fledderjohn/223",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-julia-fledderjohn.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/18/Fledderjohn.jpg?width=300"
+        },
+        {
+          "name": "Colin Demos",
+          "title": "Student Assistant",
+          "office": "Athletics and Recreation directory (individual office not published)",
+          "profile_url": "https://michigantechhuskies.com/staff-directory/colin-demos/224",
+          "source": {
+            "title": "Official athletics staff profile",
+            "url": "https://michigantechhuskies.com/staff-directory/colin-demos/224",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sdc-colin-demos.jpg",
+          "image_source": "https://michigantechhuskies.com/images/2026/8/18/Demos.jpg?width=300"
+        }
+      ]
     },
     {
       "id": 1061,
