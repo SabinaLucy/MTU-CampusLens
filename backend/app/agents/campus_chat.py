@@ -22,10 +22,22 @@ async def answer_campus(question,history,position,raw,mime,attached,buildings,me
                 nearby.append({'id':b['id'],'name':b['name'],'meters':round(12742000*math.asin(math.sqrt(min(1,a)))),'dining':b.get('dining',[])})
             nearby.sort(key=lambda x:x['meters'])
         except (ValueError,TypeError,KeyError):position=None
+    location_followup=question.strip().lower()=='location shared'
+    if location_followup:
+        previous=next((t['text'] for t in reversed(turns) if t['role']=='user' and t['text'].strip().lower()!='location shared'),'What buildings are near me?')
+        question=previous
     food_request=bool(words.intersection({'food','hungry','eat','dining','lunch','dinner','breakfast','cafe','cafeteria'}))
     proximity_request=bool(re.search(r'\b(near(?:by|est)?|close|closest|around)\b',question.lower()))
-    if food_request and proximity_request and not nearby and not raw and not attached:
+    if food_request and proximity_request and not position and not raw and not attached:
         return {'answer': "Let's find you something to eat! 🍔\n\nWhich building are you in or near? You can also tap **Use location** below to share your location.\n\nIn the meantime, you can explore campus dining options and check current hours on the [official dining website](https://dineoncampus.com/MTU). Holiday hours may differ.", 'nearby': []}
+    if position and not raw and not attached and (proximity_request or location_followup):
+        options=[x for x in nearby if x['dining']] if food_request else nearby
+        options=options[:5]
+        intro='📍 Got your location!'
+        if options:
+            lines=[f"- **{', '.join(d['name'] for d in x['dining']) if food_request else x['name']}** — {x['name'] + ', ' if food_request else ''}about {x['meters']} m away" for x in options]
+            return {'answer':intro+'\n\nHere are the closest mapped '+('campus dining options' if food_request else 'campus buildings')+':\n\n'+'\n'.join(lines)+'\n\nDistances are straight-line estimates. Not all campus locations have map coordinates yet.'+(' Check [current dining hours](https://dineoncampus.com/MTU) before heading out.' if food_request else ''),'nearby':options}
+        return {'answer':intro+' I cannot calculate nearby distances yet because the relevant campus locations are missing map coordinates. You can browse the campus directory or [dining options](https://dineoncampus.com/MTU).','nearby':[]}
     events=[]
     if words.intersection({'events','event','today','tomorrow','happening','concert','workshop'}):
         try:events=(await get_live_events())['events'][:80]
