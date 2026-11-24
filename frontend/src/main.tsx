@@ -1406,7 +1406,7 @@ function App() {
                   </div>
 
                   <div className="featured-grid">
-                    {[...buildings].sort((a,b)=>Number(!!b.image_url)-Number(!!a.image_url)).slice(0, 4).map(building => (
+                    {[1029,1047,1003,1028,1,1012,4,6].flatMap(id=>buildings.filter(b=>b.id===id && !!b.image_url)).map(building => (
                       <button
                         key={building.id}
                         className="featured-tile"
