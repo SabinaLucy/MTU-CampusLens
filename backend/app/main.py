@@ -83,7 +83,7 @@ async def get_events(building_id: int):
         event for event in result["events"]
         if matching_building(
             event["location"],
-            building["abbreviation"]
+            building["abbreviation"], building["name"], building.get("aliases", [])
         )
     ]
 

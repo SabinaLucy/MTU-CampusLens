@@ -33,19 +33,39 @@ def to_datetime(value):
     return None
 
 
-def matching_building(location, abbreviation):
-    location = location.lower()
+def normalize_location(value):
+    return re.sub(r'[^a-z0-9]+', ' ', str(value).casefold()).strip()
+
+
+def matching_building(location, abbreviation, building_name="", aliases=()):
+    location = normalize_location(location)
     names = {
-        "Rozsa": ["rozsa"],
+        "Rozsa": ["rozsa", "black performance hall"],
         "Rekhi": ["rekhi"],
-        "MEEM": ["r. l. smith", "meem"],
-        "Fisher": ["fisher hall"],
+        "MEEM": ["r l smith", "meem"],
+        "Fisher": ["fisher hall", "fisher rock garden", "fisher"],
         "MUB": ["memorial union", "mub"],
         "Library": ["van pelt", "opie library"],
+        "SDC": ["student development complex", "sdc", "macinnes student ice arena", "wood gym", "varsity gym"],
+        "Admin": ["administration and student services building", "administration building", "admin"],
     }
-    return any(
-        name in location for name in names.get(abbreviation, [])
-    )
+    extra = {
+        "Student Development Complex": names["SDC"],
+        "Administration Building": names["Admin"],
+        "Academic Office Building": ["academic office building", "aob"],
+        "Electrical Energy Resources Center": ["eerc", "electrical energy resources center"],
+        "Walker Arts & Humanities Center": ["walker arts", "walker", "mcardle theatre"],
+        "R. L. Smith Building": names["MEEM"],
+        "Fisher Hall": names["Fisher"],
+        "Memorial Union Building": names["MUB"],
+        "J. Robert Van Pelt and John and Ruanne Opie Library": names["Library"],
+    }
+    candidates = [abbreviation, building_name, *(aliases or []), *names.get(abbreviation, []), *extra.get(building_name, [])]
+    for candidate in candidates:
+        key = normalize_location(candidate)
+        if len(key) >= 3 and re.search(r'(?<![a-z0-9])'+re.escape(key)+r'(?![a-z0-9])', location):
+            return True
+    return False
 
 
 def parse_calendar(raw):
