@@ -38,7 +38,7 @@ async def _gemini(prompt: str, image: bytes | None, mime: str, model: str, json_
         parts.append({'inline_data': {'mime_type': mime, 'data': base64.b64encode(image).decode('ascii')}})
     payload: dict[str, Any] = {
         'contents': [{'role': 'user', 'parts': parts}],
-        'generationConfig': {'temperature': 0.0 if json_mode else 0.2, 'maxOutputTokens': 900}
+        'generationConfig': {'temperature': 0.0 if json_mode else 0.2, 'maxOutputTokens': 2048}
     }
     if json_mode:
         payload['generationConfig']['responseMimeType'] = 'application/json'

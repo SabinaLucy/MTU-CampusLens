@@ -146,3 +146,31 @@ async def recognize_image(file: UploadFile = File(...)):
 async def chat(body: ChatRequest):
     building = find_building(body.building_id)
     return await chat_workflow(body.question, building, repo.metadata(), bool(provider_order()))
+
+from fastapi import Form
+import json
+from .agents.campus_chat import answer_campus
+
+@app.post('/api/campus-chat')
+async def campus_chat(question: str = Form(...), history: str = Form('[]'), location: str = Form('null'), file: UploadFile | None = File(None)):
+    if not question.strip() or len(question)>4000 or len(history)>60000 or len(location)>1000:
+        raise HTTPException(422,'Invalid conversation input.')
+    try:
+        turns=json.loads(history)
+        position=json.loads(location)
+    except ValueError:
+        raise HTTPException(422,'Invalid conversation context.')
+    raw=None
+    mime='image/jpeg'
+    attached=''
+    if file:
+        raw=await file.read(3*1024*1024+1)
+        if len(raw)>3*1024*1024: raise HTTPException(413,'Attachment exceeds 3 MB.')
+        if file.content_type=='text/plain':
+            attached=raw.decode('utf-8',errors='replace')[:20000]
+            raw=None
+        elif file.content_type=='application/pdf' and raw.startswith(b'%PDF-'):
+            mime='application/pdf'
+        else:
+            raw,mime=validated_image(raw)
+    return await answer_campus(question,turns,position,raw,mime,attached,repo.all(),repo.metadata())

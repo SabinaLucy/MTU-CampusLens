@@ -468,6 +468,17 @@ function Items({
   );
 }
 
+type CampusTurn={role:'user'|'assistant';text:string;attachment?:string;nearby?:{id:number;name:string;meters:number}[]};
+function CampusChat({openBuilding}:{openBuilding:(id:number)=>void}){
+ const key='campuslens-chat-v1';
+ const [turns,U]=useState<CampusTurn[]>(()=>{try{return JSON.parse(localStorage.getItem(key)||'[]')}catch{return []}}),[q,Q]=useState(''),[file,F]=useState<File|null>(null),[busy,B]=useState(false),[pos,P]=useState<GeolocationCoordinates|null>(null),[notice,N]=useState('');
+ useEffect(()=>{try{localStorage.setItem(key,JSON.stringify(turns))}catch{}},[turns]);
+ function clear(){if(window.confirm('Clear this conversation history from this device?')){U([]);Q('');F(null);P(null);N('');localStorage.removeItem(key)}}
+ function locate(){if(!navigator.geolocation){N('Location is unavailable.');return}navigator.geolocation.getCurrentPosition(p=>{P(p.coords);N('Location shared. Update whenever you move.')},()=>N('Location permission denied or unavailable. You can still chat.'),{enableHighAccuracy:true,timeout:12000,maximumAge:0})}
+ async function send(e:React.FormEvent){e.preventDefault();if(busy||(!q.trim()&&!file))return;if(file&&file.size>3*1024*1024){N('Choose an attachment under 3 MB.');return}const text=q.trim()||'What can you tell me about this attachment?';const data=new FormData();data.append('question',text);data.append('history',JSON.stringify(turns.slice(-12)));data.append('location',JSON.stringify(pos?{latitude:pos.latitude,longitude:pos.longitude,accuracy:pos.accuracy}:null));if(file)data.append('file',file);U(t=>[...t,{role:'user',text,attachment:file?.name}]);Q('');F(null);B(true);try{const res=await request<{answer:string;nearby:CampusTurn['nearby']}>('/api/campus-chat',{method:'POST',body:data});U(t=>[...t,{role:'assistant',text:res.answer,nearby:res.nearby}])}catch{U(t=>[...t,{role:'assistant',text:'Could not reach CampusLens. Please try again.'}])}finally{B(false)}}
+ return <section className="content-card campus-chat"><header><h2><MessageCircle size={22}/> Ask CampusLens</h2><button className="chat-action" disabled={busy} onClick={clear}>Clear history</button></header><div className="chat-thread">{!turns.length&&<div className="chat-welcome"><h1>How can I help you today?</h1><p>Your campus. Your questions. One place.</p><div className="chat-prompts">{['What buildings are near me?','Identify a building from a photo','Find food nearby','What events are happening today?','Find faculty and staff','Help me find my way around'].map(x=><button className="chat-action" key={x} onClick={()=>Q(x)}>{x}</button>)}</div></div>}{turns.map((t,i)=><article className={'chat-turn '+t.role} key={i}><strong>{t.role==='user'?'You':'CampusLens'}</strong>{t.attachment&&<small>{t.attachment}</small>}<p style={{whiteSpace:'pre-wrap',overflowWrap:'anywhere'}}>{t.text}</p>{t.nearby?.map(x=><button className="chat-action" key={x.id} onClick={()=>openBuilding(x.id)}>{x.name} · {x.meters} m straight-line</button>)}{t.role==='assistant'&&<button className="chat-action" onClick={()=>navigator.clipboard.writeText(t.text)}>Copy</button>}</article>)}{busy&&<p>CampusLens is thinking…</p>}</div><form className="chat-composer" onSubmit={send}><textarea rows={3} maxLength={4000} value={q} onChange={e=>Q(e.target.value)} placeholder="Ask CampusLens anything…"/>{file&&<div>{file.name} <button type="button" onClick={()=>F(null)}>Remove</button></div>}<div className="chat-tools"><label className="chat-action"><Upload size={16}/> Attach<input hidden type="file" accept="image/jpeg,image/png,image/webp,application/pdf,text/plain" onChange={e=>{F(e.target.files?.[0]||null);e.target.value=''}}/></label><label className="chat-action"><Camera size={16}/> Camera<input hidden type="file" accept="image/*" capture="environment" onChange={e=>{F(e.target.files?.[0]||null);e.target.value=''}}/></label><button type="button" className="chat-action" onClick={locate}><MapPin size={16}/>{pos?'Update location':'Share location'}</button>{pos&&<button type="button" className="chat-action" onClick={()=>{P(null);N('Location removed.')}}>Remove location</button>}<button type="submit" className="gold-btn" disabled={busy||(!q.trim()&&!file)}>Send</button></div><small>{notice||'Optional attachments and location are sent with your question. Chat text is saved on this device.'}</small></form><small>CampusLens may make mistakes. Verify important information.</small></section>
+}
+
 function App() {
   const [buildings, setBuildings] = useState<Building[]>([]);
   const [selected, setSelected] = useState<Building | null>(null);
@@ -1675,50 +1686,7 @@ function App() {
               </section>
             </>
           ) : (
-            <>
-              <div className="page-heading">
-                <span className="eyebrow">
-                  YOUR AI CAMPUS GUIDE
-                </span>
-
-                <h1>Ask CampusLens.</h1>
-
-                <p>
-                  Choose a supported building to ask
-                  grounded questions about its departments,
-                  rooms, and public information.
-                </p>
-              </div>
-
-              <div className="content-card">
-                <h2>Choose a building to start</h2>
-
-                <div className="building-results">
-                  {buildings.map(building => (
-                    <button
-                      key={building.id}
-                      onClick={async () => {
-                        await openBuilding(building.id);
-                        setTab('Ask CampusLens');
-                      }}
-                    >
-                      <span className="tile-icon">
-                        <MessageCircle size={19} />
-                      </span>
-
-                      <span>
-                        <strong>{building.name}</strong>
-                        <small>
-                          Ask about {building.abbreviation}
-                        </small>
-                      </span>
-
-                      <ChevronRight size={17} />
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </>
+            <CampusChat openBuilding={openBuilding}/>
           )}
 
           <footer className="footer">
