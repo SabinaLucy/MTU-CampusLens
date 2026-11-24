@@ -49,8 +49,9 @@ def main():
     report={str(b["id"]):{"name":b["name"],"images":[],"people_candidates":[],"sources":[],"status":"needs_review"} for b in buildings}
     queue=["https://www.mtu.edu/tour/campus/","https://www.mtu.edu/virtual-tours/","https://events.mtu.edu/places","https://www.mtu.edu/ece/department/faculty/","https://www.mtu.edu/ece/department/staff/","https://www.mtu.edu/cs/department/people/","https://www.mtu.edu/applied-computing/about/faculty/","https://www.mtu.edu/"]
     queue += [b["source"]["url"] for b in buildings if not b["source"]["url"].endswith(".pdf")]
-    seen=set(); errors=[]; checked={}
-    while queue and len(seen)<350:
+    queue = ["https://www.mtu.edu/research/vpr-office/shared-facilities/","https://www.mtu.edu/academics/robotics/","https://www.mtu.edu/manufacturing/facilities/","https://www.mtu.edu/materials/facilities/","https://www.mtu.edu/mcff/instruments/","https://www.mtu.edu/tour/campus/"] + queue
+    seen=set(); errors=[]; checked={}; labs=[]
+    while queue and len(seen)<650:
         url=queue.pop(0)
         if url in seen or not approved(url): continue
         seen.add(url)
@@ -68,10 +69,32 @@ def main():
                         if not any(x["url"]==src for x in out["images"]):
                             out["images"].append({"url":src,"source":r.url,"label":label,"dimensions":checked[src],"status":"needs_visual_review"})
                     except Exception as e: errors.append({"url":src,"error":str(e)})
+            # Keep lab evidence separate from building exterior photos.
+            for h in soup.select("main h2, main h3, main h4, article h2, article h3, article h4"):
+                name=h.get_text(" ",strip=True)
+                if not re.search(r"\b(lab|laboratory|facility|machine shop)\b",name,re.I): continue
+                parts=[]
+                for sibling in h.next_siblings:
+                    if getattr(sibling,"name",None) in ("h1","h2","h3","h4"): break
+                    if getattr(sibling,"get_text",None): parts.append(sibling.get_text(" ",strip=True))
+                context=" ".join(parts)[:2500]
+                assigned=[b["id"] for b in buildings if matches(context,b)]
+                photos=[]
+                for img in (h.parent.select("img") if h.parent and len(h.parent.select("h2,h3,h4"))<=1 else []):
+                    label=img.get("alt","")
+                    src=img.get("data-src") or img.get("src")
+                    if not src or not label: continue
+                    src=urljoin(r.url,src)
+                    try:
+                        if src not in checked: checked[src]=validate(src)
+                        photos.append({"url":src,"label":label,"dimensions":checked[src],"status":"needs_visual_review"})
+                    except Exception as e: errors.append({"url":src,"error":str(e)})
+                item={"name":name,"source":r.url,"description_evidence":context,"building_candidates":assigned,"images":photos,"status":"needs_location_and_visual_review"}
+                if item not in labs: labs.append(item)
             for a in soup.select("a[href]"):
                 link=urljoin(r.url,a["href"]).split("#")[0]
                 label=a.get_text(" ",strip=True)
-                if approved(link) and link not in seen and (any(matches(label,b) for b in buildings) or re.search(r"faculty|staff|directory|/people/|/department/|/places",urlsplit(link).path,re.I)):
+                if approved(link) and link not in seen and (any(matches(label,b) for b in buildings) or re.search(r"faculty|staff|directory|/people/|/department/|/places|/labs?/|facilities|research-groups|equipment",urlsplit(link).path,re.I)):
                     if link not in queue: queue.append(link)
                 if a["href"].startswith("mailto:"):
                     card=a.find_parent(["li","article","tr"]) or a.parent
@@ -83,6 +106,7 @@ def main():
                         if item not in out["people_candidates"]: out["people_candidates"].append(item)
         except Exception as e: errors.append({"url":url,"error":str(e)})
     Path("research-output").mkdir(exist_ok=True)
-    Path("research-output/coverage.json").write_text(json.dumps({"locations":list(report.values()),"pages_attempted":len(seen),"errors":errors},indent=2))
+    Path("research-output/coverage.json").write_text(json.dumps({"locations":list(report.values()),"pages_attempted":len(seen),"errors":errors,"lab_candidates":labs},indent=2))
+    print(f"Lab candidates: {len(labs)}; with image candidates: {sum(bool(x[\'images\']) for x in labs)}")
     print(f"Locations: {len(report)}; pages attempted: {len(seen)}; locations with image candidates: {sum(bool(x['images']) for x in report.values())}")
 if __name__=="__main__": main()
