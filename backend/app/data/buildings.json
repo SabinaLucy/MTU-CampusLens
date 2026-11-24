@@ -150,6 +150,67 @@
           },
           "image_url": "/portraits/jun-dai.jpg",
           "image_source": "https://www.mtu.edu/business/people-groups/faculty/jun-dai/images/jun-dai-personnel170.jpg"
+        },
+        {
+          "name": "Mark D. Rouleau",
+          "title": "Department Chair, Social Sciences",
+          "office": "2039 AOB",
+          "email": "mdroulea@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/social-sciences/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/mark-d-rouleau.jpg",
+          "image_source": "https://www.mtu.edu/social-sciences/department/faculty/rouleau/images/mark-rouleau-personnel.jpg"
+        },
+        {
+          "name": "Links of Interest",
+          "title": "University personnel",
+          "office": "3272 AOB",
+          "email": "sawalton@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/social-sciences/department/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Areas of Expertise",
+          "title": "University personnel",
+          "office": "2112 AOB",
+          "email": "lyoun@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/social-sciences/department/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Christine Flood",
+          "title": "Administrative Aide",
+          "office": "2113 AOB",
+          "email": "csflood@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/social-sciences/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/christine-flood.jpg",
+          "image_source": "https://www.mtu.edu/social-sciences/department/staff/images/flood-christine-personnel170.jpg"
+        },
+        {
+          "name": "Mariah Maggio",
+          "title": "Department Coordinator",
+          "office": "1791 AOB",
+          "email": "mlmaggio@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/social-sciences/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/mariah-maggio.jpg",
+          "image_source": "https://www.mtu.edu/social-sciences/department/staff/images/maggio-mariah-personnel170.jpg"
         }
       ]
     },
@@ -407,7 +468,7 @@
           }
         },
         {
-          "name": "Electrical and Computer Engineering Women’s Center",
+          "name": "Electrical and Computer Engineering Women\u2019s Center",
           "notes": "Seventh floor",
           "source": {
             "title": "MTU official EERC place profile",
@@ -610,7 +671,7 @@
           "image_source": "https://www.mtu.edu/ece/department/faculty/dang/images/fengying-dang-personnel340.jpg"
         },
         {
-          "name": "Durdu Güney",
+          "name": "Durdu G\u00fcney",
           "title": "Associate Professor, ECE",
           "office": "EERC 729",
           "email": "dguney@mtu.edu",
@@ -1070,7 +1131,7 @@
           "room_type": "Lecture hall",
           "notes": "476 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1082,7 +1143,7 @@
           "room_type": "Lecture hall",
           "notes": "125 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1181,15 +1242,16 @@
       "people": [
         {
           "name": "Katrina Black",
-          "title": "Physics",
-          "office": "Fisher 114",
+          "title": "Teaching Professor, Physics",
+          "office": "2352 Fisher",
           "source": {
-            "title": "MTU official reference",
-            "url": "https://www.mtu.edu/physics/",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/faculty/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/katrina-black.jpg",
-          "image_source": "https://www.mtu.edu/physics/department/faculty/black/images/black-katrina-personnel.jpg"
+          "image_source": "https://www.mtu.edu/physics/department/faculty/black/images/black-katrina-personnel.jpg",
+          "email": "keblack@mtu.edu"
         },
         {
           "name": "Jacek Borysow",
@@ -1241,27 +1303,426 @@
         },
         {
           "name": "Jae Jeong Lee",
-          "title": "Physics",
-          "office": "Fisher 118",
+          "title": "Administrative Aide",
+          "office": "2087 Fisher",
           "source": {
-            "title": "MTU official reference",
-            "url": "https://www.mtu.edu/physics/",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/jae-jeong-lee.jpg",
-          "image_source": "https://www.mtu.edu/physics/department/staff/images/lee-personnel170.jpg"
+          "image_source": "https://www.mtu.edu/physics/department/staff/images/lee-personnel170.jpg",
+          "email": "jlee3@mtu.edu"
         },
         {
           "name": "Claire Wiitanen",
-          "title": "Physics",
-          "office": "Fisher 107",
+          "title": "Budget Coordinator / Office Manager",
+          "office": "1179 Fisher",
           "source": {
-            "title": "MTU official reference",
-            "url": "https://www.mtu.edu/physics/",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/claire-wiitanen.jpg",
-          "image_source": "https://www.mtu.edu/physics/department/staff/images/wiitanen-claire-personnel.jpg"
+          "image_source": "https://www.mtu.edu/physics/department/staff/images/wiitanen-claire-personnel.jpg",
+          "email": "cewiitan@mtu.edu"
+        },
+        {
+          "name": "Rodica Curtu",
+          "title": "Professor and Department Chair",
+          "office": "2908 Fisher",
+          "email": "rcurtu@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/rodica-curtu.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/rcurtu/images/rodicacurtu20250709021-personnel170.jpg"
+        },
+        {
+          "name": "Sunyoung (Sunny) Ahn",
+          "title": "Assistant Teaching Professor",
+          "office": "2175 Fisher",
+          "email": "sahn@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sunyoung-sunny-ahn.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/ahn/images/sunny-ahn-personnel.jpg"
+        },
+        {
+          "name": "MaryFran Desrochers",
+          "title": "University personnel",
+          "office": "2105 Fisher",
+          "email": "mfdesroc@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/maryfran-desrochers.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/desrochers/images/mdesrochers20240930002-personnel170.jpg"
+        },
+        {
+          "name": "Xiaoqing Gao",
+          "title": "Assistant Teaching Professor",
+          "office": "2221 Fisher",
+          "email": "xgao5@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/xiaoqing-gao.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/gao-x/images/xiaoqingga2025090801-personnel170.jpg"
+        },
+        {
+          "name": "Jason Gregersen",
+          "title": "Teaching Professor",
+          "office": "3408 Fisher",
+          "email": "jdgreger@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/jason-gregersen.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/gregersen/images/jasongregerson2025061702-personnel170.jpg"
+        },
+        {
+          "name": "John Gruver",
+          "title": "Associate Professor",
+          "office": "2793 Fisher",
+          "email": "jgruver@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/john-gruver.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/gruver/images/jgruver20241001003-personnel170.jpg"
+        },
+        {
+          "name": "Links of Interest",
+          "title": "University personnel",
+          "office": "2272 Fisher",
+          "email": "jsuh@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ann M. Humes",
+          "title": "Teaching Professor",
+          "office": "2938 Fisher",
+          "email": "amhumes@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/ann-m-humes.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/humes/images/ahumes20240930001-personnel170.jpg"
+        },
+        {
+          "name": "Philip N. Kendall",
+          "title": "Associate Teaching Professor",
+          "office": "2095 Fisher",
+          "email": "kendall@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/philip-n-kendall.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/kendall/images/phil-kendall-personnel170.jpg"
+        },
+        {
+          "name": "Melissa S. Keranen",
+          "title": "Professor",
+          "office": "1491 Fisher",
+          "email": "msjukuri@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/melissa-s-keranen.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/keranen/images/melissa-keranen-09212023001-personnel170.jpg"
+        },
+        {
+          "name": "Todd R. King",
+          "title": "Associate Professor",
+          "office": "1990 Fisher",
+          "email": "trking@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/todd-r-king.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/king/images/king-personnel.jpg"
+        },
+        {
+          "name": "Ray Molzon",
+          "title": "Associate Teaching Professor",
+          "office": "0386 Fisher",
+          "email": "remolzon@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/ray-molzon.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/molzon/images/molzonr-personnel340.jpg"
+        },
+        {
+          "name": "David A. Olson",
+          "title": "Associate Teaching Professor",
+          "office": "2101 Fisher",
+          "email": "daolson@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/david-a-olson.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/d-olson/images/d-olson-personnel.jpg"
+        },
+        {
+          "name": "Tamara R. Olson",
+          "title": "Associate Professor",
+          "office": "2191 Fisher",
+          "email": "trolson@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/tamara-r-olson.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/t-olson/images/tamara-olson-202502200002-personnel170.jpg"
+        },
+        {
+          "name": "Areas of Expertise",
+          "title": "University personnel",
+          "office": "2220 Fisher",
+          "email": "yrho@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Robert Schneider",
+          "title": "Assistant Professor",
+          "office": "2443 Fisher",
+          "email": "robertsc@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/robert-schneider.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/schneider/images/robertschneider2025091604-personnel170.jpg"
+        },
+        {
+          "name": "Qiuying Sha",
+          "title": "Distinguished Professor",
+          "office": "2146 Fisher",
+          "email": "qsha@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/qiuying-sha.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/sha/images/sha-personnel.jpg"
+        },
+        {
+          "name": "Tim Wagner",
+          "title": "Associate Teaching Professor",
+          "office": "2287 Fisher",
+          "email": "tjwagner@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/tim-wagner.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/wagner/images/teachingaward202505301300-personnel170.jpg"
+        },
+        {
+          "name": "Teresa M. Woods",
+          "title": "Associate Teaching Professor",
+          "office": "1031 Fisher",
+          "email": "tmthomps@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/teresa-m-woods.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/woods/images/twoods20240930002-personnel170.jpg"
+        },
+        {
+          "name": "Link of Interest",
+          "title": "University personnel",
+          "office": "3332 Fisher",
+          "email": "zhengfux@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Xiao Zhang",
+          "title": "Associate Professor",
+          "office": "3362 Fisher",
+          "email": "xzhang35@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/xiao-zhang.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/faculty/x-zhang/images/xiaozhang2025082502-personnel170.jpg"
+        },
+        {
+          "name": "Shamshun Nisa",
+          "title": "Department Coordinator",
+          "office": "0797 Fisher",
+          "email": "snisa@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/shamshun-nisa.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/staff/images/shamshunnisa2025070101-personnel170.jpg"
+        },
+        {
+          "name": "Andi Schoch",
+          "title": "Administrative Aide",
+          "office": "1495 Fisher",
+          "email": "ajschoch@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/andi-schoch.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/staff/images/andi-schoch-personnel170.jpg"
+        },
+        {
+          "name": "Emran Hossen",
+          "title": "University personnel",
+          "office": "3445 Fisher",
+          "email": "ehossen@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/math/department/faculty-staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/emran-hossen.jpg",
+          "image_source": "https://www.mtu.edu/math/department/faculty-staff/postdoc/hossen-emran/images/hossen-emran-20260127-personnel170.jpg"
+        },
+        {
+          "name": "Mauricio Reyes Hurtado",
+          "title": "Assistant Teaching Professor, Physics",
+          "office": "1909 Fisher",
+          "email": "mrhurtad@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/mauricio-reyes-hurtado.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/hurtado/images/mauricio-reyes-hurtado-personnel170.jpg"
+        },
+        {
+          "name": "Kartik Iyer",
+          "title": "Assistant Professor, Physics",
+          "office": "2356 Fisher",
+          "email": "kiyer@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/kartik-iyer.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/iyer/images/iyer-kartik-personnel170.jpg"
+        },
+        {
+          "name": "Claudio Mazzoleni",
+          "title": "Distinguished Professor, Physics",
+          "office": "1226 Fisher",
+          "email": "cmazzoleni@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/claudio-mazzoleni.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/mazzoleni/images/mazzoleni-claudio-personnel.jpg"
+        },
+        {
+          "name": "Michael R. Meyer",
+          "title": "Teaching Professor, Physics",
+          "office": "1708 Fisher",
+          "email": "mrmeyer@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/michael-r-meyer.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/meyer/images/meyer-michigan-tech-personnel170.jpg"
+        },
+        {
+          "name": "Robert S. Weidman",
+          "title": "Associate Professor, Physics",
+          "office": "2126 Fisher",
+          "email": "weidman@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/robert-s-weidman.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/faculty/weidman/images/weidman-robert-personnel.jpg"
+        },
+        {
+          "name": "Wil Slough",
+          "title": "Director of First-Year Programs",
+          "office": "2273 Fisher",
+          "email": "wjslough@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/wil-slough.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/staff/images/slough-wil-personnel.jpg"
+        },
+        {
+          "name": "Mark Somero",
+          "title": "Laboratory Instrumentation Technician",
+          "office": "2234 Fisher",
+          "email": "mwsomero@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/physics/department/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/mark-somero.jpg",
+          "image_source": "https://www.mtu.edu/physics/department/staff/images/somero-personnel170.jpg"
         }
       ]
     },
@@ -1379,7 +1840,7 @@
           "id": 501,
           "name": "University Archives and Historical Collections",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1390,7 +1851,7 @@
           "id": 502,
           "name": "Jackson Center for Teaching and Learning",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1405,7 +1866,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1417,7 +1878,7 @@
           "room_type": "Library instruction room",
           "notes": "Second floor; no current class assignment asserted.",
           "source": {
-            "title": "Van Pelt and Opie Library — Floor directory",
+            "title": "Van Pelt and Opie Library \u2014 Floor directory",
             "url": "https://www.mtu.edu/library/about/map/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -1442,11 +1903,11 @@
           "building_ids": [
             5
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/library/about/hours/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Published regular hours: Mon–Thu 8 AM–10 PM; Fri 8 AM–6 PM; Sat 9 AM–5 PM; Sun 9 AM–8 PM. Holiday exceptions apply.",
+          "hours": "Published regular hours: Mon\u2013Thu 8 AM\u201310 PM; Fri 8 AM\u20136 PM; Sat 9 AM\u20135 PM; Sun 9 AM\u20138 PM. Holiday exceptions apply.",
           "image_url": "/dining/library-card.svg"
         }
       ]
@@ -1574,14 +2035,13 @@
       ],
       "people": [
         {
-          "name": "Bo Zhang",
-          "title": "Assistant Professor, Computer Science",
-          "office": "Rekhi Hall 307",
-          "email": "bo.zhang@mtu.edu",
+          "name": "Links of Interest",
+          "title": "University personnel",
+          "office": "2315 Rekhi",
+          "email": "linda@mtu.edu",
           "source": {
-            "title": "Computer Science Faculty Directory",
-            "url": "https://www.mtu.edu/cs/department/people/",
-            "checked_at": "2026-11-24",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/bo-zhang.jpg",
@@ -1590,26 +2050,24 @@
         {
           "name": "Ruihong Zhang",
           "title": "Teaching Professor, Computer Science",
-          "office": "Rekhi Hall 302",
+          "office": "1638 Rekhi",
           "email": "ruihong@mtu.edu",
           "source": {
-            "title": "Computer Science Faculty Directory",
-            "url": "https://www.mtu.edu/cs/department/people/",
-            "checked_at": "2026-11-24",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/ruihong-zhang.jpg",
           "image_source": "https://www.mtu.edu/cs/department/people/faculty/zhang/images/zhang-personnel-personnel170.jpg"
         },
         {
-          "name": "Weihua Zhou",
-          "title": "Associate Professor, Data Science",
-          "office": "Rekhi Hall 109",
+          "name": "Teaching Interests",
+          "title": "University personnel",
+          "office": "2666 Rekhi",
           "email": "whzhou@mtu.edu",
           "source": {
-            "title": "Computer Science Faculty Directory",
-            "url": "https://www.mtu.edu/cs/department/people/",
-            "checked_at": "2026-11-24",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/weihua-zhou.jpg",
@@ -1727,63 +2185,68 @@
         },
         {
           "name": "Anwar Walid",
-          "title": "ICC Executive Director",
-          "office": "Rekhi 202",
+          "title": "Executive Director of the Institute of Computing and Cybersystems (ICC)",
+          "office": "2514 Rekhi",
           "source": {
-            "title": "MTU official reference",
-            "url": "https://www.mtu.edu/computing/about/staff/",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/anwar-walid.jpg",
-          "image_source": "https://www.mtu.edu/cs/department/people/images/anwarwalid-iccdirector-20260821013-personnel170.jpg"
+          "image_source": "https://www.mtu.edu/cs/department/people/images/anwarwalid-iccdirector-20260821013-personnel170.jpg",
+          "email": "aiwalid@mtu.edu"
         },
         {
           "name": "Sherry Wyeth",
-          "title": "Data Science and AI Adviser",
-          "office": "Rekhi 226",
+          "title": "Academic Advisor",
+          "office": "3606 Rekhi",
           "source": {
-            "title": "MTU official reference",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/sherry-wyeth.jpg",
-          "image_source": "https://www.mtu.edu/computing/about/staff/wyeth/images/sherry-wyeth-personnel170.jpg"
+          "image_source": "https://www.mtu.edu/computing/about/staff/wyeth/images/sherry-wyeth-personnel170.jpg",
+          "email": "swyeth@mtu.edu"
         },
         {
           "name": "Kay Oliver",
-          "title": "Manager of Administration",
-          "office": "Rekhi 224",
+          "title": "Manager of Administration & Executive Assistant",
+          "office": "2316 Rekhi",
           "source": {
-            "title": "MTU official reference",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/kay-oliver.jpg",
-          "image_source": "https://www.mtu.edu/computing/about/staff/oliver/images/kay-oliver-black-back-5x7-personnel170.jpg"
+          "image_source": "https://www.mtu.edu/computing/about/staff/oliver/images/kay-oliver-black-back-5x7-personnel170.jpg",
+          "email": "koliver@mtu.edu"
         },
         {
           "name": "Denise Landsberg",
-          "title": "Computer Science Adviser",
-          "office": "Rekhi 322",
+          "title": "Academic Advisor, Computer Science",
+          "office": "3643 Rekhi",
           "source": {
-            "title": "MTU official reference",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/denise-landsberg.jpg",
-          "image_source": "https://www.mtu.edu/computing/about/staff/landsberg/images/denise-landsberg2-crop-personnel340.jpg"
+          "image_source": "https://www.mtu.edu/computing/about/staff/landsberg/images/denise-landsberg2-crop-personnel340.jpg",
+          "email": "dllandsb@mtu.edu"
         },
         {
           "name": "Nicholas Kwiek",
-          "title": "Applied Computing Adviser",
-          "office": "Rekhi 323A",
+          "title": "Academic Advisor, Applied Computing",
+          "office": "2524 Rekhi",
           "source": {
-            "title": "MTU official reference",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/nicholas-kwiek.jpg",
-          "image_source": "https://www.mtu.edu/applied-computing/about/staff/images/nickkwiek-personnel340.jpg"
+          "image_source": "https://www.mtu.edu/applied-computing/about/staff/images/nickkwiek-personnel340.jpg",
+          "email": "ndkwiek@mtu.edu"
         },
         {
           "name": "Janna Chittick",
@@ -1799,27 +2262,103 @@
         },
         {
           "name": "Madeline Mercado Voelker",
-          "title": "Department Coordinator",
-          "office": "Rekhi 323",
+          "title": "Department Coordinator, Applied Computing",
+          "office": "4302 Rekhi",
           "source": {
-            "title": "MTU official reference",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/madeline-mercado-voelker.jpg",
-          "image_source": "https://www.mtu.edu/applied-computing/about/staff/images/mvoelkerportrait10-2026-personnel340.jpg"
+          "image_source": "https://www.mtu.edu/applied-computing/about/staff/images/mvoelkerportrait10-2026-personnel340.jpg",
+          "email": "mmercado@mtu.edu"
         },
         {
           "name": "Kristi Hauswirth",
           "title": "Director of Finance and Data Operations",
-          "office": "Rekhi 225",
+          "office": "3454 Rekhi",
           "source": {
-            "title": "MTU official reference",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/computing/about/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/kristi-hauswirth.jpg",
-          "image_source": "https://www.mtu.edu/computing/about/staff/hauswirth/images/kristi-hauswirth-personnel-personnel170.jpg"
+          "image_source": "https://www.mtu.edu/computing/about/staff/hauswirth/images/kristi-hauswirth-personnel-personnel170.jpg",
+          "email": "khauswir@mtu.edu"
+        },
+        {
+          "name": "Links of Interest",
+          "title": "University personnel",
+          "office": "1726 Rekhi",
+          "email": "jyue@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Koloud Al Khamaiseh",
+          "title": "Assistant Teaching Professor, Computer Science",
+          "office": "3619 Rekhi",
+          "email": "kalkhama@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/koloud-al-khamaiseh.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/alkhamaiseh/images/2.jpg-koloud-personnel340.jpg"
+        },
+        {
+          "name": "Serein Al-Ratrout",
+          "title": "Associate Teaching Professor, Computer Science",
+          "office": "2518 Rekhi",
+          "email": "salratro@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/serein-al-ratrout.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/al-ratrout/images/serein-al-ratrout-oct-2022-8x8-personnel170.jpg"
+        },
+        {
+          "name": "Areas of Expertise",
+          "title": "University personnel",
+          "office": "2271 Rekhi",
+          "email": "yakov@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Stella Otoo",
+          "title": "Assistant Teaching Professor, Computer Science",
+          "office": "3602 Rekhi",
+          "email": "sotoo@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/stella-otoo.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/otoo/images/img-20230308-wa0002-stella-personnel170.jpg"
+        },
+        {
+          "name": "Michael Walker",
+          "title": "Assistant Professor, Computer Science",
+          "office": "3392 Rekhi",
+          "email": "miwalker@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/cs/department/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/michael-walker.jpg",
+          "image_source": "https://www.mtu.edu/cs/department/people/faculty/walker/images/michael-walker-personnel170.jpg"
         }
       ],
       "image_url": "/buildings/1.jpg",
@@ -2027,7 +2566,7 @@
           "room_type": "Classroom",
           "notes": "100 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -2039,7 +2578,7 @@
           "room_type": "Classroom",
           "notes": "104 seats listed in the official classroom directory.",
           "source": {
-            "title": "Michigan Tech IT — Classroom directory",
+            "title": "Michigan Tech IT \u2014 Classroom directory",
             "url": "https://www.mtu.edu/it/services/learning-technology/classrooms/",
             "checked_at": "2026-11-11T12:00:00-05:00",
             "source_type": "official_mtu"
@@ -2290,25 +2829,25 @@
       ],
       "people": [
         {
-          "name": "Jason R. Blough",
-          "office": "R. L. Smith 808",
-          "email": "jrblough@mtu.edu",
+          "name": "Areas of Expertise",
+          "office": "2129 R. L. Smith",
+          "email": "shangyan@mtu.edu",
           "phone": "906-487-1020",
-          "title": "Chair and Distinguished Professor",
+          "title": "University personnel",
           "source": {
-            "title": "MAE Faculty Directory",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
           }
         },
         {
-          "name": "Amitabh Narain",
-          "office": "R. L. Smith 804",
-          "email": "narain@mtu.edu",
+          "name": "Links of Interest",
+          "office": "3014 R. L. Smith",
+          "email": "avuruska@mtu.edu",
           "phone": "906-487-2555",
-          "title": "Professor",
+          "title": "University personnel",
           "source": {
-            "title": "MAE Faculty Directory",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
           }
@@ -2323,7 +2862,9 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/aneet-dharmavaram-narendranath.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/narendranath/images/narendranath-aneet-personnel340.jpg"
         },
         {
           "name": "Vinh Nguyen",
@@ -2335,7 +2876,9 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/vinh-nguyen.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/nguyen/images/vinh-nguyen-2023-personnel340.jpg"
         },
         {
           "name": "Gregory M. Odegard",
@@ -2347,19 +2890,23 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/gregory-m-odegard.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/odegard/images/odegard-gregory-personnel340.jpg"
         },
         {
           "name": "Ye Qi",
-          "office": "R. L. Smith 827",
+          "office": "1403 R. L. Smith",
           "email": "yeqi@mtu.edu",
           "phone": "906-487-1403",
-          "title": "Assistant Teaching Professor",
+          "title": "Assistant Teaching Professor, Mechanical and Aerospace Engineering",
           "source": {
-            "title": "MAE Faculty Directory",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/ye-qi.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/qi/images/ye-qi-2023-personnel340.jpg"
         },
         {
           "name": "Youngchul Ra",
@@ -2371,19 +2918,23 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/youngchul-ra.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/ra/images/ra-youngchul-personnel340.jpg"
         },
         {
           "name": "Darrell L. Robinette",
-          "office": "R. L. Smith 1020A",
+          "office": "2764 R. L. Smith",
           "email": "dlrobine@mtu.edu",
           "phone": "906-487-2764",
-          "title": "Associate Professor",
+          "title": "Associate Professor, Mechanical and Aerospace Engineering",
           "source": {
-            "title": "MAE Faculty Directory",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/darrell-l-robinette.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/robinette/images/robinette-darrell-personnel340.jpg"
         },
         {
           "name": "Trisha Sain",
@@ -2395,7 +2946,9 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/trisha-sain.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/sain/images/sain-trisha-personnel340.jpg"
         },
         {
           "name": "Aslihan Vuruskan",
@@ -2407,16 +2960,18 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/aslihan-vuruskan.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/vuruskan/images/avuruskan-picture-personnel170.jpg"
         },
         {
-          "name": "Chad M. Walber",
-          "office": "R. L. Smith 821",
-          "email": "cmwalber@mtu.edu",
+          "name": "Areas of Interest",
+          "office": "3405 R. L. Smith",
+          "email": "wwei4@mtu.edu",
           "phone": "906-487-1156",
-          "title": "Associate Teaching Professor",
+          "title": "University personnel",
           "source": {
-            "title": "MAE Faculty Directory",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
           }
@@ -2431,28 +2986,30 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/wei-wei.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/wei/images/wei-wei-photo-personnel170.jpg"
         },
         {
-          "name": "Amir Hussain Idrisi",
-          "office": "R. L. Smith 1009",
-          "email": "amirhus@mtu.edu",
+          "name": "Links of Interest",
+          "office": "2709 R. L. Smith",
+          "email": "samiers@mtu.edu",
           "phone": "906-487-2047",
-          "title": "Assistant Teaching Professor",
+          "title": "University personnel",
           "source": {
-            "title": "MAE Faculty Directory",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
           }
         },
         {
-          "name": "Jaclyn Johnson",
-          "office": "R. L. Smith 817",
-          "email": "jenesbit@mtu.edu",
+          "name": "Teaching Interests",
+          "office": "3253 R. L. Smith",
+          "email": "pjvansus@mtu.edu",
           "phone": "906-487-3433",
-          "title": "Teaching Professor",
+          "title": "University personnel",
           "source": {
-            "title": "MAE Faculty Directory",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
           }
@@ -2467,7 +3024,9 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/l-brad-king.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/king/images/king-l-personnel340.jpg"
         },
         {
           "name": "Vijaya V. N. Sriram Malladi",
@@ -2479,7 +3038,9 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/vijaya-v-n-sriram-malladi.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/malladi/images/sriram-malladi-personnel340.jpg"
         },
         {
           "name": "Scott A Miers",
@@ -2491,19 +3052,23 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/scott-a-miers.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/miers/images/miers-scott-personnel170.jpg"
         },
         {
-          "name": "Stephen M. Morse",
-          "office": "R. L. Smith 820",
+          "name": "Stephen M. Morse, PE",
+          "office": "3241 R. L. Smith",
           "email": "smmorse@mtu.edu",
           "phone": "906-487-3241",
-          "title": "Associate Teaching Professor",
+          "title": "Associate Teaching Professor, Mechanical and Aerospace Engineering",
           "source": {
-            "title": "MAE Faculty Directory",
+            "title": "MTU official directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/stephen-m-morse-pe.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/morse-s/images/stephen-morse-personnel340.jpg"
         },
         {
           "name": "Jeffrey D. Naber",
@@ -2515,7 +3080,252 @@
             "title": "MAE Faculty Directory",
             "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
             "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/jeffrey-d-naber.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/naber/images/naber-jeffrey-personnel340.jpg"
+        },
+        {
+          "name": "Links of Interest",
+          "title": "University personnel",
+          "office": "3671 R. L. Smith",
+          "email": "gmgutow@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
           }
+        },
+        {
+          "name": "William J. Endres",
+          "title": "Richard and Elizabeth Henes Professor (Mechanical Engineering)",
+          "office": "2567 R. L. Smith",
+          "email": "wjendres@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/william-j-endres.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/endres/images/william-endres-personnel340.jpg"
+        },
+        {
+          "name": "Teaching Interests",
+          "title": "University personnel",
+          "office": "3025 R. L. Smith",
+          "email": "cxhe@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Madelyn MacRobbie",
+          "title": "Assistant Professor, Mechanical and Aerospace Engineering",
+          "office": "1510 R. L. Smith",
+          "email": "mamacrob@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/faculty/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/madelyn-macrobbie.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/faculty/macrobbie/images/macrobbie-headshot---madelyn-macrobbie-personnel340.jpg"
+        },
+        {
+          "name": "Karen E. Bess",
+          "title": "Executive Assistant, Mechanical and Aerospace Engineering",
+          "office": "2911 R. L. Smith",
+          "email": "kebess@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/karen-e-bess.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/bess-karen-personnel170.jpg"
+        },
+        {
+          "name": "Jeremy Esch",
+          "title": "University personnel",
+          "office": "3147 R. L. Smith",
+          "email": "jdesch@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/jeremy-esch.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/jeremy-esch-personnel340.jpg"
+        },
+        {
+          "name": "Donna Jeno-Amici",
+          "title": "Coordinator of Research and Marketing Programs, Mechanical and Aerospace Engineering",
+          "office": "1050 R. L. Smith",
+          "email": "djenoami@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/donna-jeno-amici.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/jeno-amici/images/donna-jeno-mici-personnel170.jpg"
+        },
+        {
+          "name": "George Johnson",
+          "title": "University personnel",
+          "office": "7020 R. L. Smith",
+          "email": "georgejo@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/george-johnson.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/george-johnson-personnel340.jpg"
+        },
+        {
+          "name": "Jonathan Lund",
+          "title": "University personnel",
+          "office": "1174 R. L. Smith",
+          "email": "jelund@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/jonathan-lund.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/lund-jonathan-personnel170.jpg"
+        },
+        {
+          "name": "Jacob Lundin",
+          "title": "University personnel",
+          "office": "3496 R. L. Smith",
+          "email": "jdlundin@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/jacob-lundin.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/jacob-lundin-personnel170.jpg"
+        },
+        {
+          "name": "Hailey McNaughton",
+          "title": "Administrative Aide, Mechanical and Aerospace Engineering",
+          "office": "2551 R. L. Smith",
+          "email": "hnmcnaug@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/hailey-mcnaughton.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/mcnaughton-h-headshot-personnel340.jpg"
+        },
+        {
+          "name": "Robert W. Page",
+          "title": "Laboratory Facilities Manager, Mechanical and Aerospace Engineering",
+          "office": "2577 R. L. Smith",
+          "email": "rwpage@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/robert-w-page.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/page-personnel170.jpg"
+        },
+        {
+          "name": "Mark Provoast",
+          "title": "Academic Advisor, Mechanical and Aerospace Engineering",
+          "office": "2564 R. L. Smith",
+          "email": "mlprovoa@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/mark-provoast.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/mark-provoast-personnel170.jpg"
+        },
+        {
+          "name": "Sarah Sohlden",
+          "title": "Academic Advisor, Mechanical and Aerospace Engineering",
+          "office": "2564 R. L. Smith",
+          "email": "ssohlden@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/sarah-sohlden.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/sarah-sohlden-personnel170.jpg"
+        },
+        {
+          "name": "Martin Toth",
+          "title": "Training Specialist Supervisor, Mechanical and Aerospace Engineering",
+          "office": "2433 R. L. Smith",
+          "email": "mrtoth@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/martin-toth.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/toth-martin-personnel340.jpg"
+        },
+        {
+          "name": "Ryan A. Towles",
+          "title": "Academic Advisor, Mechanical and Aerospace Engineering",
+          "office": "2564 R. L. Smith",
+          "email": "ratowles@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/ryan-a-towles.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/towles-ryan-personnel170.jpg"
+        },
+        {
+          "name": "Connie Tuohimaa",
+          "title": "Manager of Finance and Accounting, Mechanical and Aerospace Engineering",
+          "office": "3499 R. L. Smith",
+          "email": "connie@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/connie-tuohimaa.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/tuohimaa-connie-personnel340.jpg"
+        },
+        {
+          "name": "Cindy Wadaga",
+          "title": "Coordinator of Graduate Programs, Mechanical and Aerospace Engineering",
+          "office": "3611 R. L. Smith",
+          "email": "cawadaga@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/cindy-wadaga.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/cindy-wadaga-2018-personnel340.jpg"
+        },
+        {
+          "name": "Paula Zenner",
+          "title": "Senior Director of Operations and Finance, Mechanical and Aerospace Engineering",
+          "office": "1910 R. L. Smith",
+          "email": "paula@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/mechanical-aerospace/people/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/paula-zenner.jpg",
+          "image_source": "https://www.mtu.edu/mechanical-aerospace/people/staff/images/feira-zenner-paula-personnel340.jpg"
         }
       ]
     },
@@ -2721,11 +3531,11 @@
       "dining": [
         {
           "id": "huski",
-          "name": "Huski Café",
+          "name": "Huski Caf\u00e9",
           "building_ids": [
             1059
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/it/accounts/huskycard/",
           "note": "Check official dining site for current menus and hours.",
@@ -3411,11 +4221,11 @@
         },
         {
           "id": "campus",
-          "name": "Campus Café",
+          "name": "Campus Caf\u00e9",
           "building_ids": [
             1017
           ],
-          "type": "Café",
+          "type": "Caf\u00e9",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
@@ -3489,7 +4299,7 @@
         {
           "name": "International Programs and Services",
           "room_number": "200",
-          "notes": "Immigration advising, CPT/OPT and international student support. 906-487-2160; ips@mtu.edu. Academic year Mon–Fri 8–5, closed noon–1.",
+          "notes": "Immigration advising, CPT/OPT and international student support. 906-487-2160; ips@mtu.edu. Academic year Mon\u2013Fri 8\u20135, closed noon\u20131.",
           "source": {
             "title": "MTU official reference",
             "url": "https://www.mtu.edu/international/about/contact/",
@@ -3699,13 +4509,13 @@
         },
         {
           "name": "Karen Hext",
-          "title": "Graduate Degree Services",
-          "office": "Admin 130",
+          "title": "University personnel",
+          "office": "1493 Administration",
           "email": "degree@mtu.edu",
           "phone": "906-487-1493",
           "source": {
-            "title": "MTU official reference",
-            "url": "https://www.mtu.edu/gradschool/",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/registrar/about/staff/",
             "source_type": "official_mtu"
           },
           "image_url": "/portraits/karen-hext.jpg",
@@ -3722,6 +4532,297 @@
             "url": "https://www.mtu.edu/gradschool/",
             "source_type": "official_mtu"
           }
+        },
+        {
+          "name": "More About Christian",
+          "title": "University personnel",
+          "office": "2160 Administration",
+          "email": "cmontesi@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/international/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Links of Interest",
+          "title": "University personnel",
+          "office": "1492 Administration",
+          "email": "lkmarlor@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/gradschool/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "More About Hannah",
+          "title": "University personnel",
+          "office": "2160 Administration",
+          "email": "hannahm@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/international/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "More About Jamie",
+          "title": "University personnel",
+          "office": "2160 Administration",
+          "email": "jasertic@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/international/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Cody Kangas",
+          "title": "Executive Director, Career Services",
+          "office": "1804 Administration",
+          "email": "cody@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/cody-kangas.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/kangas-20240617-08-personnel340.jpg"
+        },
+        {
+          "name": "Natalie Anderson",
+          "title": "Manager, Advising and Cooperative Education",
+          "office": "3370 Administration",
+          "email": "nataliea@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/natalie-anderson.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/nataliea-8074-personnel340.jpg"
+        },
+        {
+          "name": "Jim Desrochers",
+          "title": "Director, Employer Relations",
+          "office": "3461 Administration",
+          "email": "jtdesroc@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/jim-desrochers.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/jim-desrochers-portrait-personnel340.jpg"
+        },
+        {
+          "name": "Beth Fitzpatrick",
+          "title": "Senior Career Advisor",
+          "office": "3465 Administration",
+          "email": "bfitzpat@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/beth-fitzpatrick.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/bethwilliams-personnel340.jpg"
+        },
+        {
+          "name": "Liz Fujita",
+          "title": "Assistant Director, Academic and Career Integration",
+          "office": "1161 Administration",
+          "email": "liz@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/liz-fujita.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/liz-fujita-portrait-personnel340.jpg"
+        },
+        {
+          "name": "Alex Hughes",
+          "title": "Data & Technology Specialist",
+          "office": "2314 Administration",
+          "email": "ajhughes@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/alex-hughes.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/alex-hughes-personnel340.jpg"
+        },
+        {
+          "name": "Melissa Michaelson",
+          "title": "Assistant Director, Career Development and Education",
+          "office": "2570 Administration",
+          "email": "mmichael@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/melissa-michaelson.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/melissa-michaelson-personnel-personnel340.jpg"
+        },
+        {
+          "name": "Jill Patterson",
+          "title": "Manager, Career and Employer Events",
+          "office": "3664 Administration",
+          "email": "jspatter@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/jill-patterson.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/jill-patterson-photo-personnel340.jpg"
+        },
+        {
+          "name": "Alison Tuovila",
+          "title": "Administrative Aide",
+          "office": "2313 Administration",
+          "email": "artuovil@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/career/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/alison-tuovila.jpg",
+          "image_source": "https://www.mtu.edu/career/connect/staff/images/alison-tuovila-portrait-personnel340.jpg"
+        },
+        {
+          "name": "Shellie Crisman",
+          "title": "University personnel",
+          "office": "3659 Administration",
+          "email": "smcrisma@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/gradschool/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/shellie-crisman.jpg",
+          "image_source": "https://www.mtu.edu/globalcampus/about/staff/images/crisman-shellie-20251009-03-personnel170.jpg"
+        },
+        {
+          "name": "Moriah Goodall",
+          "title": "Department Coordinator",
+          "office": "2326 Administration",
+          "email": "mgoodall@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/gradschool/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/moriah-goodall.jpg",
+          "image_source": "https://www.mtu.edu/gradschool/about/staff/images/goodall-moriah-personnel-personnel170.jpg"
+        },
+        {
+          "name": "Heather Harry",
+          "title": "Manager of Administration",
+          "office": "3457 Administration",
+          "email": "heatherh@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/gradschool/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/heather-harry.jpg",
+          "image_source": "https://www.mtu.edu/gradschool/about/staff/images/harry-heather-20251003-05-personnel340.jpg"
+        },
+        {
+          "name": "Chad Arney",
+          "title": "University personnel",
+          "office": "1617 Administration",
+          "email": "chad@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/registrar/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/chad-arney.jpg",
+          "image_source": "https://www.mtu.edu/registrar/about/staff/images/chad-arney-profile-personnel340.jpg"
+        },
+        {
+          "name": "Rachel Colling",
+          "title": "Senior Administrative Aide",
+          "office": "2212 Administration",
+          "email": "rlamere@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/registrar/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/rachel-colling.jpg",
+          "image_source": "https://www.mtu.edu/deanofstudents/office/staff/images/rachel-lamere-personnel170.jpg"
+        },
+        {
+          "name": "Kyle Glatz",
+          "title": "Curriculum Services Coordinator",
+          "office": "1621 Administration",
+          "email": "kglatz@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/registrar/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/kyle-glatz.jpg",
+          "image_source": "https://www.mtu.edu/registrar/about/staff/images/kyle-glatz-personnel170.jpg"
+        },
+        {
+          "name": "Lauren Haataja",
+          "title": "Degree Audit & CRM Advisor training",
+          "office": "2395 Administration",
+          "email": "laurenmn@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/registrar/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/lauren-haataja.jpg",
+          "image_source": "https://www.mtu.edu/registrar/about/staff/images/lauren-haataja-personnel340.jpg"
+        },
+        {
+          "name": "Samantha Hoover",
+          "title": "Senior Administrative Aide",
+          "office": "1614 Administration",
+          "email": "shoover@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/registrar/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/samantha-hoover.jpg",
+          "image_source": "https://www.mtu.edu/registrar/about/staff/images/samantha-hoover-personnel340.jpg"
+        },
+        {
+          "name": "Theresa Jacques",
+          "title": "University personnel",
+          "office": "2936 Administration",
+          "email": "tjacques@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/registrar/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/theresa-jacques.jpg",
+          "image_source": "https://www.mtu.edu/registrar/about/staff/images/jacques-theresa-personnel.jpg"
+        },
+        {
+          "name": "Kathy Pintar",
+          "title": "Senior Assistant Registrar, Academic and Student Services",
+          "office": "1633 Administration",
+          "email": "kapintar@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/registrar/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/kathy-pintar.jpg",
+          "image_source": "https://www.mtu.edu/registrar/about/staff/images/pintar-kathy-personnel.jpg"
         }
       ]
     },
@@ -4041,7 +5142,7 @@
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
           "note": "Check official dining site for current menus and hours.",
-          "hours": "Closed Nov 25–29; reopens Nov 30, 10 AM",
+          "hours": "Closed Nov 25\u201329; reopens Nov 30, 10 AM",
           "image_url": "/dining/mub-card.svg"
         }
       ],
@@ -4049,14 +5150,81 @@
         {
           "name": "Emilie Sander",
           "title": "Administrative Aide, Student Leadership and Involvement",
-          "office": "MUB 112",
+          "office": "112 Memorial Union Building",
           "email": "emsander@mtu.edu",
           "phone": "906-487-1963",
           "source": {
-            "title": "Student Leadership Staff",
-            "url": "https://www-cf.mtu.edu/student-leadership/about/staff/",
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/student-leadership/about/staff/",
             "source_type": "official_mtu"
-          }
+          },
+          "image_url": "/portraits/emilie-sander.jpg",
+          "image_source": "https://www.mtu.edu/student-leadership/about/staff/images/emillie-sanders-personnel340.jpg"
+        },
+        {
+          "name": "Danielle Meirow",
+          "title": "Director of Student Leadership and Involvement",
+          "office": "112 Memorial Union Building",
+          "email": "dlmeirow@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/student-leadership/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/danielle-meirow.jpg",
+          "image_source": "https://www.mtu.edu/student-leadership/about/staff/images/danielle-meirow-personnel340.jpg"
+        },
+        {
+          "name": "Kendall Belopavlovich",
+          "title": "Assistant Director, Student Leadership and Involvement",
+          "office": "112 Memorial Union Building",
+          "email": "kybelopa@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/student-leadership/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/kendall-belopavlovich.jpg",
+          "image_source": "https://www.mtu.edu/student-leadership/about/staff/images/belopavlovich-headshot-personnel340.jpg"
+        },
+        {
+          "name": "Taylor Piering",
+          "title": "Senior Coordinator, Student Leadership and Involvement",
+          "office": "112 Memorial Union Building",
+          "email": "tpiering@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/student-leadership/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/taylor-piering.jpg",
+          "image_source": "https://www.mtu.edu/student-leadership/about/staff/images/taylor-piering-personnel340.jpg"
+        },
+        {
+          "name": "Cole Pierucki",
+          "title": "Senior Coordinator, Student Leadership and Involvement",
+          "office": "112 Memorial Union Building",
+          "email": "cgpieruc@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/student-leadership/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/cole-pierucki.jpg",
+          "image_source": "https://www.mtu.edu/student-leadership/about/staff/images/cole-pierucki-personnel340.jpg"
+        },
+        {
+          "name": "Micah Vacco",
+          "title": "Senior Coordinator, Student Leadership and Involvement",
+          "office": "112 Memorial Union Building",
+          "email": "mvacco@mtu.edu",
+          "source": {
+            "title": "MTU official directory",
+            "url": "https://www.mtu.edu/student-leadership/about/staff/",
+            "source_type": "official_mtu"
+          },
+          "image_url": "/portraits/micah-vacco.jpg",
+          "image_source": "https://www.mtu.edu/student-leadership/about/staff/images/micah-vacco-personnel340.jpg"
         }
       ]
     },
