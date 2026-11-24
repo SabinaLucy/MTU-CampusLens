@@ -6,6 +6,7 @@ import logging
 import time
 from datetime import date, datetime, time as dt_time, timedelta
 from zoneinfo import ZoneInfo
+from urllib.parse import urlsplit
 
 import httpx
 from icalendar import Calendar
@@ -15,6 +16,7 @@ logger = logging.getLogger(__name__)
 FEED_URL = "https://events.mtu.edu/calendar.ics"
 TIMEZONE = ZoneInfo("America/Detroit")
 CACHE_SECONDS = 900
+EVENT_API = "https://events.mtu.edu/api/2/events"
 
 _cache = {"expires": 0.0, "events": []}
 
@@ -89,6 +91,39 @@ def parse_calendar(raw):
     return list(unique.values())
 
 
+def event_key(url):
+    return urlsplit(url).path.rstrip("/")
+
+
+async def enrich_images(client, events):
+    """Use the official Localist calendar API; never block the ICS fallback."""
+    async def fetch_page(page):
+        try:
+            response = await client.get(EVENT_API, params={"days": 90, "pp": 100, "page": page}, timeout=5.0)
+            response.raise_for_status()
+            return response.json()
+        except Exception:
+            return {}
+
+    first = await fetch_page(1)
+    pages = min(6, int(first.get("page", {}).get("total", 1) or 1))
+    payloads = [first] + await asyncio.gather(*(fetch_page(i) for i in range(2, pages + 1)))
+    images = {}
+    for payload in payloads:
+        for item in payload.get("events", []):
+            event = item.get("event", {})
+            photo = event.get("photo_url")
+            if not isinstance(photo, str) or not photo.startswith("https://"):
+                continue
+            for url in (event.get("localist_url"), event.get("url")):
+                if isinstance(url, str) and url.startswith("https://events.mtu.edu/event/"):
+                    images[event_key(url)] = photo
+    for event in events:
+        photo = images.get(event_key(event["url"]))
+        if photo:
+            event["image_url"] = photo
+
+
 async def get_live_events():
     if time.monotonic() < _cache["expires"]:
         return {"events": _cache["events"], "status": "live"}
@@ -103,9 +138,11 @@ async def get_live_events():
             )
             response.raise_for_status()
 
-        events = await asyncio.to_thread(
-            parse_calendar, response.content
-        )
+            events = await asyncio.to_thread(parse_calendar, response.content)
+            try:
+                await asyncio.wait_for(enrich_images(client, events), timeout=10)
+            except Exception:
+                logger.warning("Official event images unavailable; retaining calendar entries")
 
         _cache["events"] = events
         _cache["expires"] = time.monotonic() + CACHE_SECONDS

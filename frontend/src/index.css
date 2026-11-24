@@ -204,3 +204,9 @@
   .hero h1 { font-size: clamp(30px, 9vw, 36px); }
   .hero .hero-art.campus-photo { height: 39%; }
 }
+
+/* Saved directory, accessible category accordions and official event imagery */
+.campus-category-toggle{display:flex;align-items:center;gap:12px;width:100%;text-align:left;font:inherit;font-weight:650;color:inherit;background:transparent;border:1px solid var(--border, #8885);border-radius:12px;padding:15px;cursor:pointer;margin:8px 0;}
+.campus-category-toggle>span:first-child{flex:1;min-width:0;}.category-count{font-size:.85em;opacity:.8;}.category-chevron{flex-shrink:0;transition:transform .2s;}.category-chevron.expanded{transform:rotate(180deg);}
+.saved-list{display:grid;gap:10px;margin:16px 0;}.saved-row{display:flex;align-items:center;gap:8px;}.saved-row .building-results{flex:1;min-width:0;}.saved-row .building-results button{width:100%;}.saved-remove{color:#d4a526;flex-shrink:0;}
+.event-image{width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:rgba(212,165,38,.12);color:#d4a526;margin-bottom:12px;}.event-image img{width:100%;height:100%;object-fit:cover;display:block;}.event-image.compact{width:80px;aspect-ratio:1;flex-shrink:0;margin:0;}

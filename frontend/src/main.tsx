@@ -5,7 +5,7 @@ import {
   Camera, Search, MapPin, BookOpen, MessageCircle,
   ArrowLeft, ExternalLink, Building2, AlertCircle,
   Sun, Moon, CalendarDays, Home, Layers, Heart,
-  Menu, X, ChevronRight, ArrowUpRight,
+  Menu, X, ChevronRight, ChevronDown, ArrowUpRight,
   GraduationCap, Compass, ShieldCheck, Clock,
   Upload
 } from 'lucide-react';
@@ -63,6 +63,7 @@ type LiveEvent = {
   start_time: string;
   url: string;
   source: string;
+  image_url?: string;
 };
 
 type EventsResponse = {
@@ -84,6 +85,7 @@ type Page =
   | 'Home'
   | 'Buildings'
   | 'Events'
+  | 'Saved Buildings'
   | 'Ask CampusLens';
 
 type BuildingTab =
@@ -149,6 +151,15 @@ function SourceLink({ source }: { source?: Source }) {
   );
 }
 
+function EventImage({ event, compact = false }: { event: LiveEvent; compact?: boolean }) {
+  const [failed, setFailed] = useState(false);
+  return <div className={compact ? 'event-image compact' : 'event-image'}>
+    {event.image_url && !failed
+      ? <img src={event.image_url} alt={event.title} loading="lazy" decoding="async" onError={() => setFailed(true)} />
+      : <CalendarDays size={compact ? 26 : 40} aria-label="Event image unavailable" />}
+  </div>;
+}
+
 function LiveEventCards({
   events,
   status
@@ -209,6 +220,7 @@ function LiveEventCards({
               className="item-card"
               key={`${event.title}-${event.start_time}-${index}`}
             >
+              <EventImage event={event} />
               <span className="eyebrow">
                 <CalendarDays size={14} />
                 MTU EVENT
@@ -305,6 +317,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [query, setQuery] = useState('');
+  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({});
 
   const [tab, setTab] = useState<BuildingTab>('Overview');
 
@@ -454,7 +467,6 @@ function App() {
       );
 
       setSelected(building);
-      setPage('Buildings');
       setPrediction(null);
       setTab('Overview');
       setQuestion('');
@@ -570,6 +582,7 @@ function App() {
     ['Home', <Home size={18} />],
     ['Buildings', <Building2 size={18} />],
     ['Events', <CalendarDays size={18} />],
+    ['Saved Buildings', <Heart size={18} />],
     ['Ask CampusLens', <MessageCircle size={18} />]
   ];
 
@@ -645,7 +658,7 @@ function App() {
         >
           <div className="side-label">DISCOVER</div>
 
-          {nav.map(([destination, icon]) => (
+          {nav.filter(([destination]) => destination !== 'Saved Buildings').map(([destination, icon]) => (
             <button
               key={destination}
               className={`side-item ${
@@ -712,10 +725,10 @@ function App() {
 
           <div className="side-label">YOUR SPACE</div>
 
-          <div className="side-item">
+          <button className={`side-item ${page === 'Saved Buildings' ? 'active' : ''}`} onClick={() => navigate('Saved Buildings')}>
             <Heart size={18} />
-            {favorites.length} saved buildings
-          </div>
+            Saved Buildings ({favorites.length})
+          </button>
 
           <div className="side-foot">
             <span>✦ CAMPUSLENS</span>
@@ -739,11 +752,10 @@ function App() {
                 className="back-link"
                 onClick={() => {
                   setSelected(null);
-                  setPage('Buildings');
                 }}
               >
                 <ArrowLeft size={17} />
-                All buildings
+                {page === 'Saved Buildings' ? 'Saved Buildings' : 'Back'}
               </button>
 
               <div className="building-banner">
@@ -1176,7 +1188,7 @@ function App() {
                       className="event-promo"
                       key={`${event.start_time}-${index}`}
                     >
-                      <CalendarDays size={26} />
+                      <EventImage event={event} compact />
 
                       <div>
                         <strong>{event.title}</strong>
@@ -1389,7 +1401,7 @@ function App() {
                     <input
                       value={query}
                       onChange={e =>
-                        setQuery(e.target.value)
+                        { setQuery(e.target.value); setExpandedCategories({}); }
                       }
                       placeholder="Search buildings, departments…"
                     />
@@ -1401,8 +1413,10 @@ function App() {
                     if (!locations.length) return null;
                     return (
                       <section className="campus-category" key={category} aria-label={category}>
-                        <h3 className="campus-category-heading">{category} <span>{locations.length}</span></h3>
-                        <div className="building-results">
+                        <button className="campus-category-toggle" aria-expanded={expandedCategories[category] ?? Boolean(query.trim())} onClick={() => setExpandedCategories(current => ({...current, [category]: !(current[category] ?? Boolean(query.trim()))}))}>
+                          <span>{category}</span><span className="category-count">{locations.length}</span><ChevronDown size={19} className={(expandedCategories[category] ?? Boolean(query.trim())) ? 'category-chevron expanded' : 'category-chevron'} />
+                        </button>
+                        {(expandedCategories[category] ?? Boolean(query.trim())) && <div className="building-results">
                           {locations.map(building => (
                             <button key={building.id} onClick={() => openBuilding(building.id)}>
                               <span className="tile-icon"><Building2 size={20} /></span>
@@ -1410,13 +1424,29 @@ function App() {
                               <ChevronRight size={17} />
                             </button>
                           ))}
-                        </div>
+                        </div>}
                       </section>
                     );
                   })}
                   {!filtered.length && <p className="muted">No matching campus locations.</p>}
                 </section>
               </div>
+            </>
+          ) : page === 'Saved Buildings' ? (
+            <>
+              <div className="page-heading"><span className="eyebrow">YOUR SPACE</span><h1>Saved Buildings</h1><p>Quickly return to your favorite campus locations.</p></div>
+              <section className="content-card">
+                <h2><Heart size={23} /> Saved Buildings ({favorites.length})</h2>
+                {!favorites.length ? <div className="empty-record"><Heart size={20} /> No saved buildings yet. Open a building and select Save building.</div> :
+                  !buildings.length ? <p className="muted">Building directory is not loaded yet.</p> :
+                  <div className="saved-list">{buildings.filter(building => favorites.includes(building.id)).map(building => (
+                    <div className="saved-row" key={building.id}>
+                      <div className="building-results"><button onClick={() => openBuilding(building.id)}><span className="tile-icon"><Building2 size={20} /></span><span><strong>{building.name}</strong><small>{building.abbreviation}</small></span><ChevronRight size={17} /></button></div>
+                      <button className="icon-btn saved-remove" aria-label={`Remove ${building.name} from saved buildings`} title="Remove saved building" onClick={() => toggleFavorite(building.id)}><Heart size={20} fill="currentColor" /></button>
+                    </div>
+                  ))}</div>}
+                <button className="outline-btn" onClick={() => navigate('Buildings')}>Browse buildings <ChevronRight size={17} /></button>
+              </section>
             </>
           ) : page === 'Events' ? (
             <>
