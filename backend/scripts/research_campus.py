@@ -107,6 +107,6 @@ def main():
         except Exception as e: errors.append({"url":url,"error":str(e)})
     Path("research-output").mkdir(exist_ok=True)
     Path("research-output/coverage.json").write_text(json.dumps({"locations":list(report.values()),"pages_attempted":len(seen),"errors":errors,"lab_candidates":labs},indent=2))
-    print(f"Lab candidates: {len(labs)}; with image candidates: {sum(bool(x[\'images\']) for x in labs)}")
+    print(f"Lab candidates: {len(labs)}; with image candidates: {sum(bool(x['images']) for x in labs)}")
     print(f"Locations: {len(report)}; pages attempted: {len(seen)}; locations with image candidates: {sum(bool(x['images']) for x in report.values())}")
 if __name__=="__main__": main()
