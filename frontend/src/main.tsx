@@ -7,7 +7,7 @@ import {
   Sun, Moon, CalendarDays, Home, Layers, Heart,
   Menu, X, ChevronRight, ChevronDown, ArrowUpRight,
   GraduationCap, Compass, ShieldCheck, Clock,
-  Upload
+  Upload, Coffee
 } from 'lucide-react';
 import './index.css';
 
@@ -40,6 +40,110 @@ type Item = {
 
 type Person = {name: string; title: string; office: string; email?: string; image_url?: string; profile_url?: string; source: Source};
 
+type Dining = {id:string; name:string; building_ids:number[]; type:string; menu:string; source:string; note:string; image_url?:string};
+const DINING: Dining[] = [
+  {
+    "id": "wads",
+    "name": "The Social House at Wadsworth Hall",
+    "building_ids": [
+      1017
+    ],
+    "type": "Dining hall",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+    "note": "Check official dining site for current menus and hours."
+  },
+  {
+    "id": "mcnair",
+    "name": "The Eatery at McNair",
+    "building_ids": [
+      1018,
+      1019
+    ],
+    "type": "Dining hall",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+    "note": "Check official dining site for current menus and hours."
+  },
+  {
+    "id": "dhh",
+    "name": "DHH Junction House",
+    "building_ids": [
+      1015
+    ],
+    "type": "Dining hall",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+    "note": "Check official dining site for current menus and hours."
+  },
+  {
+    "id": "campus",
+    "name": "Campus Café",
+    "building_ids": [
+      1017
+    ],
+    "type": "Café",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+    "note": "Check official dining site for current menus and hours."
+  },
+  {
+    "id": "library",
+    "name": "Library Café",
+    "building_ids": [
+      5
+    ],
+    "type": "Café",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/it/accounts/huskycard/",
+    "note": "Check official dining site for current menus and hours."
+  },
+  {
+    "id": "mub",
+    "name": "MUB Grill",
+    "building_ids": [
+      4
+    ],
+    "type": "Restaurant",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+    "note": "Check official dining site for current menus and hours."
+  },
+  {
+    "id": "huski",
+    "name": "Huski Café",
+    "building_ids": [
+      1059
+    ],
+    "type": "Café",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/it/accounts/huskycard/",
+    "note": "Check official dining site for current menus and hours."
+  },
+  {
+    "id": "portage",
+    "name": "Par & Grill",
+    "building_ids": [
+      1033,
+      1060
+    ],
+    "type": "Restaurant",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/faculty-handbook/faculty/chapter9/s9-6/962/index.html",
+    "note": "Listed in MTU's faculty handbook; confirm current operation and hours."
+  },
+  {
+    "id": "sdc",
+    "name": "Coaches Corner",
+    "building_ids": [
+      1012
+    ],
+    "type": "Concessions",
+    "menu": "https://dineoncampus.com/MTU",
+    "source": "https://www.mtu.edu/faculty-handbook/faculty/chapter9/s9-6/962/index.html",
+    "note": "Listed in MTU's faculty handbook; confirm current operation and hours."
+  }
+];
 type Building = {
   image_url?: string;
   image_source?: Source;
@@ -92,11 +196,13 @@ type Page =
   | 'Buildings'
   | 'Events'
   | 'Saved Buildings'
+  | 'Dining & Cafés'
   | 'Ask CampusLens';
 
 type BuildingTab =
   | 'Overview'
   | 'Departments & offices'
+  | 'Dining & Cafés'
   | 'Faculty & Staff'
   | 'Events'
   | 'Classes & rooms'
@@ -108,6 +214,7 @@ const CAMPUS_CATEGORIES = ['Academic & Research', 'Sports & Recreation', 'Studen
 const tabs: BuildingTab[] = [
   'Overview',
   'Departments & offices',
+  'Dining & Cafés',
   'Faculty & Staff',
   'Events',
   'Classes & rooms',
@@ -173,6 +280,8 @@ function ProfilePhoto({ url, name, person = false }: {url?: string; name: string
   return <div className={person ? 'person-photo' : 'profile-photo'}>{url && !failed ? <img src={url} alt={name} loading="lazy" onError={() => setFailed(true)} /> : person ? <GraduationCap size={30} /> : <span><Building2 size={32} /> Official photograph not available</span>}</div>;
 }
 
+function Thumb({building}: {building:Building}) { const [failed,setFailed]=useState(false); return <span className="tile-icon campus-thumb">{building.image_url && !failed ? <img src={building.image_url} alt={building.name} loading="lazy" onError={()=>setFailed(true)}/> : <Building2 size={20}/>}</span>; }
+function DiningCards({items, buildings, openBuilding}: {items:Dining[]; buildings:Building[]; openBuilding:(id:number)=>void}) { const [active,setActive]=useState<string|null>(null); const [q,setQ]=useState(''); const filtered=items.filter(x=>(x.name+' '+x.type+' '+buildings.filter(b=>x.building_ids.includes(b.id)).map(b=>b.name).join(' ')).toLowerCase().includes(q.toLowerCase())); const chosen=items.find(x=>x.id===active); return <><h2>{chosen?chosen.name:'Dining & Cafés'}</h2>{chosen?<button className="back-link" onClick={()=>setActive(null)}>Back to dining</button>:<input className="dining-search" value={q} onChange={e=>setQ(e.target.value)} placeholder="Search dining, cafés or buildings"/>}<div className="dining-grid">{(chosen?[chosen]:filtered).map(x=><article className="item-card dining-card" key={x.id}>{x.image_url?<ProfilePhoto url={x.image_url} name={x.name}/>:<div className="dining-photo"><Coffee size={32}/><small>Outlet photo not yet available</small></div>}<button className="text-action" onClick={()=>setActive(x.id)}>{x.name}</button><p>{x.type}</p><p>{x.note}</p><a href={x.menu} target="_blank" rel="noreferrer">Official menus & hours <ExternalLink size={14}/></a><a href={x.source} target="_blank" rel="noreferrer">University source</a>{buildings.filter(b=>x.building_ids.includes(b.id)).map(b=><button key={b.id} className="outline-btn" onClick={()=>{setActive(null);openBuilding(b.id)}}>{b.name}</button>)}</article>)}</div></>; }
 function People({building}: {building: Building}) {
   const [search, setSearch] = useState('');
   const people = (building.people || []).filter(p => (p.name + ' ' + p.title + ' ' + p.office).toLowerCase().includes(search.toLowerCase()));
@@ -604,6 +713,7 @@ function App() {
   const nav: [Page, React.ReactNode][] = [
     ['Home', <Home size={18} />],
     ['Buildings', <Building2 size={18} />],
+    ['Dining & Cafés', <Coffee size={18} />],
     ['Events', <CalendarDays size={18} />],
     ['Saved Buildings', <Heart size={18} />],
     ['Ask CampusLens', <MessageCircle size={18} />]
@@ -819,7 +929,7 @@ function App() {
               </div>
 
               <div className="tabs">
-                {tabs.map(value => (
+                {tabs.filter(value=>value !== 'Dining & Cafés' || DINING.some(x=>x.building_ids.includes(selected.id))).map(value => (
                   <button
                     key={value}
                     className={
@@ -908,6 +1018,7 @@ function App() {
                   </>
                 )}
 
+                {tab === 'Dining & Cafés' && <DiningCards key={selected.id} items={DINING.filter(x=>x.building_ids.includes(selected.id))} buildings={buildings} openBuilding={openBuilding}/>}
                 {tab === 'Faculty & Staff' && <People key={selected.id} building={selected}/>}
 
                 {tab === 'Events' && (
@@ -1263,7 +1374,7 @@ function App() {
                   </div>
 
                   <div className="featured-grid">
-                    {buildings.slice(0, 4).map(building => (
+                    {[...buildings].sort((a,b)=>Number(!!b.image_url)-Number(!!a.image_url)).slice(0, 4).map(building => (
                       <button
                         key={building.id}
                         className="featured-tile"
@@ -1271,9 +1382,7 @@ function App() {
                           openBuilding(building.id)
                         }
                       >
-                        <span className="tile-icon">
-                          <Building2 size={23} />
-                        </span>
+                        <Thumb key={building.id} building={building}/>
 
                         <span>
                           <strong>{building.name}</strong>
@@ -1447,7 +1556,7 @@ function App() {
                         {(expandedCategories[category] ?? Boolean(query.trim())) && <div className="building-results">
                           {locations.map(building => (
                             <button key={building.id} onClick={() => openBuilding(building.id)}>
-                              <span className="tile-icon"><Building2 size={20} /></span>
+                              <Thumb key={building.id} building={building}/>
                               <span><strong>{building.name}</strong><small>{building.abbreviation}{building.location_type === 'campus_location' ? ' · Campus location' : ''}</small></span>
                               <ChevronRight size={17} />
                             </button>
@@ -1469,13 +1578,15 @@ function App() {
                   !buildings.length ? <p className="muted">Building directory is not loaded yet.</p> :
                   <div className="saved-list">{buildings.filter(building => favorites.includes(building.id)).map(building => (
                     <div className="saved-row" key={building.id}>
-                      <div className="building-results"><button onClick={() => openBuilding(building.id)}><span className="tile-icon"><Building2 size={20} /></span><span><strong>{building.name}</strong><small>{building.abbreviation}</small></span><ChevronRight size={17} /></button></div>
+                      <div className="building-results"><button onClick={() => openBuilding(building.id)}><Thumb key={building.id} building={building}/><span><strong>{building.name}</strong><small>{building.abbreviation}</small></span><ChevronRight size={17} /></button></div>
                       <button className="icon-btn saved-remove" aria-label={`Remove ${building.name} from saved buildings`} title="Remove saved building" onClick={() => toggleFavorite(building.id)}><Heart size={20} fill="currentColor" /></button>
                     </div>
                   ))}</div>}
                 <button className="outline-btn" onClick={() => navigate('Buildings')}>Browse buildings <ChevronRight size={17} /></button>
               </section>
             </>
+          ) : page === 'Dining & Cafés' ? (
+            <section className="content-card"><DiningCards items={DINING} buildings={buildings} openBuilding={openBuilding}/></section>
           ) : page === 'Events' ? (
             <>
               <div className="page-heading">

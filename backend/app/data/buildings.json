@@ -36,7 +36,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/mineral-museum-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1002,
@@ -62,7 +69,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1046,
@@ -88,7 +96,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1066,
@@ -114,7 +123,8 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "dining": []
     },
     {
       "id": 1027,
@@ -140,7 +150,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1067,
@@ -166,7 +177,8 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "dining": []
     },
     {
       "id": 1047,
@@ -192,7 +204,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/physics/research/images/amjoch2-250sq.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/physics/research/amjoch.html",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1011,
@@ -218,7 +237,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1004,
@@ -244,7 +264,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1003,
@@ -499,7 +520,14 @@
             "source_type": "official_mtu"
           }
         }
-      ]
+      ],
+      "image_url": "https://www.mtu.edu/mmet/department/profile/images/eerc-building-banner2400.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/mmet/department/profile/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 3,
@@ -572,7 +600,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1028,
@@ -598,7 +627,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/glrc-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1009,
@@ -624,7 +660,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1031,
@@ -650,7 +687,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 5,
@@ -728,7 +766,26 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/campus-winter-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": [
+        {
+          "id": "library",
+          "name": "Library Café",
+          "building_ids": [
+            5
+          ],
+          "type": "Café",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/it/accounts/huskycard/",
+          "note": "Check official dining site for current menus and hours."
+        }
+      ]
     },
     {
       "id": 1,
@@ -866,7 +923,14 @@
             "source_type": "official_mtu"
           }
         }
-      ]
+      ],
+      "image_url": "https://www.mtu.edu/tour/campus/images/rekhi-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1065,
@@ -892,7 +956,14 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "image_url": "https://www.mtu.edu/tour/campus/images/krc-banner1600.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1007,
@@ -918,7 +989,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1056,
@@ -944,7 +1016,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 2,
@@ -1009,7 +1082,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1001,
@@ -1035,7 +1109,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/rotc-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1045,
@@ -1061,7 +1142,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1010,
@@ -1087,7 +1169,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1006,
@@ -1113,7 +1196,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1023,
@@ -1139,7 +1223,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Sports & Recreation",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1013,
@@ -1165,7 +1250,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Sports & Recreation",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1059,
@@ -1191,7 +1277,26 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "image_url": "https://www.mtu.edu/tour/campus/images/ripley-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": [
+        {
+          "id": "huski",
+          "name": "Huski Café",
+          "building_ids": [
+            1059
+          ],
+          "type": "Café",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/it/accounts/huskycard/",
+          "note": "Check official dining site for current menus and hours."
+        }
+      ]
     },
     {
       "id": 1035,
@@ -1217,7 +1322,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Sports & Recreation",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1034,
@@ -1243,7 +1349,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Sports & Recreation",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/ripley-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1060,
@@ -1269,7 +1382,27 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "image_url": "https://www.mtu.edu/tour/campus/images/golf-course-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": [
+        {
+          "id": "portage",
+          "name": "Par & Grill",
+          "building_ids": [
+            1033,
+            1060
+          ],
+          "type": "Restaurant",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/faculty-handbook/faculty/chapter9/s9-6/962/index.html",
+          "note": "Listed in MTU's faculty handbook; confirm current operation and hours."
+        }
+      ]
     },
     {
       "id": 1033,
@@ -1295,7 +1428,21 @@
       "classes": [],
       "reference_images": [],
       "category": "Sports & Recreation",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": [
+        {
+          "id": "portage",
+          "name": "Par & Grill",
+          "building_ids": [
+            1033,
+            1060
+          ],
+          "type": "Restaurant",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/faculty-handbook/faculty/chapter9/s9-6/962/index.html",
+          "note": "Listed in MTU's faculty handbook; confirm current operation and hours."
+        }
+      ]
     },
     {
       "id": 1048,
@@ -1321,7 +1468,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Sports & Recreation",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1062,
@@ -1347,7 +1495,8 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "dining": []
     },
     {
       "id": 1012,
@@ -1373,7 +1522,26 @@
       "classes": [],
       "reference_images": [],
       "category": "Sports & Recreation",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/sdc-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": [
+        {
+          "id": "sdc",
+          "name": "Coaches Corner",
+          "building_ids": [
+            1012
+          ],
+          "type": "Concessions",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/faculty-handbook/faculty/chapter9/s9-6/962/index.html",
+          "note": "Listed in MTU's faculty handbook; confirm current operation and hours."
+        }
+      ]
     },
     {
       "id": 1061,
@@ -1399,7 +1567,8 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "dining": []
     },
     {
       "id": 1016,
@@ -1425,7 +1594,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1015,
@@ -1451,7 +1621,26 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/admissions/life/housing-dining/dhh/images/douglass-houghton-hall-banner2400.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/admissions/life/housing-dining/dhh/index.html",
+        "checked_at": "2026-11-24"
+      },
+      "dining": [
+        {
+          "id": "dhh",
+          "name": "DHH Junction House",
+          "building_ids": [
+            1015
+          ],
+          "type": "Dining hall",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+          "note": "Check official dining site for current menus and hours."
+        }
+      ]
     },
     {
       "id": 1032,
@@ -1477,7 +1666,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/admissions/life/housing-dining/east-hall/images/east-hall-main-banner2400.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/admissions/life/housing-dining/east-hall/index.html",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1019,
@@ -1503,7 +1699,21 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": [
+        {
+          "id": "mcnair",
+          "name": "The Eatery at McNair",
+          "building_ids": [
+            1018,
+            1019
+          ],
+          "type": "Dining hall",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+          "note": "Check official dining site for current menus and hours."
+        }
+      ]
     },
     {
       "id": 1024,
@@ -1529,7 +1739,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1022,
@@ -1555,7 +1766,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/admissions/life/housing-dining/images/hillside-banner2400.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/admissions/life/housing-dining/hillside/index.html",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1030,
@@ -1581,7 +1799,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1017,
@@ -1607,7 +1826,37 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/admissions/life/housing-dining/images/wads-banner1600.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/admissions/life/housing-dining/wadsworth/index.html",
+        "checked_at": "2026-11-24"
+      },
+      "dining": [
+        {
+          "id": "wads",
+          "name": "The Social House at Wadsworth Hall",
+          "building_ids": [
+            1017
+          ],
+          "type": "Dining hall",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+          "note": "Check official dining site for current menus and hours."
+        },
+        {
+          "id": "campus",
+          "name": "Campus Café",
+          "building_ids": [
+            1017
+          ],
+          "type": "Café",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+          "note": "Check official dining site for current menus and hours."
+        }
+      ]
     },
     {
       "id": 1018,
@@ -1633,7 +1882,21 @@
       "classes": [],
       "reference_images": [],
       "category": "Student Housing",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": [
+        {
+          "id": "mcnair",
+          "name": "The Eatery at McNair",
+          "building_ids": [
+            1018,
+            1019
+          ],
+          "type": "Dining hall",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+          "note": "Check official dining site for current menus and hours."
+        }
+      ]
     },
     {
       "id": 1000,
@@ -1659,7 +1922,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1005,
@@ -1685,7 +1949,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/alumni-house-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1057,
@@ -1711,7 +1982,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1020,
@@ -1737,7 +2009,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1054,
@@ -1763,7 +2036,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1008,
@@ -1789,7 +2063,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1014,
@@ -1815,7 +2090,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 4,
@@ -1866,7 +2142,26 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/mub-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": [
+        {
+          "id": "mub",
+          "name": "MUB Grill",
+          "building_ids": [
+            4
+          ],
+          "type": "Restaurant",
+          "menu": "https://dineoncampus.com/MTU",
+          "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
+          "note": "Check official dining site for current menus and hours."
+        }
+      ]
     },
     {
       "id": 1064,
@@ -1892,7 +2187,8 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "dining": []
     },
     {
       "id": 1026,
@@ -1918,7 +2214,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1055,
@@ -1944,7 +2241,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1025,
@@ -1970,7 +2268,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1058,
@@ -1996,7 +2295,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1052,
@@ -2022,7 +2322,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1053,
@@ -2048,7 +2349,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1069,
@@ -2074,7 +2376,8 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "dining": []
     },
     {
       "id": 1063,
@@ -2100,7 +2403,14 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "image_url": "https://www.mtu.edu/tour/campus/images/ford-center-banner1600.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1068,
@@ -2126,7 +2436,8 @@
       "rooms": [],
       "events": [],
       "classes": [],
-      "reference_images": []
+      "reference_images": [],
+      "dining": []
     },
     {
       "id": 1050,
@@ -2152,7 +2463,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1044,
@@ -2178,7 +2490,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1036,
@@ -2204,7 +2517,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1039,
@@ -2230,7 +2544,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1040,
@@ -2256,7 +2571,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1041,
@@ -2282,7 +2598,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1037,
@@ -2308,7 +2625,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1038,
@@ -2334,7 +2652,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1042,
@@ -2360,7 +2679,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1043,
@@ -2386,7 +2706,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 6,
@@ -2414,7 +2735,14 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "image_url": "https://www.mtu.edu/tour/campus/images/rozsa-800banner.jpg",
+      "image_source": {
+        "title": "Official MTU photograph (source caption matched)",
+        "url": "https://www.mtu.edu/tour/campus/",
+        "checked_at": "2026-11-24"
+      },
+      "dining": []
     },
     {
       "id": 1051,
@@ -2440,7 +2768,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1021,
@@ -2466,7 +2795,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     },
     {
       "id": 1049,
@@ -2492,7 +2822,8 @@
       "classes": [],
       "reference_images": [],
       "category": "Other Campus Locations",
-      "location_type": "building"
+      "location_type": "building",
+      "dining": []
     }
   ]
 }
