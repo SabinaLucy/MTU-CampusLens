@@ -7,7 +7,7 @@ import {
   Sun, Moon, CalendarDays, Home, Layers, Heart,
   Menu, X, ChevronRight, ChevronDown, ArrowUpRight,
   GraduationCap, Compass, ShieldCheck, Clock,
-  Upload, Coffee, PanelLeft
+  Upload, Coffee, PanelLeft, Bookmark, Bell, CalendarPlus
 } from 'lucide-react';
 import './index.css';
 
@@ -193,6 +193,7 @@ type LiveEvent = {
   url: string;
   source: string;
   image_url?: string;
+  end_time?: string;
 };
 
 type EventsResponse = {
@@ -215,6 +216,7 @@ type Page =
   | 'Buildings'
   | 'Events'
   | 'Saved Buildings'
+  | 'My Events'
   | 'Dining & Cafés'
   | 'Ask CampusLens';
 
@@ -312,6 +314,30 @@ function People({building}: {building: Building}) {
     {(building.directory_sources || []).map(source=><SourceLink key={source.url} source={source}/>)}</>;
 }
 
+
+type SavedEvent = {event:LiveEvent; reminders:number[]; delivered:number[]};
+const eventKey=(e:LiveEvent)=>JSON.stringify([e.url,e.start_time,e.title]);
+const EventStore=React.createContext<{saved:SavedEvent[]; toggle:(e:LiveEvent)=>void; reminders:(e:LiveEvent,n:number[])=>void}>({saved:[],toggle:()=>{},reminders:()=>{}});
+function calendarExport(e:LiveEvent, reminders:number[]){
+ const start=new Date(e.start_time);
+ if(!Number.isFinite(start.getTime()))return;
+ const stamp=(d:Date)=>d.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+ const escape=(v:string)=>v.replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/;/g,'\\;').replace(/,/g,'\\,');
+ const end=e.end_time?new Date(e.end_time):null;
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//CampusLens//Events//EN','BEGIN:VEVENT','UID:'+encodeURIComponent(eventKey(e))+'@campuslens','DTSTAMP:'+stamp(new Date()),'DTSTART:'+stamp(start),...(end&&Number.isFinite(end.getTime())&&end>start?['DTEND:'+stamp(end)]:[]),'SUMMARY:'+escape(e.title),'LOCATION:'+escape(e.location||''),'DESCRIPTION:'+escape(e.url),...reminders.flatMap(n=>['BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+escape(e.title),'TRIGGER:-PT'+n+'M','END:VALARM']),'END:VEVENT','END:VCALENDAR'];
+ const url=URL.createObjectURL(new Blob([lines.join('\r\n')+'\r\n'],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='campuslens-event.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function EventActions({event}:{event:LiveEvent}){
+ const store=React.useContext(EventStore), entry=store.saved.find(x=>eventKey(x.event)===eventKey(event));
+ const [custom,C]=useState(''),[notice,N]=useState('');
+ const valid=Number.isFinite(Date.parse(event.start_time));
+ const reminders=entry?.reminders||[];
+ const add=async(n:number)=>{if(!Number.isInteger(n)||n<1||n>525600||Date.parse(event.start_time)-n*60000<=Date.now()){N('Choose a reminder time that is still in the future.');return;}store.reminders(event,[...new Set([...reminders,n])]);if('Notification' in window){try{const permission=await Notification.requestPermission();N(permission==='granted'?'Reminder saved. CampusLens must stay open; export to your calendar for background alerts.':'Reminder saved for in-app alerts. Use your calendar for background alerts.');}catch{N('Reminder saved for in-app alerts.');}}else N('Reminder saved for in-app alerts.');};
+ const calendar=(kind:string)=>{if(!valid)return;const start=new Date(event.start_time),end=event.end_time?new Date(event.end_time):null;if(kind==='ics'||reminders.length||!end||!Number.isFinite(end.getTime())||end<=start){calendarExport(event,reminders);N('Calendar file exported. Open it in your preferred calendar and confirm the event.');return;}const stamp=(d:Date)=>d.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');const params=kind==='google'?new URLSearchParams({action:'TEMPLATE',text:event.title,dates:stamp(start)+'/'+stamp(end),location:event.location,details:event.url}):new URLSearchParams({path:'/calendar/action/compose',rru:'addevent',subject:event.title,startdt:start.toISOString(),enddt:end.toISOString(),location:event.location,body:event.url});window.open((kind==='google'?'https://calendar.google.com/calendar/render?':'https://outlook.live.com/calendar/0/deeplink/compose?')+params,'_blank','noopener,noreferrer');};
+ return <div className="event-actions"><button className="outline-btn" onClick={()=>store.toggle(event)}><Bookmark size={16} fill={entry?'currentColor':'none'}/>{entry?'Saved · Remove':'Save event'}</button>{entry&&valid&&<details><summary><Bell size={15}/> Reminders ({reminders.length})</summary><div className="event-reminder-options">{[15,30,60,120,1440,10080].map(n=><button className="outline-btn" key={n} disabled={reminders.includes(n)} onClick={()=>void add(n)}>{n<60?n+' min':n<1440?n/60+' hr':n/1440+' day(s)'}</button>)}</div><label>Custom minutes before<input type="number" min="1" max="525600" value={custom} onChange={e=>C(e.target.value)}/></label><button className="outline-btn" onClick={()=>void add(Number(custom))}>Add reminder</button>{reminders.map(n=><button key={n} className="outline-btn" onClick={()=>store.reminders(event,reminders.filter(x=>x!==n))}>{n} min before · Remove</button>)}<small>CampusLens alerts require this site to stay open. Calendar reminders can work in the background.</small></details>}{valid&&<details><summary><CalendarPlus size={15}/> Add to calendar</summary><button className="outline-btn" onClick={()=>calendar('google')}>Google Calendar</button><button className="outline-btn" onClick={()=>calendar('ics')}>Apple Calendar / ICS</button><button className="outline-btn" onClick={()=>calendar('outlook')}>Outlook Calendar</button></details>}{notice&&<small role="status">{notice}</small>}</div>;
+}
+function MyEvents(){const {saved}=React.useContext(EventStore);const [filter,F]=useState('Upcoming');const events=saved.filter(x=>filter==='All saved'||(filter==='Past'?Date.parse(x.event.start_time)<Date.now():Date.parse(x.event.start_time)>=Date.now())).map(x=>x.event);return <><div className="page-heading"><span className="eyebrow">YOUR SPACE</span><h1>My Events</h1><p>Keep track of saved events and reminders.</p></div><section className="content-card"><div className="event-periods">{['Upcoming','Past','All saved'].map(x=><button key={x} aria-pressed={filter===x} onClick={()=>F(x)}>{x}</button>)}</div>{events.length?<LiveEventCards events={events} status="saved"/>:<div className="empty-record">No saved events in this view.</div>}</section></>;}
+
 function FilteredEvents({events,status}: {events:LiveEvent[];status:string}) {
  const [q,Q]=useState(''),[period,P]=useState('Upcoming'),[location,L]=useState(''),[from,F]=useState(''),[to,T]=useState(''),[sort,S]=useState('soon'),[view,V]=useState('cards');
  const day=(d:Date)=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Detroit',year:'numeric',month:'2-digit',day:'2-digit'}).format(d);
@@ -363,7 +389,7 @@ function LiveEventCards({
   return (
     <>
       <p className="muted">
-        {events.length} upcoming event
+        {events.length} {status==='saved'?'saved':'upcoming'} event
         {events.length === 1 ? '' : 's'} found
         {status === 'cached' ? ' (cached results)' : ''}.
       </p>
@@ -403,6 +429,7 @@ function LiveEventCards({
                 {' '}{event.location}
               </p>
 
+              <EventActions event={event}/>
               <a
                 className="source-link"
                 href={event.url}
@@ -577,6 +604,11 @@ function App() {
     }
   });
 
+  const [savedEvents,setSavedEvents]=useState<SavedEvent[]>(()=>{try{const data=JSON.parse(localStorage.getItem('campuslens-saved-events')||'[]');return Array.isArray(data)?data:[];}catch{return [];}});
+  const [eventAlert,setEventAlert]=useState('');
+  useEffect(()=>{localStorage.setItem('campuslens-saved-events',JSON.stringify(savedEvents));},[savedEvents]);
+  useEffect(()=>{const tick=()=>{const now=Date.now();for(const x of savedEvents){const start=Date.parse(x.event.start_time);const due=x.reminders.filter(n=>!x.delivered.includes(n)&&now>=start-n*60000&&now<start);if(!due.length)continue;setEventAlert(x.event.title+' starts soon. '+x.event.location);if('Notification' in window&&Notification.permission==='granted'){try{new Notification('CampusLens event reminder',{body:x.event.title+' · '+x.event.location});}catch{}}setSavedEvents(old=>old.map(y=>eventKey(y.event)===eventKey(x.event)?{...y,delivered:[...new Set([...y.delivered,...due])]}:y));}};tick();const id=setInterval(tick,15000);return()=>clearInterval(id);},[savedEvents]);
+  const eventStore={saved:savedEvents,toggle:(event:LiveEvent)=>setSavedEvents(old=>old.some(x=>eventKey(x.event)===eventKey(event))?old.filter(x=>eventKey(x.event)!==eventKey(event)):[...old,{event,reminders:[],delivered:[]}]),reminders:(event:LiveEvent,reminders:number[])=>setSavedEvents(old=>old.map(x=>eventKey(x.event)===eventKey(event)?{...x,reminders,delivered:x.delivered.filter(n=>reminders.includes(n))}:x))};
   // LIVE EVENTS STATE
   const [liveEvents, setLiveEvents] =
     useState<LiveEvent[]>([]);
@@ -821,7 +853,7 @@ function App() {
     ['Ask CampusLens', <MessageCircle size={18} />]
   ];
 
-  return (
+  return (<EventStore.Provider value={eventStore}>
     <div className="app-shell">
       <header className="topbar">
         <button
@@ -888,7 +920,7 @@ function App() {
         </div>
       </header>
 
-      <div className={`layout ${sidebarHidden?"sidebar-hidden":""}`}>
+      <div className={`layout ${sidebarHidden?"sidebar-hidden":""}`}>{eventAlert&&<div className="event-alert" role="alert">{eventAlert}<button onClick={()=>setEventAlert("")}>Dismiss</button></div>}
         {mobileMenu&&<button className="sidebar-scrim" aria-label="Close navigation" onClick={()=>setMobileMenu(false)}/>}
         <aside
           className={`sidebar ${mobileMenu ? 'open' : ''}`}
@@ -922,6 +954,7 @@ function App() {
             Saved Buildings ({favorites.length})
           </button>
 
+          <button className={`side-item ${page === 'My Events' ? 'active' : ''}`} onClick={()=>navigate('My Events')}><CalendarDays size={18}/> My Events ({savedEvents.length})</button>
           <div className="side-foot">
             <span>✦ CAMPUSLENS</span>
             <p>
@@ -1396,6 +1429,7 @@ function App() {
                           })}
                         </p>
 
+                        <EventActions event={event}/>
                         <a
                           href={event.url}
                           target="_blank"
@@ -1591,7 +1625,7 @@ function App() {
                 </section>
               </div>
             </>
-          ) : page === 'Saved Buildings' ? (
+          ) : page === 'My Events' ? (<MyEvents/>) : page === 'Saved Buildings' ? (
             <>
               <div className="page-heading"><span className="eyebrow">YOUR SPACE</span><h1>Saved Buildings</h1><p>Quickly return to your favorite campus locations.</p></div>
               <section className="content-card">
@@ -1681,6 +1715,7 @@ function App() {
         </main>
       </div>
     </div>
+    </EventStore.Provider>
   );
 }
 
