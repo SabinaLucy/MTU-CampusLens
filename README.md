@@ -1,6 +1,30 @@
-# MTU CampusLens — JSON-backed student MVP
+# MTU CampusLens
 
-An independent Michigan Tech student prototype. **No database, no model training.** React + TypeScript + Tailwind frontend; FastAPI backend; JSON curated records; optional Gemini or OpenAI recognition and grounded Q&A.
+CampusLens is an independent Michigan Technological University student project that uses agentic AI and multimodal building recognition to help students, staff and visitors explore campus.
+
+The system uses React, TypeScript and Tailwind CSS for the frontend, FastAPI for the backend, curated JSON records for campus data, and Gemini or OpenAI for AI-powered recognition and assistance. No custom model training or SQL database is required.
+
+## Features
+
+- Building recognition from uploaded photos or camera captures, with manual confirmation and search.
+- Campus directory with building images, departments, offices, faculty, staff and available room information.
+- Live campus events, dining information and links to official resources.
+- Ask CampusLens with conversational history, image and document attachments, and optional location sharing.
+- Explore Nearby with an interactive campus map.
+- Daily campus brief with weather, events, dining and Building of the Day.
+- Saved buildings, campus resources, responsive navigation, and light and dark themes.
+
+## Agentic AI architecture
+
+| Component | Responsibility |
+| --- | --- |
+| Vision Agent | Uses a hosted multimodal model to suggest building matches. |
+| Building Research and Knowledge Agent | Retrieves curated building records and their source references. |
+| Campus Assistant Agent | Generates grounded answers with a deterministic fallback for building-specific questions. |
+| Profile Research Agent | Offline tool for collecting candidate images from approved university websites for human review. |
+| Agent Orchestrator | Coordinates runtime workflows and records agent handoffs. |
+
+Three dedicated `SKILL.md` definitions describe the vision, building researcher and assistant responsibilities. Skills are loaded through an explicit allowlist rather than executed as arbitrary code. The architecture is intended to support adaptation to other universities with appropriate campus data and configuration.
 
 ## Run on Windows PowerShell
 
@@ -27,7 +51,7 @@ npm run dev
 
 Open http://localhost:5173. API documentation: http://localhost:8000/docs.
 
-### Enable Gemini recognition and AI chat
+### Enable Gemini
 
 Create an API key at https://aistudio.google.com/apikey and edit `backend/.env`:
 
@@ -38,23 +62,31 @@ GEMINI_VISION_MODEL=gemini-2.5-flash
 GEMINI_CHAT_MODEL=gemini-2.5-flash-lite
 ```
 
-Restart the backend. Free-tier eligibility and quotas can change. The UI works without credentials: use **Browse manually**; the chat route uses a local, non-AI answer fallback. The backend also supports `AI_PROVIDER=openai` with `OPENAI_API_KEY`, or `AI_PROVIDER=auto` for Gemini then OpenAI. Do not commit `.env`.
+Restart the backend. For deployment, configure these variables in the backend hosting environment. Never commit API keys or `.env` files. OpenAI is also supported through `AI_PROVIDER=openai` and `OPENAI_API_KEY`. Free-tier availability and quotas may change.
 
-## Architecture
+## Project structure
 
-- `frontend/src/main.tsx`: upload, confirmation, building dashboard, chat, manual search.
-- `backend/app/main.py`: HTTP endpoints, validation, error handling.
-- `backend/app/agents/providers.py`: Gemini and OpenAI HTTP adapters.
-- `backend/app/agents/knowledge_agent.py`: curated source-grounded context.
-- `backend/app/agents/answer_agent.py`: deterministic fallback answers.
-- `backend/app/services/repository.py`: read-only JSON repository; can later be replaced by SQL.
-- `backend/app/data/buildings.json`: five campus building identities and curated information with source URLs.
-
-Data is **not live**. Empty events and classes do not mean nothing is scheduled. Only add records checked against official MTU sources; record `source.url` and `source.checked_at`. Do not invent schedules, room numbers, or upcoming events. No automatic scraping or refresh is implemented.
+- `frontend/src/main.tsx`: campus interface, recognition, directory and chat.
+- `backend/app/main.py`: API endpoints and request validation.
+- `backend/app/agents/`: agent workflows, provider adapters, knowledge retrieval and assistant logic.
+- `backend/.agents/skills/`: runtime agent skill definitions.
+- `backend/app/services/`: JSON repository and live event retrieval.
+- `backend/app/data/`: curated campus records.
+- `backend/tests/`: API and agent tests.
 
 ## API
 
-`GET /api/health`, `GET /api/buildings`, `GET /api/buildings/{id}`, `GET /api/buildings/{id}/events`, `GET /api/buildings/{id}/departments`, `GET /api/buildings/{id}/classes`, `POST /api/recognize` (multipart `file`), `POST /api/chat` (`{"building_id":1,"question":"Where is this building?"}`).
+- `GET /api/health`
+- `GET /api/agents/skills`
+- `GET /api/buildings`
+- `GET /api/buildings/{building_id}`
+- `GET /api/events`
+- `GET /api/buildings/{building_id}/events`
+- `GET /api/buildings/{building_id}/departments`
+- `GET /api/buildings/{building_id}/classes`
+- `POST /api/recognize`
+- `POST /api/chat`
+- `POST /api/campus-chat`
 
 ## Tests
 
@@ -64,24 +96,27 @@ pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-Test recognition with a genuine building photo and a non-campus image after setting a valid key. Model guesses are **not guaranteed**; users must confirm or manually correct them.
+After configuring Gemini, check the health endpoint and test recognition with genuine campus and non-campus images, building-specific questions and general campus chat.
 
-## GitHub
-
-This package is a standalone implementation; compare against your existing repository before replacing files.
+## Contributing
 
 ```powershell
 git clone https://github.com/SabinaLucy/MTU-CampusLens.git
 cd MTU-CampusLens
-# Copy the contents of this project package into this cloned folder.
-git status
-git add .
-git commit -m "Replace database with JSON repository and add CampusLens UI"
-git push origin main
+git pull origin main
+git switch -c feature/your-feature
 ```
 
-If you lack push permissions, create a branch and pull request. Keep API keys and `.env` out of Git. The `.gitignore` excludes these files.
+Make changes on a feature branch and open a pull request. Use official university sources for new records, preserve source references and avoid inventing missing information.
 
-## Limitations and handover
+## Limitations and future improvements
 
-Recognition is a vision-model suggestion rather than a verified image classifier; no custom training/reference-image embeddings are included. The model can decline uncertain matches. No live MTU integration, production authentication, persistent feedback, or automatic event refresh. Extend the JSON dataset carefully, or swap the repository class for SQL later. A free-tier API may rate-limit or fail, so always demo the manual fallback.
+- Some buildings have incomplete faculty, staff, departmental and room information.
+- Live events are supported, but most directory records are curated snapshots. Class schedules and dining hours are not guaranteed to be current.
+- Building recognition is a model suggestion and requires user confirmation.
+- Nearby results depend on available coordinates; distances are straight-line estimates, not walking routes.
+- AI features depend on provider availability and API quotas. Manual browsing and building-specific fallback answers remain available.
+- Runtime agents use structured handoffs rather than fully autonomous planning. Offline research results require human review.
+- Further work includes expanding verified campus records, improving agent workflows and integrating additional free, reliable data sources.
+
+CampusLens is a student prototype, not an official university service.
