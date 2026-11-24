@@ -54,7 +54,7 @@ const DINING: Dining[] = [
     "note": "Check official dining site for current menus and hours.",
     "hours": "Thanksgiving: closed until Nov 29, 4:30 PM",
     "image_url": "/dining/wads.jpg",
-    "image_source": "https://www.mtu.edu/residential-living/dining/images/socialhouse20251110003-square250.jpg"
+    "image_source": "https://www.mtu.edu/residential-living/dining/images/socialhouse2025-square250.jpg"
   },
   {
     "id": "mcnair",
@@ -73,7 +73,7 @@ const DINING: Dining[] = [
   },
   {
     "id": "dhh",
-    "name": "DHH Junction House",
+    "name": "Food Hall at Douglass Houghton Hall",
     "building_ids": [
       1015
     ],
