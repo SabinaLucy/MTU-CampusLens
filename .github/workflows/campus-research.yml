@@ -1,0 +1,27 @@
+name: CampusLens research audit
+on:
+  push:
+    branches: [campuslens-upgrade]
+    paths:
+      - 'backend/scripts/research_campus.py'
+      - '.github/workflows/campus-research.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests beautifulsoup4 pillow
+      - run: python -m py_compile backend/scripts/research_campus.py
+      - run: python backend/scripts/research_campus.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: campus-research-coverage
+          path: research-output/
