@@ -1,0 +1,23 @@
+name: Targeted portrait and dining photo update
+on:
+  push:
+    branches: [campuslens-upgrade]
+    paths: ['backend/scripts/enrich_portraits.py', '.github/workflows/portrait-research.yml']
+permissions:
+  contents: write
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests beautifulsoup4 pillow
+      - run: python backend/scripts/enrich_portraits.py
+      - run: |
+          git config user.name "CampusLens research"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backend/app/data/buildings.json frontend/src/main.tsx
+          git diff --cached --quiet || git commit -m "Populate source-matched portraits and dining photos"
+          git push origin HEAD:campuslens-upgrade
