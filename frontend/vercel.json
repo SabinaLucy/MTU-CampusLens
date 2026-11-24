@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/campuslens-proxy?path=:path*"
+    }
+  ]
+}

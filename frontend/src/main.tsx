@@ -11,7 +11,8 @@ import {
 } from 'lucide-react';
 import './index.css';
 
-const API = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
+// Vite proxies locally; Vercel proxies deployed requests on the same origin.
+const API = '';
 
 const EVENT_URL = 'https://events.mtu.edu/';
 const ROZSA_URL =
@@ -124,7 +125,7 @@ async function request<T>(
     }
 
     if (response.status === 404 && url.startsWith('/api/')) {
-      message = `API endpoint ${url} returned 404. Check the frontend VITE_API_URL in Vercel Preview settings and redeploy.`;
+      message = `API endpoint ${url} returned 404. Check the server-side CampusLens API proxy configuration.`;
     }
     throw new Error(message);
   }
