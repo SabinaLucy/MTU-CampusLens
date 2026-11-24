@@ -1,7 +1,7 @@
 // Server-side only: never expose backend credentials to the browser.
 export default async function handler(req, res) {
   const path = typeof req.query.path === 'string' ? req.query.path : '';
-  if (!/^(health|events|agents\/skills|recognize|chat|buildings(?:\/\d+(?:\/(?:events|departments|classes))?)?)$/.test(path)) {
+  if (!/^(health|events|agents\/skills|recognize|chat|campus-chat|buildings(?:\/\d+(?:\/(?:events|departments|classes))?)?)$/.test(path)) {
     return res.status(404).json({detail: 'Unknown CampusLens API route.'});
   }
   if (!['GET', 'POST'].includes(req.method)) {
