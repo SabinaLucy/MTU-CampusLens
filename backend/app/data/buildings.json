@@ -62,7 +62,26 @@
         "checked_at": "2026-11-22",
         "source_type": "official_mtu"
       },
-      "departments": [],
+      "departments": [
+        {
+          "name": "College of Business",
+          "notes": "Accounting, finance, economics, MIS, analytics, management and marketing",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/business/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Social Sciences",
+          "notes": "History, anthropology, archaeology, sociology and environmental policy",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/social-sciences/",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
       "offices": [],
       "rooms": [],
       "events": [],
@@ -70,7 +89,59 @@
       "reference_images": [],
       "category": "Academic & Research",
       "location_type": "building",
-      "dining": []
+      "dining": [],
+      "people": [
+        {
+          "name": "Jeffrey Wall",
+          "title": "MIS and Analytics",
+          "office": "AOB G010",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Jenny Apriesnig",
+          "title": "Economics",
+          "office": "AOB 123",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Elham Asgari",
+          "title": "Management and Entrepreneurship",
+          "office": "AOB 121",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Laura Connolly",
+          "title": "Economics",
+          "office": "AOB 125",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Jun Dai",
+          "title": "Accounting Information Systems",
+          "office": "AOB 126",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/business/people-groups/faculty-staff/",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 1046,
@@ -961,22 +1032,22 @@
       },
       "departments": [
         {
-          "id": 301,
-          "name": "Physics",
+          "name": "Mathematical Sciences",
+          "room_number": "302",
+          "notes": "906-487-1495; mathdept@mtu.edu",
           "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/math/",
             "source_type": "official_mtu"
           }
         },
         {
-          "id": 302,
-          "name": "Mathematical Sciences",
+          "name": "Physics",
+          "room_number": "118",
+          "notes": "906-487-2086; physics@mtu.edu",
           "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
             "source_type": "official_mtu"
           }
         }
@@ -1013,7 +1084,162 @@
       "reference_images": [],
       "category": "Academic & Research",
       "location_type": "building",
-      "dining": []
+      "dining": [],
+      "labs": [
+        {
+          "name": "Math Learning Center",
+          "room_number": "234",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Physics Learning Center",
+          "room_number": "128",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Optics Lab",
+          "room_number": "B003",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Electronics Lab",
+          "room_number": "B003",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Modern Physics Lab",
+          "room_number": "B024",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Physics Behind Music Lab",
+          "room_number": "B024",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "PH1111/1161 Lab",
+          "room_number": "B023",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "PH1100 Lab",
+          "room_number": "B020",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "PH1200 Lab",
+          "room_number": "229",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "people": [
+        {
+          "name": "Katrina Black",
+          "title": "Physics",
+          "office": "Fisher 114",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Jacek Borysow",
+          "title": "Physics",
+          "office": "Fisher 103",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Elena Giusarma",
+          "title": "Physics",
+          "office": "Fisher 124B",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Qi Zhong",
+          "title": "Physics",
+          "office": "Fisher 124C",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Robert Weidman",
+          "title": "Physics",
+          "office": "Fisher 106",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Jae Jeong Lee",
+          "title": "Physics",
+          "office": "Fisher 118",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Claire Wiitanen",
+          "title": "Physics",
+          "office": "Fisher 107",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/physics/",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 1028,
@@ -1223,22 +1449,68 @@
       },
       "departments": [
         {
-          "id": 101,
-          "name": "Applied Computing",
+          "name": "College of Computing",
+          "room_number": "220",
+          "notes": "906-487-2209; computing@mtu.edu",
           "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
             "source_type": "official_mtu"
           }
         },
         {
-          "id": 102,
           "name": "Computer Science",
           "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Applied Computing",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Data Science",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Artificial Intelligence",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Cybersecurity",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Health Informatics",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Institute of Computing and Cybersystems",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
             "source_type": "official_mtu"
           }
         }
@@ -1314,18 +1586,6 @@
           }
         },
         {
-          "name": "Daniel Fuhrmann",
-          "title": "Chair, Applied Computing",
-          "office": "Rekhi Hall 323",
-          "email": "fuhrmann@mtu.edu",
-          "source": {
-            "title": "Applied Computing Faculty Directory",
-            "url": "https://www.mtu.edu/applied-computing/about/faculty/",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
-          }
-        },
-        {
           "name": "Ronghua (Sam) Xu",
           "title": "Assistant Professor, Applied Computing",
           "office": "Rekhi Hall 107",
@@ -1336,6 +1596,176 @@
             "checked_at": "2026-11-24",
             "source_type": "official_mtu"
           }
+        },
+        {
+          "name": "Dennis Livesay",
+          "title": "Dean of Computing",
+          "office": "Rekhi 221",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Zhenlin Wang",
+          "title": "Chair, Computer Science",
+          "office": "Rekhi 322",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Daniel Fuhrmann",
+          "title": "Chair, Applied Computing",
+          "office": "Rekhi 323",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Yu Cai",
+          "title": "Associate Dean",
+          "office": "Rekhi 110",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Guy Hembroff",
+          "title": "Biomedical Data Science Lab lead",
+          "office": "Rekhi 319 (lab)",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Jean Mayo",
+          "title": "Professor",
+          "office": "Rekhi 304",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Nilufer Onder",
+          "title": "Associate Professor",
+          "office": "Rekhi 309",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Charles Wallace",
+          "title": "Professor",
+          "office": "Rekhi 205",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Todd Arney",
+          "title": "Associate Teaching Professor",
+          "office": "Rekhi 103",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Anwar Walid",
+          "title": "ICC Executive Director",
+          "office": "Rekhi 202",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Sherry Wyeth",
+          "title": "Data Science and AI Adviser",
+          "office": "Rekhi 226",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Kay Oliver",
+          "title": "Manager of Administration",
+          "office": "Rekhi 224",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Denise Landsberg",
+          "title": "Computer Science Adviser",
+          "office": "Rekhi 322",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Nicholas Kwiek",
+          "title": "Applied Computing Adviser",
+          "office": "Rekhi 323A",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Janna Chittick",
+          "title": "Department Coordinator",
+          "office": "Rekhi 322",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Madeline Mercado Voelker",
+          "title": "Department Coordinator",
+          "office": "Rekhi 323",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Kristi Hauswirth",
+          "title": "Director of Finance and Data Operations",
+          "office": "Rekhi 225",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/staff/",
+            "source_type": "official_mtu"
+          }
         }
       ],
       "image_url": "https://www.mtu.edu/tour/campus/images/rekhi-800banner.jpg",
@@ -1344,7 +1774,72 @@
         "url": "https://www.mtu.edu/tour/campus/",
         "checked_at": "2026-11-24"
       },
-      "dining": []
+      "dining": [],
+      "labs": [
+        {
+          "name": "Biomedical Data Science Lab",
+          "room_number": "319",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/college/facilities/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "MIND Lab",
+          "room_number": "111",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/college/facilities/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "College of Computing Learning Center",
+          "room_number": "118",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/college/facilities/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Linux Computer Lab",
+          "room_number": "112",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/college/facilities/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Linux Computer Lab (112A)",
+          "room_number": "112A",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/college/facilities/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Linux Computer Lab (117)",
+          "room_number": "117",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/college/facilities/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Security and Privacy Lab",
+          "room_number": "317",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/college/facilities/",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 1065,
@@ -1455,17 +1950,26 @@
       },
       "departments": [
         {
-          "id": 201,
           "name": "Mechanical and Aerospace Engineering",
           "source": {
-            "title": "Michigan Tech campus map (September 2025)",
-            "url": "https://www.mtu.edu/maps/campus-map.pdf",
-            "checked_at": "2026-11-11T12:00:00-05:00",
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/",
             "source_type": "official_mtu"
           }
         }
       ],
-      "offices": [],
+      "offices": [
+        {
+          "name": "Graduate Program Assistant",
+          "room_number": "815",
+          "notes": "Graduate program assistance",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/graduate/advising/faqs/",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
       "rooms": [
         {
           "id": 210,
@@ -1497,7 +2001,243 @@
       "reference_images": [],
       "category": "Academic & Research",
       "location_type": "building",
-      "dining": []
+      "dining": [],
+      "labs": [
+        {
+          "name": "Wave Tank",
+          "room_number": "S001, S001A",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Dynamic Systems Laboratory",
+          "room_number": "S003, S003A, S003F",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Recirculating Wind Tunnel",
+          "room_number": "S010",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Gas Turbine Test Cell",
+          "room_number": "S013B",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Rocket Engine Test Cell",
+          "room_number": "S014",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Research Machine Shop",
+          "room_number": "B002",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Welding and Fabrication Lab",
+          "room_number": "B006",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "CNC and 3D Printer Lab",
+          "room_number": "B007",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ion Space Propulsion Lab",
+          "room_number": "B007C",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Nucor Metrology Center",
+          "room_number": "101",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Aerospace Enterprise Clean Room",
+          "room_number": "117",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Automation in Manufacturing Lab",
+          "room_number": "128",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Lagina Student Success Center",
+          "room_number": "203",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Cuskie Design and Creativity Center",
+          "room_number": "209",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Intelligent Robotics and System Optimization Lab",
+          "room_number": "301",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Intelligent Systems and Controls Lab",
+          "room_number": "306",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Mechanics Acoustics and Dynamics Lab",
+          "room_number": "501",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Intelligent Mechatronics Lab",
+          "room_number": "502B",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Planetary Atmosphere Works Lab",
+          "room_number": "505A",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Sound Quality Laboratory",
+          "room_number": "601A, 601B",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Heat Transfer Laboratory",
+          "room_number": "602",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Rivard Product Realization Center",
+          "room_number": "605, 606",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Planetary Surface Technology Development Lab",
+          "room_number": "701A",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Microfluidics and Interfacial Transport Lab",
+          "room_number": "1001",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Spacecraft Engineering Practice",
+          "room_number": "1104",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "E-Propulsion Lab",
+          "room_number": "1108",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mechanical-aerospace/facilities/labs/index.html",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 1001,
@@ -1933,7 +2673,128 @@
         "source_type": "official_mtu"
       },
       "departments": [],
-      "offices": [],
+      "offices": [
+        {
+          "name": "Fitness Center",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Swimming and diving pools",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "MacInnes Student Ice Arena",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Indoor track",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Climbing wall",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Racquetball courts",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Basketball courts",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Archery and rifle ranges",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Fitness classes",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Intramural sports",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Recreational skating",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Multipurpose desk",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ticketing Operations",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "University Images",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Locker rooms and equipment services",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/recreation/",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
       "rooms": [],
       "events": [],
       "classes": [],
@@ -2347,14 +3208,243 @@
         "source_type": "official_mtu"
       },
       "departments": [],
-      "offices": [],
+      "offices": [
+        {
+          "name": "International Programs and Services",
+          "room_number": "200",
+          "notes": "Immigration advising, CPT/OPT and international student support. 906-487-2160; ips@mtu.edu. Academic year Mon–Fri 8–5, closed noon–1.",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/international/about/contact/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Career Services",
+          "room_number": "220",
+          "notes": "Career advising, resumes and interviews; 906-487-2313; career@mtu.edu",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Graduate School",
+          "room_number": "414",
+          "notes": "Graduate admissions and student support; fourth floor; 906-487-2327; gradadms@mtu.edu",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Financial Aid and Cashiers",
+          "room_number": "103",
+          "notes": "Student billing and financial aid; 906-487-2622",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Registrar",
+          "room_number": "130",
+          "notes": "Registration and transcripts; 906-487-2319",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Dean of Students",
+          "room_number": "130",
+          "notes": "906-487-2212",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Disability Services",
+          "room_number": "130",
+          "notes": "906-487-2345",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Transportation Services",
+          "room_number": "100",
+          "notes": "Parking and transportation; 906-487-1441",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Wahtera Center for Student Success",
+          "notes": "First floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Enrollment Services",
+          "notes": "First floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Orientation",
+          "notes": "First floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Center for Educational Outreach",
+          "notes": "Second floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Enterprise Application Services",
+          "notes": "Second floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Counseling Services",
+          "notes": "Third floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Equal Opportunity Compliance and Title IX",
+          "room_number": "308",
+          "notes": "906-487-3310",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Student Conduct Services",
+          "notes": "Third floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "University Administration",
+          "notes": "Fifth floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "University Marketing and Communications",
+          "notes": "Garden level",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Mail Services",
+          "notes": "Garden level",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://events.mtu.edu/administration_and_student_services_building",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Graduate Student Government",
+          "room_number": "405",
+          "notes": "gsg@mtu.edu",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
       "rooms": [],
       "events": [],
       "classes": [],
       "reference_images": [],
       "category": "Administration & Services",
       "location_type": "building",
-      "dining": []
+      "dining": [],
+      "people": [
+        {
+          "name": "Debra Charlesworth",
+          "title": "Associate Dean of Graduate Student Success",
+          "office": "Admin 159",
+          "email": "ddc@mtu.edu",
+          "phone": "906-487-2212",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/gradschool/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Karen Hext",
+          "title": "Graduate Degree Services",
+          "office": "Admin 130",
+          "email": "degree@mtu.edu",
+          "phone": "906-487-1493",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/gradschool/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Tiffany Jaeger",
+          "title": "Manager of Student Outreach and Retention",
+          "office": "Admin 130",
+          "email": "tiffanyj@mtu.edu",
+          "phone": "906-487-2212",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/gradschool/",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 1005,
@@ -2566,6 +3656,91 @@
             "source_type": "official_mtu"
           },
           "room_number": null
+        },
+        {
+          "name": "Undergraduate Admissions",
+          "notes": "John Edgar McAllister Welcome Center; 906-487-2335; mtu4u@mtu.edu",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/computing/about/contact/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Campus Bookstore",
+          "notes": "906-487-2410; campusstore@mtu.edu",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mub/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Student Leadership and Involvement",
+          "room_number": "112",
+          "notes": "906-487-1963",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Student organizations",
+          "room_number": "112",
+          "notes": "906-487-1963",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Dining and Catering Services",
+          "room_number": "101",
+          "notes": "906-487-2277",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Meeting room reservations",
+          "room_number": "101",
+          "notes": "906-487-2543",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/deanofstudents/support/where-to-go-what/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "University makerspace",
+          "notes": "Basement",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mub/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "MUB Commons",
+          "notes": "Ground floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mub/",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ballroom",
+          "notes": "Second floor",
+          "source": {
+            "title": "MTU official reference",
+            "url": "https://www.mtu.edu/mub/",
+            "source_type": "official_mtu"
+          }
         }
       ],
       "rooms": [],
