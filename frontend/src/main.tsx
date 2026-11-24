@@ -354,9 +354,9 @@ function App() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const [theme, setTheme] = useState<'dark' | 'light'>(() =>
-    localStorage.getItem('campuslens-theme') === 'light'
-      ? 'light'
-      : 'dark'
+    localStorage.getItem('campuslens-theme') === 'dark'
+      ? 'dark'
+      : 'light'
   );
 
   const [favorites, setFavorites] = useState<number[]>(() => {
