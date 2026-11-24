@@ -162,6 +162,7 @@ const DINING: Dining[] = [
   }
 ];
 type Building = {
+  latitude?:number; longitude?:number;
   image_url?: string;
   image_source?: Source;
   people?: Person[];
@@ -483,6 +484,22 @@ function CampusChat({openBuilding}:{openBuilding:(id:number)=>void}){
  function locate(){if(!navigator.geolocation){N('Location is unavailable.');return}if(watch.current!==null){stopLocation();return}watch.current=navigator.geolocation.watchPosition(p=>{P(p.coords);N('Live location enabled')},()=>{stopLocation();N('Location permission denied or unavailable. You can still chat.')},{enableHighAccuracy:true,timeout:12000,maximumAge:0})}
  async function send(e:React.FormEvent){e.preventDefault();if(busy||(!q.trim()&&!file))return;if(file&&file.size>3*1024*1024){N('Choose an attachment under 3 MB.');return}const text=q.trim()||'What can you tell me about this attachment?';const data=new FormData();data.append('question',text);data.append('history',JSON.stringify(turns.slice(-12)));data.append('location',JSON.stringify(pos?{latitude:pos.latitude,longitude:pos.longitude,accuracy:pos.accuracy}:null));if(file)data.append('file',file);U(t=>[...t,{role:'user',text,attachment:file?.name}]);Q('');F(null);B(true);try{const res=await request<{answer:string;nearby:CampusTurn['nearby']}>('/api/campus-chat',{method:'POST',body:data});U(t=>[...t,{role:'assistant',text:res.answer,nearby:res.nearby}])}catch{U(t=>[...t,{role:'assistant',text:'Could not reach CampusLens. Please try again.'}])}finally{B(false)}}
  return <section className="campus-chat"><header><div className="chat-heading"><span className="chat-brand-icon"><MessageCircle size={22}/></span><div><h2>Ask CampusLens</h2><small>Your intelligent campus companion</small></div></div><button className="chat-action" disabled={busy} onClick={clear}>Clear history</button></header><div className="chat-thread">{!turns.length&&<div className="chat-welcome"><span className="chat-orb"><img src="/images/husky-icon.png" alt="Michigan Tech Husky logo"/></span><h1>How can I help you today?</h1><p>Your campus. Your questions. One place.</p><div className="chat-prompts">{[{q:'What buildings are near me?',t:"What's near me?",d:'Explore nearby places',emoji:'📍'},{q:'Identify a building from a photo',t:'Identify a place',d:'Take or upload a photo',emoji:'📸'},{q:'Find food nearby',t:'Find food',d:'Explore dining options',emoji:'🍔'},{q:'What events are happening today?',t:'Campus events',d:'Discover what is happening',emoji:'🎉'},{q:'Find faculty and staff',t:'Find someone',d:'Search the directory',emoji:'👩‍🏫'},{q:'Help me find my way around',t:'Get directions',d:'Explore the campus',emoji:'🗺️'}].map(({q,t,d,emoji})=><button className="chat-suggestion" key={q} onClick={()=>Q(q)}><span className="chat-emoji" aria-hidden="true">{emoji}</span><strong>{t}</strong><small>{d}</small></button>)}</div></div>}{turns.map((t,i)=><article className={'chat-turn '+t.role} key={i}><strong>{t.role==='user'?'You':'CampusLens'}</strong>{t.attachment&&<small>{t.attachment}</small>}<p style={{whiteSpace:'pre-wrap',overflowWrap:'anywhere'}}>{t.text}</p>{t.nearby?.map(x=><button className="chat-action" key={x.id} onClick={()=>openBuilding(x.id)}>{x.name} · {x.meters} m straight-line</button>)}{t.role==='assistant'&&<button className="chat-action" onClick={()=>navigator.clipboard.writeText(t.text)}>Copy</button>}</article>)}{busy&&<p className="chat-thinking">CampusLens is thinking…</p>}<div ref={bottom}/></div><form className="chat-composer" onSubmit={send}><textarea rows={3} maxLength={4000} value={q} onChange={e=>Q(e.target.value)} onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.nativeEvent.isComposing&&window.matchMedia('(pointer:fine)').matches){e.preventDefault();e.currentTarget.form?.requestSubmit()}}} placeholder="Ask CampusLens anything…"/>{file&&<div className="chat-attachment">{preview&&<img src={preview} alt="Attachment preview"/>}{file.name} <button type="button" onClick={()=>F(null)}>Remove</button></div>}<div className="chat-tools"><label className="chat-action" title="Attach file"><Upload size={16}/><span className="chat-tool-label">Attach</span><input hidden type="file" accept="image/jpeg,image/png,image/webp,application/pdf,text/plain" onChange={e=>{F(e.target.files?.[0]||null);e.target.value=''}}/></label><label className="chat-action" title="Camera"><Camera size={16}/><span className="chat-tool-label">Camera</span><input hidden type="file" accept="image/*" capture="environment" onChange={e=>{F(e.target.files?.[0]||null);e.target.value=''}}/></label><button type="button" className="chat-action" onClick={locate} aria-label={pos?"Stop location":"Use location"}><MapPin size={16}/><span className="chat-tool-label">{pos?'Stop location':'Use location'}</span></button>{pos&&<button type="button" className="chat-action" onClick={stopLocation}>Remove location</button>}<button type="submit" className="gold-btn" disabled={busy||(!q.trim()&&!file)} aria-label="Send message"><ArrowUpRight size={22}/></button></div><small>{notice||'Optional attachments and location are sent with your question. Chat text is saved on this device.'}</small></form><small>CampusLens may make mistakes. Verify important information.</small></section>
+}
+
+function TodayCampus({buildings,events,status,navigate,openBuilding}:{buildings:Building[];events:LiveEvent[];status:string;navigate:(p:Page)=>void;openBuilding:(id:number)=>void}){
+ const [weather,W]=useState<{temperature_2m:number;weather_code:number}|null>(null);
+ useEffect(()=>{const c=new AbortController();fetch('https://api.open-meteo.com/v1/forecast?latitude=47.12&longitude=-88.55&current=temperature_2m,weather_code&temperature_unit=fahrenheit&timezone=America%2FDetroit',{signal:c.signal}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>W(d.current)).catch(()=>{});return()=>c.abort()},[]);
+ const date=(v:Date)=>v.toLocaleDateString('en-CA',{timeZone:'America/Detroit'}),today=date(new Date()),count=events.filter(e=>date(new Date(e.start_time))===today).length;
+ const featured=buildings.length?buildings[Math.floor(Date.now()/86400000)%buildings.length]:null;
+ return <section className="content-card today-campus"><div className="section-head"><div><span className="eyebrow">YOUR DAILY CAMPUS BRIEF</span><h2>Today's campus</h2></div><span>{new Date().toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:'America/Detroit'})}</span></div><div className="daily-grid"><a className="daily-tile" href="https://open-meteo.com/" target="_blank" rel="noreferrer"><span>🌤️</span><strong>{weather?Math.round(weather.temperature_2m)+'°F':'Weather unavailable'}</strong><small>Houghton weather · Open-Meteo</small></a><button className="daily-tile" onClick={()=>navigate('Dining & Cafés')}><span>🍽️</span><strong>Dining today</strong><small>Check official hours and menus</small></button><button className="daily-tile" onClick={()=>navigate('Events')}><span>🎉</span><strong>{status==='loading'?'Loading events…':status==='unavailable'?'Calendar unavailable':count+' events today'}</strong><small>Official MTU calendar</small></button><button className="daily-tile" disabled={!featured} onClick={()=>featured&&openBuilding(featured.id)}><span>🐾</span><strong>Discover MTU</strong><small>{featured?.name||'Loading campus directory'}</small></button></div></section>
+}
+function ExploreNearby({buildings,openBuilding}:{buildings:Building[];openBuilding:(id:number)=>void}){
+ const [position,P]=useState<GeolocationCoordinates|null>(null),[message,M]=useState(''),[filter,F]=useState('all'),[expanded,E]=useState(false);
+ const ranked=buildings.filter(b=>Number.isFinite(b.latitude)&&Number.isFinite(b.longitude)&&(filter==='all'||DINING.some(d=>d.building_ids.includes(b.id)))).map(b=>{const rad=Math.PI/180;const a=position?Math.sin((b.latitude!-position.latitude)*rad/2)**2+Math.cos(position.latitude*rad)*Math.cos(b.latitude!*rad)*Math.sin((b.longitude!-position.longitude)*rad/2)**2:0;return {b,d:position?12742000*Math.asin(Math.sqrt(Math.min(1,a))):null}}).sort((a,b)=>(a.d??0)-(b.d??0));
+ function locate(){if(!navigator.geolocation){M('Location unavailable');return}M('Requesting location…');navigator.geolocation.getCurrentPosition(p=>{P(p.coords);M('Location shared for this view only.')},()=>M('Location unavailable or permission denied.'),{timeout:10000,enableHighAccuracy:true})}
+ const lat=position?.latitude??47.12,lon=position?.longitude??-88.55;
+ const map='https://www.openstreetmap.org/export/embed.html?bbox='+encodeURIComponent([lon-.012,lat-.006,lon+.012,lat+.006].join(','))+'&layer=mapnik'+(position?'&marker='+encodeURIComponent(lat+','+lon):'');
+ return <section className="content-card nearby-campus"><div className="section-head"><div><span className="eyebrow">EXPLORE YOUR SURROUNDINGS</span><h2>📍 Explore nearby</h2></div><button className="outline-btn" onClick={()=>E(!expanded)}>{expanded?'Hide map':'Explore map'}</button></div>{expanded&&<><div className="nearby-controls"><button className="outline-btn" onClick={locate}>Use my location</button>{position&&<button className="outline-btn" onClick={()=>{P(null);M('Location removed.')}}>Stop sharing</button>}<select aria-label="Location category" value={filter} onChange={e=>F(e.target.value)}><option value="all">Buildings</option><option value="dining">Dining & cafés</option></select></div><p className="muted">{message||'Location sharing is optional. Opening the map loads OpenStreetMap.'}</p><iframe title="Interactive OpenStreetMap campus map" src={map} loading="lazy" referrerPolicy="no-referrer" className="nearby-map"/><a href={CAMPUS_MAP} target="_blank" rel="noreferrer">Official MTU campus map ↗</a>{!ranked.length&&<p className="muted">Verified building coordinates are not available for this category yet. Browse the official map or directory instead.</p>}{ranked.slice(0,8).map(({b,d})=><div className="nearby-result" key={b.id}><button className="text-action" onClick={()=>openBuilding(b.id)}>{b.name}</button>{d!==null&&<small>{Math.round(d)} m straight-line</small>}<a href={'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(b.latitude+','+b.longitude)+'&travelmode=walking'} target="_blank" rel="noreferrer">Directions ↗</a></div>)}</>}</section>
 }
 
 function App() {
@@ -864,54 +881,9 @@ function App() {
 
           <div className="side-divider" />
 
-          <div className="side-label">
-            CAMPUS RESOURCES
-          </div>
-
-          <a
-            className="side-item"
-            href={CAMPUS_MAP}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <MapPin size={18} />
-            Campus map
-            <ExternalLink size={13} />
-          </a>
-
-          <a
-            className="side-item"
-            href={EVENT_URL}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <CalendarDays size={18} />
-            MTU events
-            <ExternalLink size={13} />
-          </a>
-
-          <a
-            className="side-item"
-            href={ROZSA_URL}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Compass size={18} />
-            Rozsa Center
-            <ExternalLink size={13} />
-          </a>
-
-          <a
-            className="side-item"
-            href="https://www.mtu.edu/registrar/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GraduationCap size={18} />
-            Registrar
-            <ExternalLink size={13} />
-          </a>
-
+          <details className="campus-resources" open><summary className="side-label">CAMPUS RESOURCES <ChevronDown size={14}/></summary>
+          {[[ "Campus map",CAMPUS_MAP],["MTU events",EVENT_URL],["Rozsa Center",ROZSA_URL],["Registrar","https://www.mtu.edu/registrar/"],["University Library","https://www.mtu.edu/library/"],["Career Services","https://www.mtu.edu/career/"],["Graduate School","https://www.mtu.edu/gradschool/"],["International Programs & Services","https://www.mtu.edu/international/"],["Health & Wellness","https://www.mtu.edu/wellness/"],["Campus Safety","https://www.mtu.edu/publicsafety/"],["IT Support","https://www.mtu.edu/it/"],["Campus Transportation","https://www.mtu.edu/transportation/"]].map(([name,url])=><a key={name} className="side-item" href={url} target="_blank" rel="noreferrer"><ExternalLink size={15}/>{name}</a>)}
+          </details>
           <div className="side-divider" />
 
           <div className="side-label">YOUR SPACE</div>
@@ -1269,6 +1241,7 @@ function App() {
 </div>
               </section>
 
+              <TodayCampus buildings={buildings} events={liveEvents} status={eventsStatus} navigate={navigate} openBuilding={openBuilding}/>
               <div className="quick-actions">
                 <button
                   onClick={() => navigate('Buildings')}
@@ -1472,6 +1445,7 @@ function App() {
                 </p>
               </div>
 
+              <ExploreNearby buildings={buildings} openBuilding={openBuilding}/>
               <div className="explore-grid">
                 <section className="content-card">
                   <h2>
@@ -1695,7 +1669,7 @@ function App() {
               </section>
             </>
           ) : (
-            <CampusChat openBuilding={openBuilding}/>
+            <><CampusChat openBuilding={openBuilding}/><ExploreNearby buildings={buildings} openBuilding={openBuilding}/></>
           )}
 
           <footer className="footer">
