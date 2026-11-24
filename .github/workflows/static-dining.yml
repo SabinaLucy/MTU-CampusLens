@@ -1,0 +1,56 @@
+name: Store dining photos locally
+on:
+  push:
+    branches: [campuslens-upgrade]
+    paths: ['.github/workflows/static-dining.yml']
+permissions:
+  contents: write
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests pillow
+      - run: |
+          python - <<'PY'
+          import json,re,requests
+          from pathlib import Path
+          from PIL import Image
+          from io import BytesIO
+          ui=Path('frontend/src/main.tsx')
+          s=ui.read_text()
+          m=re.search(r'const DINING: Dining\[\] = (\[[\s\S]*?\]);',s)
+          items=json.loads(m.group(1))
+          folder=Path('frontend/public/dining')
+          folder.mkdir(parents=True,exist_ok=True)
+          mapped={}
+          for x in items:
+              url=x.get('image_url','')
+              if not url.startswith('https://www.mtu.edu/'): continue
+              try:
+                  r=requests.get(url,timeout=25,allow_redirects=False)
+                  r.raise_for_status()
+                  with Image.open(BytesIO(r.content)) as im:
+                      im.load()
+                      if min(im.size)<100: continue
+                      im.convert('RGB').save(folder/(x['id']+'.jpg'),quality=92)
+                  x['image_source']=url
+                  x['image_url']='/dining/'+x['id']+'.jpg'
+                  mapped[x['id']]=x
+                  print('Stored',x['name'])
+              except Exception as exc: print('Failed',x['name'],exc)
+          if not mapped: raise SystemExit('No images downloaded')
+          ui.write_text(s[:m.start(1)]+json.dumps(items,indent=2)+s[m.end(1):])
+          p=Path('backend/app/data/buildings.json')
+          d=json.loads(p.read_text())
+          for b in d['buildings']:
+              for x in b.get('dining',[]):
+                  if x['id'] in mapped: x.update(mapped[x['id']])
+          p.write_text(json.dumps(d,indent=2)+'\n')
+          PY
+      - run: |
+          git config user.name "CampusLens research"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/dining frontend/src/main.tsx backend/app/data/buildings.json
+          git diff --cached --quiet || git commit -m "Bundle official dining photographs as static assets"
+          git push origin HEAD:campuslens-upgrade
