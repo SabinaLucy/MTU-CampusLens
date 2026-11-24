@@ -1,0 +1,20 @@
+name: Bundle official portraits and dining photos
+on:
+  push:
+    branches: [campuslens-upgrade]
+    paths: ['backend/scripts/bundle_photos.py','.github/workflows/bundle-photos.yml']
+permissions:
+  contents: write
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests beautifulsoup4 pillow
+      - run: python backend/scripts/bundle_photos.py
+      - run: |
+          git config user.name "CampusLens research"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add frontend/public frontend/src/main.tsx backend/app/data/buildings.json
+          git diff --cached --quiet || git commit -m "Bundle matched official photos locally"
+          git push origin HEAD:campuslens-upgrade
