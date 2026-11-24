@@ -310,6 +310,19 @@ function People({building}: {building: Building}) {
     {(building.directory_sources || []).map(source=><SourceLink key={source.url} source={source}/>)}</>;
 }
 
+function FilteredEvents({events,status}: {events:LiveEvent[];status:string}) {
+ const [q,Q]=useState(''),[period,P]=useState('Upcoming'),[location,L]=useState(''),[from,F]=useState(''),[to,T]=useState(''),[sort,S]=useState('soon'),[view,V]=useState('cards');
+ const day=(d:Date)=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Detroit',year:'numeric',month:'2-digit',day:'2-digit'}).format(d);
+ const today=day(new Date());
+ const shift=(n:number)=>{const d=new Date(today+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+n);return day(d)};
+ const locations=[...new Set(events.map(e=>e.location).filter(Boolean))].sort();
+ const filtered=events.filter(e=>{const date=new Date(e.start_time);if(!Number.isFinite(date.getTime()))return period==='Upcoming'&&!location;
+ const k=day(date);return (!q||[e.title,e.location].join(' ').toLowerCase().includes(q.toLowerCase()))&&(!location||e.location===location)&&
+ (period==='Upcoming'||period==='Today'&&k===today||period==='Tomorrow'&&k===shift(1)||period==='This week'&&k>=today&&k<=shift(6)||period==='This month'&&k.slice(0,7)===today.slice(0,7)||period==='Custom'&&(!from||k>=from)&&(!to||k<=to));
+ }).sort((a,b)=>sort==='name'?a.title.localeCompare(b.title):sort==='latest'?Date.parse(b.start_time)-Date.parse(a.start_time):Date.parse(a.start_time)-Date.parse(b.start_time));
+ return <><div className="event-filters"><input aria-label="Search events" placeholder="Search events or locations" value={q} onChange={e=>Q(e.target.value)}/><div className="event-periods">{['Upcoming','Today','Tomorrow','This week','This month','Custom'].map(x=><button key={x} type="button" aria-pressed={period===x} onClick={()=>P(x)}>{x}</button>)}</div>{period==='Custom'&&<div className="event-filter-grid"><label>From<input type="date" value={from} onChange={e=>F(e.target.value)}/></label><label>To<input type="date" min={from} value={to} onChange={e=>T(e.target.value)}/></label></div>}<div className="event-filter-grid"><label>Building / location<select value={location} onChange={e=>L(e.target.value)}><option value="">All locations</option>{locations.map(x=><option key={x}>{x}</option>)}</select></label><label>Sort<select value={sort} onChange={e=>S(e.target.value)}><option value="soon">Soonest first</option><option value="latest">Latest first</option><option value="name">Name A–Z</option></select></label><label>View<select value={view} onChange={e=>V(e.target.value)}><option value="cards">Cards</option><option value="days">By date</option></select></label></div><button type="button" onClick={()=>{Q('');P('Upcoming');L('');F('');T('');S('soon');V('cards')}}>Reset filters</button><p className="muted">{filtered.length} of {events.length} events • Eastern time</p></div>{view==='days'&&filtered.length&&status!=='loading'&&status!=='unavailable'? [...new Set(filtered.map(e=>day(new Date(e.start_time))))].sort().map(k=><section key={k}><h3>{k}</h3><LiveEventCards events={filtered.filter(e=>day(new Date(e.start_time))===k)} status={status}/></section>):<LiveEventCards events={filtered} status={status}/>}</>
+}
+
 function LiveEventCards({
   events,
   status
@@ -1635,7 +1648,7 @@ function App() {
                   <CalendarDays className="accent" />
                 </div>
 
-                <LiveEventCards
+                <FilteredEvents
                   events={liveEvents}
                   status={eventsStatus}
                 />

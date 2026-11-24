@@ -1,0 +1,26 @@
+name: SDC official directory and frontend build
+on:
+  push:
+    branches: [campuslens-upgrade]
+    paths: ['backend/scripts/sdc_directory.py','.github/workflows/sdc-directory.yml']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npm run build
+        working-directory: frontend
+  directory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests beautifulsoup4 pillow
+      - run: python backend/scripts/sdc_directory.py
+      - run: |
+          git config user.name "CampusLens research"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backend/app/data/buildings.json frontend/public/portraits
+          git diff --cached --quiet || git commit -m "Bundle official SDC directory and portraits"
+          git push origin HEAD:campuslens-upgrade
