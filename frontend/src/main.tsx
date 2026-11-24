@@ -38,7 +38,7 @@ type Item = {
   source?: Source;
 };
 
-type Person = {name: string; title: string; office: string; email?: string; image_url?: string; profile_url?: string; source: Source};
+type Person = {name: string; title: string; office: string; phone?: string; interests?: string; email?: string; image_url?: string; profile_url?: string; source: Source};
 
 type Dining = {id:string; name:string; building_ids:number[]; type:string; menu:string; source:string; note:string; hours?:string; image_url?:string};
 const DINING: Dining[] = [
@@ -51,7 +51,8 @@ const DINING: Dining[] = [
     "type": "Dining hall",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-    "note": "Check official dining site for current menus and hours."
+    "note": "Check official dining site for current menus and hours.",
+    "hours": "Thanksgiving: closed until Nov 29, 4:30 PM"
   },
   {
     "id": "mcnair",
@@ -63,7 +64,8 @@ const DINING: Dining[] = [
     "type": "Dining hall",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-    "note": "Check official dining site for current menus and hours."
+    "note": "Check official dining site for current menus and hours.",
+    "hours": "Thanksgiving: closed until Nov 30, 7 AM"
   },
   {
     "id": "dhh",
@@ -74,7 +76,8 @@ const DINING: Dining[] = [
     "type": "Dining hall",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-    "note": "Check official dining site for current menus and hours."
+    "note": "Check official dining site for current menus and hours.",
+    "hours": "Thanksgiving: closed until Nov 30, 7 AM"
   },
   {
     "id": "campus",
@@ -85,18 +88,20 @@ const DINING: Dining[] = [
     "type": "Café",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-    "note": "Check official dining site for current menus and hours."
+    "note": "Check official dining site for current menus and hours.",
+    "hours": "Thanksgiving: closed until Nov 29, 6 PM"
   },
   {
     "id": "library",
-    "name": "Library Café",
+    "name": "Velodrome Coffee Company",
     "building_ids": [
       5
     ],
     "type": "Café",
     "menu": "https://dineoncampus.com/MTU",
-    "source": "https://www.mtu.edu/it/accounts/huskycard/",
-    "note": "Check official dining site for current menus and hours."
+    "source": "https://www.mtu.edu/library/about/hours/",
+    "note": "Check official dining site for current menus and hours.",
+    "hours": "Published regular hours: Mon–Thu 8 AM–10 PM; Fri 8 AM–6 PM; Sat 9 AM–5 PM; Sun 9 AM–8 PM. Holiday exceptions apply."
   },
   {
     "id": "mub",
@@ -107,7 +112,8 @@ const DINING: Dining[] = [
     "type": "Restaurant",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-    "note": "Check official dining site for current menus and hours."
+    "note": "Check official dining site for current menus and hours.",
+    "hours": "Closed Nov 25–29; reopens Nov 30, 10 AM"
   },
   {
     "id": "huski",
@@ -289,7 +295,7 @@ function People({building}: {building: Building}) {
   return <><h2>Faculty & Staff</h2><p className="muted">Public university directory entries with offices verified in this building.</p>
     <div className="search-field"><Search size={18}/><input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Search faculty and staff"/></div>
     {!people.length && <p className="muted">No matching verified profiles are loaded.</p>}
-    <div className="people-grid">{people.map(p=><article className="item-card person-card" key={p.name+'-'+p.office}><ProfilePhoto key={p.image_url} url={p.image_url} name={p.name} person/><div><h3>{p.name}</h3><p>{p.title}</p><p><MapPin size={15}/> {p.office}</p>{p.email && <a href={'mailto:'+p.email}>{p.email}</a>}<SourceLink source={p.profile_url ? {...p.source,url:p.profile_url,title:'Official profile'} : p.source}/></div></article>)}</div>
+    <div className="people-grid">{people.map(p=><article className="item-card person-card" key={p.name+'-'+p.office}><ProfilePhoto key={p.image_url} url={p.image_url} name={p.name} person/><div><h3>{p.name}</h3><p>{p.title}</p><p><MapPin size={15}/> {p.office}</p>{p.email && <a href={'mailto:'+p.email}>{p.email}</a>}{p.phone && <p><a href={'tel:'+p.phone}>{p.phone}</a></p>}{p.interests && <p>{p.interests}</p>}<SourceLink source={p.profile_url ? {...p.source,url:p.profile_url,title:'Official profile'} : p.source}/></div></article>)}</div>
     {(building.directory_sources || []).map(source=><SourceLink key={source.url} source={source}/>)}</>;
 }
 

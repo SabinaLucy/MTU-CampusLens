@@ -365,14 +365,15 @@
       "people": [
         {
           "name": "Wayne W. Weaver",
-          "title": "ECE Chair",
+          "title": "Chair; Professor, ECE",
           "office": "EERC 121",
           "email": "wwweaver@mtu.edu",
+          "phone": "906-487-1461",
+          "interests": "Power electronics; microgrids",
           "source": {
-            "title": "ECE Faculty Directory",
+            "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "checked_at": "2026-11-24"
           }
         },
         {
@@ -380,11 +381,12 @@
           "title": "Assistant Teaching Professor, ECE",
           "office": "EERC 824",
           "email": "behzadak@mtu.edu",
+          "phone": "906-487-2868",
+          "interests": "Robotic perception; autonomous systems",
           "source": {
-            "title": "ECE Faculty Directory",
+            "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "checked_at": "2026-11-24"
           }
         },
         {
@@ -392,48 +394,38 @@
           "title": "Assistant Professor, ECE",
           "office": "EERC 710",
           "email": "hongyua@mtu.edu",
+          "phone": "906-487-3382",
+          "interests": "Neuromorphic computing",
           "source": {
-            "title": "ECE Faculty Directory",
+            "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "checked_at": "2026-11-24"
           }
         },
         {
-          "name": "Fengying Dang",
-          "title": "Assistant Professor, ECE",
-          "office": "EERC 711",
-          "email": "fdang1@mtu.edu",
-          "profile_url": "https://www.mtu.edu/ece/department/faculty/dang/",
+          "name": "Glen E. Archer",
+          "title": "Teaching Professor, ECE",
+          "office": "EERC 629",
+          "email": "gearcher@mtu.edu",
+          "phone": "906-487-2789",
+          "interests": "Image processing; teaching laboratories",
           "source": {
-            "title": "ECE Faculty Directory",
+            "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "checked_at": "2026-11-24"
           }
         },
         {
-          "name": "Anthony (Tony) Pinar",
-          "title": "Associate Teaching Professor, ECE",
-          "office": "EERC 731",
-          "email": "ajpinar@mtu.edu",
+          "name": "Paul L. Bergstrom",
+          "title": "Professor, ECE",
+          "office": "EERC 630",
+          "email": "paulb@mtu.edu",
+          "phone": "906-487-2058",
+          "interests": "MEMS; sensors",
           "source": {
-            "title": "ECE Faculty Directory",
+            "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
-          }
-        },
-        {
-          "name": "Aurenice M. Oliveira",
-          "title": "Associate Professor, ECE",
-          "office": "EERC 234",
-          "email": "oliveira@mtu.edu",
-          "source": {
-            "title": "ECE Faculty Directory",
-            "url": "https://www.mtu.edu/ece/department/faculty/",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "checked_at": "2026-11-24"
           }
         },
         {
@@ -441,83 +433,337 @@
           "title": "Associate Professor, ECE",
           "office": "EERC 236",
           "email": "jpbos@mtu.edu",
+          "phone": "906-487-3161",
+          "interests": "Optics; autonomous vehicles",
           "source": {
-            "title": "ECE Faculty Directory",
+            "title": "ECE official directory",
             "url": "https://www.mtu.edu/ece/department/faculty/",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Tan Chen",
+          "title": "Assistant Professor, ECE",
+          "office": "EERC 506",
+          "email": "tanchen@mtu.edu",
+          "phone": "906-487-2866",
+          "interests": "Robotics; learning-based control",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Taerin Chung",
+          "title": "Assistant Teaching Professor, ECE",
+          "office": "EERC 505",
+          "email": "tchung@mtu.edu",
+          "phone": "906-487-2713",
+          "interests": "Nanophotonics; sensing",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Christopher (Kit) Cischke",
+          "title": "Associate Chair and Teaching Professor, ECE",
+          "office": "EERC 520",
+          "email": "cmcischk@mtu.edu",
+          "phone": "906-487-2011",
+          "interests": "Parallel computing",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Flavio Bezerra Costa",
+          "title": "Assistant Professor, ECE",
+          "office": "EERC 613",
+          "email": "fbcosta@mtu.edu",
+          "phone": "906-487-1582",
+          "interests": "Renewable energy; grid protection",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Fengying Dang",
+          "title": "Assistant Professor, ECE",
+          "office": "EERC 711",
+          "email": "fdang1@mtu.edu",
+          "phone": "906-487-2040",
+          "interests": "Robotics; perception; control",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Durdu Güney",
+          "title": "Associate Professor, ECE",
+          "office": "EERC 729",
+          "email": "dguney@mtu.edu",
+          "phone": "906-487-2780",
+          "interests": "Quantum optics; metamaterials",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Trever Hassell",
+          "title": "Associate Teaching Professor, ECE",
+          "office": "EERC 825",
+          "email": "tjhassel@mtu.edu",
+          "phone": "906-487-2240",
+          "interests": "Electric drives; microgrids",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Yi Hu",
+          "title": "Assistant Professor, ECE",
+          "office": "EERC 504",
+          "email": "yhu6@mtu.edu",
+          "phone": "906-487-3091",
+          "interests": "Power systems; AI",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Christopher Middlebrook",
+          "title": "Professor, ECE",
+          "office": "EERC 628",
+          "email": "ctmiddle@mtu.edu",
+          "phone": "906-487-1622",
+          "interests": "Optical devices",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Bruce A. Mork",
+          "title": "Professor, ECE",
+          "office": "EERC 614",
+          "email": "bamork@mtu.edu",
+          "phone": "906-487-2857",
+          "interests": "Power system protection",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Shane Oberloier",
+          "title": "Assistant Teaching Professor, ECE",
+          "office": "EERC 518",
+          "email": "swoberlo@mtu.edu",
+          "phone": "906-487-2941",
+          "interests": "Open hardware; robotics",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Aurenice M. Oliveira",
+          "title": "Associate Chair and Associate Professor, ECE",
+          "office": "EERC 234",
+          "email": "oliveira@mtu.edu",
+          "phone": "906-487-2494",
+          "interests": "Vehicular networks; wireless communications",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Anthony (Tony) Pinar",
+          "title": "Associate Teaching Professor, ECE",
+          "office": "EERC 731",
+          "email": "ajpinar@mtu.edu",
+          "phone": "906-487-0024",
+          "interests": "Machine learning; signal processing",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Elena Semouchkina",
+          "title": "Professor, ECE",
+          "office": "EERC 713",
+          "email": "esemouch@mtu.edu",
+          "phone": "906-487-2869",
+          "interests": "Electromagnetics; photonic crystals",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Anna Stuhlmacher",
+          "title": "Assistant Professor, ECE",
+          "office": "EERC 503",
+          "email": "annastu@mtu.edu",
+          "phone": "906-487-2342",
+          "interests": "Power systems optimization",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Chee-Wooi Ten",
+          "title": "Professor, ECE",
+          "office": "EERC 612",
+          "email": "ten@mtu.edu",
+          "phone": "906-487-0397",
+          "interests": "Grid cybersecurity",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Kaichen Yang",
+          "title": "Assistant Professor, ECE",
+          "office": "EERC 712",
+          "email": "kaicheny@mtu.edu",
+          "phone": "906-487-3116",
+          "interests": "Network and hardware security",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24"
           }
         },
         {
           "name": "Maryann Wilcox",
-          "title": "Business Manager",
+          "title": "Business Manager, ECE",
           "office": "EERC 117",
           "email": "mawilcox@mtu.edu",
+          "phone": "906-487-2627",
+          "interests": "Department administration",
           "source": {
-            "title": "ECE Staff Directory",
-            "url": "https://www.mtu.edu/ece/department/staff/index.html",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
-          }
-        },
-        {
-          "name": "Ashley Hendrickson",
-          "title": "Administrative Aide",
-          "office": "EERC 121",
-          "email": "ashleyhe@mtu.edu",
-          "source": {
-            "title": "ECE Staff Directory",
-            "url": "https://www.mtu.edu/ece/department/staff/index.html",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/staff/",
+            "checked_at": "2026-11-24"
           }
         },
         {
           "name": "Carl Greene",
-          "title": "Lab and Academic Specialist",
+          "title": "Lab and Academic Specialist, ECE",
           "office": "EERC 826",
           "email": "carlg@mtu.edu",
+          "phone": "906-487-2532",
+          "interests": "Lab support",
           "source": {
-            "title": "ECE Staff Directory",
-            "url": "https://www.mtu.edu/ece/department/staff/index.html",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/staff/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Ashley Hendrickson",
+          "title": "Administrative Aide, ECE",
+          "office": "EERC 121",
+          "email": "ashleyhe@mtu.edu",
+          "phone": "906-487-2550",
+          "interests": "Front office; student employment",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/staff/",
+            "checked_at": "2026-11-24"
           }
         },
         {
           "name": "Lauren Huested",
-          "title": "Academic Advisor and Outreach Specialist",
+          "title": "Academic Advisor and Outreach Specialist, ECE",
           "office": "EERC 131",
           "email": "lhuested@mtu.edu",
+          "phone": "906-487-1169",
+          "interests": "Computer engineering advising",
           "source": {
-            "title": "ECE Staff Directory",
-            "url": "https://www.mtu.edu/ece/department/staff/index.html",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/staff/",
+            "checked_at": "2026-11-24"
           }
         },
         {
           "name": "Kate Marin",
-          "title": "Academic Advisor",
+          "title": "Academic Advisor, ECE",
           "office": "EERC 131",
           "email": "kmarin@mtu.edu",
+          "phone": "906-487-2232",
+          "interests": "Electrical and robotics engineering advising",
           "source": {
-            "title": "ECE Staff Directory",
-            "url": "https://www.mtu.edu/ece/department/staff/index.html",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/staff/",
+            "checked_at": "2026-11-24"
           }
         },
         {
           "name": "Lynn McCormick",
-          "title": "Graduate Program Assistant",
+          "title": "Administrative Aide; Graduate Program Assistant, ECE",
           "office": "EERC 611",
           "email": "lmccormi@mtu.edu",
+          "phone": "906-487-1995",
+          "interests": "Graduate program support",
           "source": {
-            "title": "ECE Staff Directory",
-            "url": "https://www.mtu.edu/ece/department/staff/index.html",
-            "checked_at": "2026-11-24",
-            "source_type": "official_mtu"
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/staff/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Chuck Sannes",
+          "title": "Laboratory Supervisor, ECE",
+          "office": "EERC 727",
+          "email": "cesannes@mtu.edu",
+          "phone": "906-487-2134",
+          "interests": "Laboratory maintenance",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/staff/",
+            "checked_at": "2026-11-24"
+          }
+        },
+        {
+          "name": "Mark Sloat",
+          "title": "Research Associate, ECE",
+          "office": "EERC 725",
+          "email": "mesloat@mtu.edu",
+          "phone": "906-487-2134",
+          "interests": "Lab safety and electronics support",
+          "source": {
+            "title": "ECE official directory",
+            "url": "https://www.mtu.edu/ece/department/staff/",
+            "checked_at": "2026-11-24"
           }
         }
       ],
@@ -888,14 +1134,15 @@
       "dining": [
         {
           "id": "library",
-          "name": "Library Café",
+          "name": "Velodrome Coffee Company",
           "building_ids": [
             5
           ],
           "type": "Café",
           "menu": "https://dineoncampus.com/MTU",
-          "source": "https://www.mtu.edu/it/accounts/huskycard/",
-          "note": "Check official dining site for current menus and hours."
+          "source": "https://www.mtu.edu/library/about/hours/",
+          "note": "Check official dining site for current menus and hours.",
+          "hours": "Published regular hours: Mon–Thu 8 AM–10 PM; Fri 8 AM–6 PM; Sat 9 AM–5 PM; Sun 9 AM–8 PM. Holiday exceptions apply."
         }
       ]
     },
@@ -1750,7 +1997,8 @@
           "type": "Dining hall",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-          "note": "Check official dining site for current menus and hours."
+          "note": "Check official dining site for current menus and hours.",
+          "hours": "Thanksgiving: closed until Nov 30, 7 AM"
         }
       ]
     },
@@ -1823,7 +2071,8 @@
           "type": "Dining hall",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-          "note": "Check official dining site for current menus and hours."
+          "note": "Check official dining site for current menus and hours.",
+          "hours": "Thanksgiving: closed until Nov 30, 7 AM"
         }
       ]
     },
@@ -1955,7 +2204,8 @@
           "type": "Dining hall",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-          "note": "Check official dining site for current menus and hours."
+          "note": "Check official dining site for current menus and hours.",
+          "hours": "Thanksgiving: closed until Nov 29, 4:30 PM"
         },
         {
           "id": "campus",
@@ -1966,7 +2216,8 @@
           "type": "Café",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-          "note": "Check official dining site for current menus and hours."
+          "note": "Check official dining site for current menus and hours.",
+          "hours": "Thanksgiving: closed until Nov 29, 6 PM"
         }
       ]
     },
@@ -2006,7 +2257,8 @@
           "type": "Dining hall",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-          "note": "Check official dining site for current menus and hours."
+          "note": "Check official dining site for current menus and hours.",
+          "hours": "Thanksgiving: closed until Nov 30, 7 AM"
         }
       ]
     },
@@ -2271,7 +2523,8 @@
           "type": "Restaurant",
           "menu": "https://dineoncampus.com/MTU",
           "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
-          "note": "Check official dining site for current menus and hours."
+          "note": "Check official dining site for current menus and hours.",
+          "hours": "Closed Nov 25–29; reopens Nov 30, 10 AM"
         }
       ]
     },
