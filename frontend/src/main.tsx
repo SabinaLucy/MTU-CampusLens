@@ -286,6 +286,7 @@ function SourceLink({ source }: { source?: Source }) {
 
 function EventImage({ event, compact = false }: { event: LiveEvent; compact?: boolean }) {
   const [failed, setFailed] = useState(false);
+  useEffect(()=>setFailed(false),[event.image_url]);
   return <div className={compact ? 'event-image compact' : 'event-image'}>
     {event.image_url && !failed
       ? <img src={event.image_url} alt={event.title} loading="lazy" decoding="async" onError={() => setFailed(true)} />
@@ -507,6 +508,8 @@ function App() {
   const [chatBusy, setChatBusy] = useState(false);
 
   const [page, setPage] = useState<Page>('Home');
+  const trail = React.useRef<{page:Page; selected:Building|null; tab:BuildingTab}[]>([]);
+  function goBack(){const previous=trail.current.pop();setPage(previous?.page||'Home');setSelected(previous?.selected||null);setTab(previous?.tab||'Overview');setMobileMenu(false);setError('');window.scrollTo({top:0});}
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const [theme, setTheme] = useState<'dark' | 'light'>(() =>
@@ -625,6 +628,8 @@ function App() {
   }, [buildings, query]);
 
   function navigate(destination: Page) {
+    if(destination===page&&!selected)return;
+    trail.current.push({page,selected,tab});
     setPage(destination);
     setSelected(null);
     setMobileMenu(false);
@@ -645,6 +650,7 @@ function App() {
         `/api/buildings/${id}`
       );
 
+      trail.current.push({page,selected,tab});
       setSelected(building);
       setPrediction(null);
       setTab('Overview');
@@ -919,6 +925,7 @@ function App() {
         </aside>
 
         <main className="main-area">
+          <button type="button" className="back-link global-back" onClick={goBack} disabled={!selected&&page==='Home'&&!trail.current.length}><ArrowLeft size={17}/> Back</button>
           {error && (
             <div className="error-box" role="alert">
               <AlertCircle size={18} />
@@ -928,15 +935,7 @@ function App() {
 
           {selected ? (
             <>
-              <button
-                className="back-link"
-                onClick={() => {
-                  setSelected(null);
-                }}
-              >
-                <ArrowLeft size={17} />
-                {page === 'Saved Buildings' ? 'Saved Buildings' : 'Back'}
-              </button>
+
 
               <ProfilePhoto key={selected.id} url={selected.image_url} name={selected.name}/>
               {selected.image_source && <SourceLink source={selected.image_source}/>}

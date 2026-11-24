@@ -227,3 +227,5 @@
 
 /* Minimal emoji-led welcome, using the existing campus logo. */
 .campus-chat .chat-orb{width:68px;height:68px;background:transparent;box-shadow:none;border-radius:12px;margin-bottom:16px}.chat-orb img{width:100%;height:100%;object-fit:contain}.chat-welcome h1{font-size:clamp(25px,3.5vw,40px)}.chat-suggestion .chat-emoji{font-size:29px;line-height:1.25;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;color:inherit}.chat-suggestion{box-shadow:0 3px 12px #00000006}.chat-suggestion:focus-visible{outline:2px solid var(--gold);outline-offset:2px}.chat-welcome{padding-bottom:12px}.chat-prompts{margin-bottom:12px}@media(max-width:640px){.campus-chat .chat-orb{width:48px;height:48px}.chat-suggestion .chat-emoji{font-size:25px}.chat-welcome h1{font-size:26px}}
+
+.global-back{margin:0 0 14px;min-height:40px;display:inline-flex;align-items:center;gap:7px}.global-back:disabled{opacity:.45;cursor:default}

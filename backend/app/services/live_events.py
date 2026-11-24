@@ -8,7 +8,7 @@ from html import unescape
 import time
 from datetime import date, datetime, time as dt_time, timedelta
 from zoneinfo import ZoneInfo
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urljoin
 
 import httpx
 from icalendar import Calendar
@@ -94,7 +94,7 @@ def parse_calendar(raw):
         if not url.startswith("https://events.mtu.edu/"):
             url = FEED_URL
 
-        photo = str(component.get("IMAGE", "") or component.get("X-ALT-DESC", "")).strip()
+        photo = str(component.get("IMAGE", "") or component.get("X-ALT-DESC", "") or component.get("DESCRIPTION", "")).strip()
         image_match = re.search(r'https://[^\s"<>]+\.(?:jpg|jpeg|png|webp)(?:\?[^\s"<>]*)?', photo, re.I)
         results.append({
             "title": title,
@@ -102,7 +102,7 @@ def parse_calendar(raw):
             "start_time": start_at.isoformat(),
             "url": url,
             "source": "Michigan Tech Events Calendar",
-            **({"image_url": unescape(image_match.group(0))} if image_match else {}),
+            **({"image_url": unescape(image_match.group(0))} if image_match else ({"image_url": photo} if photo.startswith("https://") and not re.search(r"\s", photo) else {})),
         })
 
     results.sort(key=lambda event: event["start_time"])
@@ -124,7 +124,7 @@ async def enrich_images(client, events):
     """Use the official Localist calendar API; never block the ICS fallback."""
     async def fetch_page(page):
         try:
-            response = await client.get(EVENT_API, params={"days": 90, "pp": 100, "page": page}, timeout=5.0)
+            response = await client.get(EVENT_API, params={"days": 90, "pp": 100, "page": page}, timeout=8.0)
             response.raise_for_status()
             return response.json()
         except Exception:
@@ -156,6 +156,29 @@ async def enrich_images(client, events):
             photo = next(iter(candidates))
         if photo:
             event["image_url"] = photo
+
+    # Official event page metadata is a fallback when the API omits a photo.
+    missing = list(dict.fromkeys(e["url"] for e in events if not e.get("image_url") and e["url"].startswith("https://events.mtu.edu/event/")))[:24]
+    semaphore = asyncio.Semaphore(8)
+    async def page_photo(url):
+        try:
+            async with semaphore:
+                response = await client.get(url, timeout=4.0)
+                response.raise_for_status()
+            for tag in re.findall(r"<meta\b[^>]*>", response.text, re.I):
+                if re.search(r"(?:property|name)\s*=\s*[\x22\x27]og:image[\x22\x27]", tag, re.I):
+                    match = re.search(r"content\s*=\s*[\x22\x27]([^\x22\x27]+)", tag, re.I)
+                    if match:
+                        photo = urljoin(url, unescape(match.group(1)))
+                        if photo.startswith("https://"): return url, photo
+        except Exception:
+            pass
+        return url, None
+    fallback = dict(await asyncio.gather(*(page_photo(url) for url in missing)))
+    for event in events:
+        if not event.get("image_url") and fallback.get(event["url"]):
+            event["image_url"] = fallback[event["url"]]
+    logger.info("Event image coverage: %s/%s", sum(bool(e.get("image_url")) for e in events), len(events))
 
 
 async def get_live_events():
