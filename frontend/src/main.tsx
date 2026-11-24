@@ -1490,7 +1490,6 @@ function App() {
                     <input
                       type="file"
                       accept="image/jpeg,image/png,image/webp"
-                      capture="environment"
                       onChange={e =>
                         chooseFile(e.target.files?.[0])
                       }
@@ -1513,6 +1512,10 @@ function App() {
                         </span>
                       </>
                     )}
+                  </label>
+                  <label className="mobile-building-camera">
+                    <Camera size={18}/> Take photo
+                    <input type="file" accept="image/jpeg,image/png,image/webp" capture="environment" onChange={e=>chooseFile(e.target.files?.[0])}/>
                   </label>
 
                   <button
