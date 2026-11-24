@@ -253,24 +253,253 @@
       "aliases": [
         "EERC"
       ],
-      "description": "Electrical Energy Resources Center is listed in Michigan Technological University's official campus map. Further profile details have not yet been verified.",
-      "address": "Michigan Technological University, Houghton, MI, USA",
+      "description": "The EERC houses Electrical and Computer Engineering and Manufacturing and Mechanical Engineering Technology. It includes a computer systems research center and ECE student learning facilities.",
+      "address": "1400 Townsend Drive, Houghton, MI 49931",
       "campus_map_number": 7,
       "map_url": "https://map.mtu.edu/",
       "source": {
-        "title": "Michigan Tech campus map (September 2025)",
-        "url": "https://www.mtu.edu/maps/campus-map.pdf",
-        "checked_at": "2026-11-22",
+        "title": "MTU official EERC place profile",
+        "url": "https://events.mtu.edu/electrical_energy_resources_center_eerc",
+        "checked_at": "2026-11-24",
         "source_type": "official_mtu"
       },
-      "departments": [],
-      "offices": [],
+      "departments": [
+        {
+          "name": "Electrical and Computer Engineering",
+          "source": {
+            "title": "MTU official EERC place profile",
+            "url": "https://events.mtu.edu/electrical_energy_resources_center_eerc",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Manufacturing and Mechanical Engineering Technology",
+          "source": {
+            "title": "MTU official EERC place profile",
+            "url": "https://events.mtu.edu/electrical_energy_resources_center_eerc",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
+      "offices": [
+        {
+          "name": "Paul and Susan Williams Center for Computer Systems Research",
+          "notes": "Fifth floor",
+          "source": {
+            "title": "MTU official EERC place profile",
+            "url": "https://events.mtu.edu/electrical_energy_resources_center_eerc",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Electrical and Computer Engineering Learning Center",
+          "notes": "First floor",
+          "source": {
+            "title": "MTU official EERC place profile",
+            "url": "https://events.mtu.edu/electrical_energy_resources_center_eerc",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Electrical and Computer Engineering Women’s Center",
+          "notes": "Seventh floor",
+          "source": {
+            "title": "MTU official EERC place profile",
+            "url": "https://events.mtu.edu/electrical_energy_resources_center_eerc",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        }
+      ],
       "rooms": [],
       "events": [],
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "directory_sources": [
+        {
+          "title": "ECE Faculty Directory",
+          "url": "https://www.mtu.edu/ece/department/faculty/",
+          "checked_at": "2026-11-24",
+          "source_type": "official_mtu"
+        },
+        {
+          "title": "ECE Staff Directory",
+          "url": "https://www.mtu.edu/ece/department/staff/index.html",
+          "checked_at": "2026-11-24",
+          "source_type": "official_mtu"
+        },
+        {
+          "title": "Applied Computing Faculty Directory",
+          "url": "https://www.mtu.edu/applied-computing/about/faculty/",
+          "checked_at": "2026-11-24",
+          "source_type": "official_mtu"
+        }
+      ],
+      "people": [
+        {
+          "name": "Wayne W. Weaver",
+          "title": "ECE Chair",
+          "office": "EERC 121",
+          "email": "wwweaver@mtu.edu",
+          "source": {
+            "title": "ECE Faculty Directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Behzad Akbari",
+          "title": "Assistant Teaching Professor, ECE",
+          "office": "EERC 824",
+          "email": "behzadak@mtu.edu",
+          "source": {
+            "title": "ECE Faculty Directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Hongyu An",
+          "title": "Assistant Professor, ECE",
+          "office": "EERC 710",
+          "email": "hongyua@mtu.edu",
+          "source": {
+            "title": "ECE Faculty Directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Fengying Dang",
+          "title": "Assistant Professor, ECE",
+          "office": "EERC 711",
+          "email": "fdang1@mtu.edu",
+          "profile_url": "https://www.mtu.edu/ece/department/faculty/dang/",
+          "source": {
+            "title": "ECE Faculty Directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Anthony (Tony) Pinar",
+          "title": "Associate Teaching Professor, ECE",
+          "office": "EERC 731",
+          "email": "ajpinar@mtu.edu",
+          "source": {
+            "title": "ECE Faculty Directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Aurenice M. Oliveira",
+          "title": "Associate Professor, ECE",
+          "office": "EERC 234",
+          "email": "oliveira@mtu.edu",
+          "source": {
+            "title": "ECE Faculty Directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Jeremy P. Bos",
+          "title": "Associate Professor, ECE",
+          "office": "EERC 236",
+          "email": "jpbos@mtu.edu",
+          "source": {
+            "title": "ECE Faculty Directory",
+            "url": "https://www.mtu.edu/ece/department/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Maryann Wilcox",
+          "title": "Business Manager",
+          "office": "EERC 117",
+          "email": "mawilcox@mtu.edu",
+          "source": {
+            "title": "ECE Staff Directory",
+            "url": "https://www.mtu.edu/ece/department/staff/index.html",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ashley Hendrickson",
+          "title": "Administrative Aide",
+          "office": "EERC 121",
+          "email": "ashleyhe@mtu.edu",
+          "source": {
+            "title": "ECE Staff Directory",
+            "url": "https://www.mtu.edu/ece/department/staff/index.html",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Carl Greene",
+          "title": "Lab and Academic Specialist",
+          "office": "EERC 826",
+          "email": "carlg@mtu.edu",
+          "source": {
+            "title": "ECE Staff Directory",
+            "url": "https://www.mtu.edu/ece/department/staff/index.html",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Lauren Huested",
+          "title": "Academic Advisor and Outreach Specialist",
+          "office": "EERC 131",
+          "email": "lhuested@mtu.edu",
+          "source": {
+            "title": "ECE Staff Directory",
+            "url": "https://www.mtu.edu/ece/department/staff/index.html",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Kate Marin",
+          "title": "Academic Advisor",
+          "office": "EERC 131",
+          "email": "kmarin@mtu.edu",
+          "source": {
+            "title": "ECE Staff Directory",
+            "url": "https://www.mtu.edu/ece/department/staff/index.html",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Lynn McCormick",
+          "title": "Graduate Program Assistant",
+          "office": "EERC 611",
+          "email": "lmccormi@mtu.edu",
+          "source": {
+            "title": "ECE Staff Directory",
+            "url": "https://www.mtu.edu/ece/department/staff/index.html",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 3,
@@ -561,7 +790,83 @@
       "classes": [],
       "reference_images": [],
       "category": "Academic & Research",
-      "location_type": "building"
+      "location_type": "building",
+      "directory_sources": [
+        {
+          "title": "Computer Science Faculty Directory",
+          "url": "https://www.mtu.edu/cs/department/people/",
+          "checked_at": "2026-11-24",
+          "source_type": "official_mtu"
+        },
+        {
+          "title": "Applied Computing Faculty Directory",
+          "url": "https://www.mtu.edu/applied-computing/about/faculty/",
+          "checked_at": "2026-11-24",
+          "source_type": "official_mtu"
+        }
+      ],
+      "people": [
+        {
+          "name": "Bo Zhang",
+          "title": "Assistant Professor, Computer Science",
+          "office": "Rekhi Hall 307",
+          "email": "bo.zhang@mtu.edu",
+          "source": {
+            "title": "Computer Science Faculty Directory",
+            "url": "https://www.mtu.edu/cs/department/people/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ruihong Zhang",
+          "title": "Teaching Professor, Computer Science",
+          "office": "Rekhi Hall 302",
+          "email": "ruihong@mtu.edu",
+          "source": {
+            "title": "Computer Science Faculty Directory",
+            "url": "https://www.mtu.edu/cs/department/people/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Weihua Zhou",
+          "title": "Associate Professor, Data Science",
+          "office": "Rekhi Hall 109",
+          "email": "whzhou@mtu.edu",
+          "source": {
+            "title": "Computer Science Faculty Directory",
+            "url": "https://www.mtu.edu/cs/department/people/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Daniel Fuhrmann",
+          "title": "Chair, Applied Computing",
+          "office": "Rekhi Hall 323",
+          "email": "fuhrmann@mtu.edu",
+          "source": {
+            "title": "Applied Computing Faculty Directory",
+            "url": "https://www.mtu.edu/applied-computing/about/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        },
+        {
+          "name": "Ronghua (Sam) Xu",
+          "title": "Assistant Professor, Applied Computing",
+          "office": "Rekhi Hall 107",
+          "email": "ronghuax@mtu.edu",
+          "source": {
+            "title": "Applied Computing Faculty Directory",
+            "url": "https://www.mtu.edu/applied-computing/about/faculty/",
+            "checked_at": "2026-11-24",
+            "source_type": "official_mtu"
+          }
+        }
+      ]
     },
     {
       "id": 1065,

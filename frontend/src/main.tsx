@@ -38,7 +38,13 @@ type Item = {
   source?: Source;
 };
 
+type Person = {name: string; title: string; office: string; email?: string; image_url?: string; profile_url?: string; source: Source};
+
 type Building = {
+  image_url?: string;
+  image_source?: Source;
+  people?: Person[];
+  directory_sources?: Source[];
   id: number;
   name: string;
   abbreviation: string;
@@ -91,6 +97,7 @@ type Page =
 type BuildingTab =
   | 'Overview'
   | 'Departments & offices'
+  | 'Faculty & Staff'
   | 'Events'
   | 'Classes & rooms'
   | 'Location'
@@ -101,6 +108,7 @@ const CAMPUS_CATEGORIES = ['Academic & Research', 'Sports & Recreation', 'Studen
 const tabs: BuildingTab[] = [
   'Overview',
   'Departments & offices',
+  'Faculty & Staff',
   'Events',
   'Classes & rooms',
   'Location',
@@ -158,6 +166,21 @@ function EventImage({ event, compact = false }: { event: LiveEvent; compact?: bo
       ? <img src={event.image_url} alt={event.title} loading="lazy" decoding="async" onError={() => setFailed(true)} />
       : <CalendarDays size={compact ? 26 : 40} aria-label="Event image unavailable" />}
   </div>;
+}
+
+function ProfilePhoto({ url, name, person = false }: {url?: string; name: string; person?: boolean}) {
+  const [failed, setFailed] = useState(false);
+  return <div className={person ? 'person-photo' : 'profile-photo'}>{url && !failed ? <img src={url} alt={name} loading="lazy" onError={() => setFailed(true)} /> : person ? <GraduationCap size={30} /> : <span><Building2 size={32} /> Official photograph not available</span>}</div>;
+}
+
+function People({building}: {building: Building}) {
+  const [search, setSearch] = useState('');
+  const people = (building.people || []).filter(p => (p.name + ' ' + p.title + ' ' + p.office).toLowerCase().includes(search.toLowerCase()));
+  return <><h2>Faculty & Staff</h2><p className="muted">Public university directory entries with offices verified in this building.</p>
+    <div className="search-field"><Search size={18}/><input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Search faculty and staff"/></div>
+    {!people.length && <p className="muted">No matching verified profiles are loaded.</p>}
+    <div className="people-grid">{people.map(p=><article className="item-card person-card" key={p.name+'-'+p.office}><ProfilePhoto key={p.image_url} url={p.image_url} name={p.name} person/><div><h3>{p.name}</h3><p>{p.title}</p><p><MapPin size={15}/> {p.office}</p>{p.email && <a href={'mailto:'+p.email}>{p.email}</a>}<SourceLink source={p.profile_url ? {...p.source,url:p.profile_url,title:'Official profile'} : p.source}/></div></article>)}</div>
+    {(building.directory_sources || []).map(source=><SourceLink key={source.url} source={source}/>)}</>;
 }
 
 function LiveEventCards({
@@ -758,6 +781,8 @@ function App() {
                 {page === 'Saved Buildings' ? 'Saved Buildings' : 'Back'}
               </button>
 
+              <ProfilePhoto key={selected.id} url={selected.image_url} name={selected.name}/>
+              {selected.image_source && <SourceLink source={selected.image_source}/>}
               <div className="building-banner">
                 <span className="eyebrow">
                   BUILDING {selected.campus_map_number ?? '—'}
@@ -865,6 +890,7 @@ function App() {
                 {tab === 'Departments & offices' && (
                   <>
                     <h2>Departments</h2>
+                    {(selected.directory_sources || []).map(source => <SourceLink key={source.url} source={source}/>)}
 
                     <Items
                       items={selected.departments}
@@ -881,6 +907,8 @@ function App() {
                     />
                   </>
                 )}
+
+                {tab === 'Faculty & Staff' && <People key={selected.id} building={selected}/>}
 
                 {tab === 'Events' && (
                   <>

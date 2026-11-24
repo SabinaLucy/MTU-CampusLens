@@ -1,0 +1,17 @@
+{
+  "allowed_domains": [
+    "www.mtu.edu",
+    "events.mtu.edu"
+  ],
+  "records": [
+    {
+      "building_id": 1003,
+      "url": "https://events.mtu.edu/electrical_energy_resources_center_eerc"
+    },
+    {
+      "building_id": 1003,
+      "person": "Fengying Dang",
+      "url": "https://www.mtu.edu/ece/department/faculty/dang/"
+    }
+  ]
+}
