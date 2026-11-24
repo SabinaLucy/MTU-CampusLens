@@ -81,19 +81,21 @@ const DINING: Dining[] = [
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
-    "hours": "Thanksgiving: closed until Nov 30, 7 AM"
+    "hours": "Thanksgiving: closed until Nov 30, 7 AM",
+    "image_url": "/dining/dhh-card.svg"
   },
   {
     "id": "campus",
-    "name": "Campus Caf\u00e9",
+    "name": "Campus Café",
     "building_ids": [
       1017
     ],
-    "type": "Caf\u00e9",
+    "type": "Café",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
-    "hours": "Thanksgiving: closed until Nov 29, 6 PM"
+    "hours": "Thanksgiving: closed until Nov 29, 6 PM",
+    "image_url": "/dining/campus-card.svg"
   },
   {
     "id": "library",
@@ -101,11 +103,12 @@ const DINING: Dining[] = [
     "building_ids": [
       5
     ],
-    "type": "Caf\u00e9",
+    "type": "Café",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/library/about/hours/",
     "note": "Check official dining site for current menus and hours.",
-    "hours": "Published regular hours: Mon\u2013Thu 8 AM\u201310 PM; Fri 8 AM\u20136 PM; Sat 9 AM\u20135 PM; Sun 9 AM\u20138 PM. Holiday exceptions apply."
+    "hours": "Published regular hours: Mon–Thu 8 AM–10 PM; Fri 8 AM–6 PM; Sat 9 AM–5 PM; Sun 9 AM–8 PM. Holiday exceptions apply.",
+    "image_url": "/dining/library-card.svg"
   },
   {
     "id": "mub",
@@ -117,18 +120,20 @@ const DINING: Dining[] = [
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/residential-living/education/break/upcoming-break/",
     "note": "Check official dining site for current menus and hours.",
-    "hours": "Closed Nov 25\u201329; reopens Nov 30, 10 AM"
+    "hours": "Closed Nov 25–29; reopens Nov 30, 10 AM",
+    "image_url": "/dining/mub-card.svg"
   },
   {
     "id": "huski",
-    "name": "Huski Caf\u00e9",
+    "name": "Huski Café",
     "building_ids": [
       1059
     ],
-    "type": "Caf\u00e9",
+    "type": "Café",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/it/accounts/huskycard/",
-    "note": "Check official dining site for current menus and hours."
+    "note": "Check official dining site for current menus and hours.",
+    "image_url": "/dining/huski-card.svg"
   },
   {
     "id": "portage",
@@ -140,7 +145,8 @@ const DINING: Dining[] = [
     "type": "Restaurant",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/faculty-handbook/faculty/chapter9/s9-6/962/index.html",
-    "note": "Listed in MTU's faculty handbook; confirm current operation and hours."
+    "note": "Listed in MTU's faculty handbook; confirm current operation and hours.",
+    "image_url": "/dining/portage-card.svg"
   },
   {
     "id": "sdc",
@@ -151,7 +157,8 @@ const DINING: Dining[] = [
     "type": "Concessions",
     "menu": "https://dineoncampus.com/MTU",
     "source": "https://www.mtu.edu/faculty-handbook/faculty/chapter9/s9-6/962/index.html",
-    "note": "Listed in MTU's faculty handbook; confirm current operation and hours."
+    "note": "Listed in MTU's faculty handbook; confirm current operation and hours.",
+    "image_url": "/dining/sdc-card.svg"
   }
 ];
 type Building = {
