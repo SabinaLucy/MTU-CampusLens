@@ -40,7 +40,7 @@ type Item = {
 
 type Person = {name: string; title: string; office: string; phone?: string; interests?: string; email?: string; image_url?: string; profile_url?: string; source: Source};
 
-type Dining = {id:string; name:string; building_ids:number[]; type:string; menu:string; source:string; note:string; hours?:string; image_url?:string};
+type Dining = {id:string; name:string; building_ids:number[]; type:string; menu:string; source:string; note:string; hours?:string; image_url?:string; image_source?:string};
 const DINING: Dining[] = [
   {
     "id": "wads",
