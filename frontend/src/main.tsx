@@ -473,11 +473,12 @@ function Items({
 type CampusTurn={locationShared?:boolean;unavailable?:boolean;role:'user'|'assistant';text:string;attachment?:string;nearby?:{id:number;name:string;meters:number}[]};
 function ChatMarkdown({text}:{text:string}) {
   // Render a bounded Markdown subset as React nodes, never raw HTML.
-  const inline=(value:string)=>value.split(/(\[[^\]\n]+\]\(https?:\/\/[^\s)]+\)|\*\*[^*\n]+\*\*|https?:\/\/[^\s<>()]+|\x60[^\x60\n]+\x60)/g).map((part,i)=>{
+  const inline=(value:string)=>value.split(/(\[[^\]\n]+\]\(https?:\/\/[^\s)]+\)|\*\*[^*\n]+\*\*|\*[^*\n]+\*|https?:\/\/[^\s<>()]+|\x60[^\x60\n]+\x60)/g).map((part,i)=>{
     const link=part.match(/^\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)$/);
     if(link)return <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer">{link[1]}</a>;
     if(/^https?:\/\//.test(part))return <a key={i} href={part} target="_blank" rel="noopener noreferrer">{part}</a>;
     if(part.startsWith('**')&&part.endsWith('**'))return <strong key={i}>{part.slice(2,-2)}</strong>;
+    if(part.startsWith('*')&&part.endsWith('*')&&part.length>2)return <em key={i}>{part.slice(1,-1)}</em>;
     if(part.charCodeAt(0)===96&&part.charCodeAt(part.length-1)===96)return <code key={i}>{part.slice(1,-1)}</code>;
     return <React.Fragment key={i}>{part}</React.Fragment>;
   });
